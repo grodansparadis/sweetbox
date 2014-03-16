@@ -1,0 +1,22 @@
+/* General */
+
+sup {font-size:8px;}
+sub {font-size:8px;}
+h1 sup {font-size:8px;}
+h1 sub {font-size:8px;}
+h2 sup {font-size:12px;}
+h2 sub {font-size:12px;}
+
+.p4 sup {font-size:9px;}
+.p4 sub {font-size:9px;}
+.p5 sup {font-size:7px;}
+.p5 sub {font-size:7px;}
+
+/* Components */
+
+img.icon {margin-bottom:2px;}
+img.hot {margin-bottom:2px;}
+img.new {margin-bottom:2px;}
+img.updated {margin-bottom:2px;}
+
+table.zoom img.status {padding-top:2px;}

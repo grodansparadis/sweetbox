@@ -1,0 +1,24 @@
+[Eagle]
+Version="04 13 10"
+Platform="Windows"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Program Files/EAGLE-4.13r1/lbr/led.lbr"
+UsedLibrary="C:/Program Files/EAGLE-4.13r1/lbr/pinhead.lbr"
+UsedLibrary="C:/Program Files/EAGLE-4.13r1/lbr/rcl.lbr"
+UsedLibrary="C:/Program Files/EAGLE-4.13r1/lbr/robotics.lbr"
+UsedLibrary="C:/Program Files/EAGLE-4.13r1/lbr/supply2.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="158 285 757 684"
+State=2
+Number=0
+
+[Desktop]
+Screen="1280 1024"
+Window="Win_1"

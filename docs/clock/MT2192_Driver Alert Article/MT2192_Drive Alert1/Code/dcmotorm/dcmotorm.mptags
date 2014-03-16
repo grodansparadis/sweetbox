@@ -1,0 +1,1139 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ACK::"#"	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	68;"	d	line:68
+ACK_BYTE::0xCD	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	142;"	d	line:142
+ACK_BYTE::254	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	228;"	d	line:228	file:
+ATT::"~"	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	67;"	d	line:67
+AVAILABLE::-1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	66;"	d	line:66	file:
+B1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	211;"	v	line:211
+B2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	211;"	v	line:211
+BASE_CLOCK::1843200	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	27;"	d	line:27
+BIT0::(1<<0)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	85;"	d	line:85
+BIT10::(1<<10)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	95;"	d	line:95
+BIT11::(1<<11)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	96;"	d	line:96
+BIT12::(1<<12)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	97;"	d	line:97
+BIT13::(1<<13)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	98;"	d	line:98
+BIT14::(1<<14)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	99;"	d	line:99
+BIT15::(1<<15)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	100;"	d	line:100
+BIT1::(1<<1)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	86;"	d	line:86
+BIT2::(1<<2)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	87;"	d	line:87
+BIT3::(1<<3)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	88;"	d	line:88
+BIT4::(1<<4)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	89;"	d	line:89
+BIT5::(1<<5)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	90;"	d	line:90
+BIT6::(1<<6)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	91;"	d	line:91
+BIT7::(1<<7)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	92;"	d	line:92
+BIT8::(1<<8)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	93;"	d	line:93
+BIT9::(1<<9)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	94;"	d	line:94
+BIT_0::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	52;"	d	line:52
+BIT_1::2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	53;"	d	line:53
+BIT_2::4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	54;"	d	line:54
+BIT_3::8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	55;"	d	line:55
+BIT_4::16	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	56;"	d	line:56
+BIT_5::32	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	57;"	d	line:57
+BIT_6::64	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	58;"	d	line:58
+BIT_7::128	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	59;"	d	line:59
+BUFFER_SIZE::256	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	119;"	d	line:119
+BUSY	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	217;"	e	line:217	enum:CONTROLLER_STATE_TYPE
+BUSY_FLAG::PORTBbits.RB8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	131;"	d	line:131	file:
+BUSY_FLAG_DIR::TRISBbits.TRISB8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	132;"	d	line:132	file:
+Beep	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	859;"	f	line:859	signature:(int n)
+Beep	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	149;"	p	line:149	signature:(int n)
+Bell	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1465;"	l	line:1465
+Bell	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	861;"	l	line:861
+Blank	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	193;"	v	line:193
+Buf	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	237;"	v	line:237
+Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	171;"	v	line:171
+BufferSize::20	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	123;"	d	line:123
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2121;"	l	line:2121
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2182;"	m	line:2182	file:
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2219;"	m	line:2219	file:
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2254;"	m	line:2254	file:
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2298;"	m	line:2298	file:
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2340;"	m	line:2340	file:
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2382;"	m	line:2382	file:
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2421;"	l	line:2421
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2451;"	l	line:2451
+Byte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2517;"	l	line:2517
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2121;"	l	line:2121
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2183;"	m	line:2183	file:
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2220;"	m	line:2220	file:
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2255;"	m	line:2255	file:
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2299;"	m	line:2299	file:
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2341;"	m	line:2341	file:
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2383;"	m	line:2383	file:
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2421;"	l	line:2421
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2451;"	l	line:2451
+Byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2517;"	l	line:2517
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2121;"	l	line:2121
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2184;"	m	line:2184	file:
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2221;"	m	line:2221	file:
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2256;"	m	line:2256	file:
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2300;"	m	line:2300	file:
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2342;"	m	line:2342	file:
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2384;"	m	line:2384	file:
+Byte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2451;"	l	line:2451
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2121;"	l	line:2121
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2185;"	m	line:2185	file:
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2222;"	m	line:2222	file:
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2257;"	m	line:2257	file:
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2301;"	m	line:2301	file:
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2343;"	m	line:2343	file:
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2385;"	m	line:2385	file:
+Byte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2451;"	l	line:2451
+Byte5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2258;"	m	line:2258	file:
+Byte5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2302;"	m	line:2302	file:
+Byte5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2344;"	m	line:2344	file:
+Byte5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2386;"	m	line:2386	file:
+Byte6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2259;"	m	line:2259	file:
+Byte6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2303;"	m	line:2303	file:
+Byte6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2345;"	m	line:2345	file:
+Byte6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2387;"	m	line:2387	file:
+Byte7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2260;"	m	line:2260	file:
+Byte7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2304;"	m	line:2304	file:
+Byte7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2346;"	m	line:2346	file:
+Byte7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2388;"	m	line:2388	file:
+Byte8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2261;"	m	line:2261	file:
+Byte8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2305;"	m	line:2305	file:
+Byte8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2347;"	m	line:2347	file:
+Byte8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2389;"	m	line:2389	file:
+CALCULATE_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	275;"	e	line:275	enum:command_type
+CALIBRATE_JOYSTICK_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	265;"	e	line:265	enum:command_type
+CALIBRATE_MOTOR_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	244;"	e	line:244	enum:command_type
+CALIBRATE_MOTOR_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	523;"	t	line:523
+CALIBRATE_SENSOR_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	254;"	e	line:254	enum:command_type
+CCW	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	491;"	e	line:491
+CHECKSUM_OFFSET::33	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	146;"	d	line:146
+CLEAR_MEMORY_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	277;"	e	line:277	enum:command_type
+CLK_POL_ACTIVE_HIGH::0xffbf	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	43;"	d	line:43
+CLK_POL_ACTIVE_LOW::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	42;"	d	line:42
+CLOCK_FREQUENCY::(SYSTEM_FREQUENCY/4)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	91;"	d	line:91
+COMMAND_INDEX::3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	207;"	d	line:207
+COMMAND_MESSAGE_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	343;"	t	line:343
+COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	310;"	t	line:310
+CONTROLLER_ERROR_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	224;"	g	line:224
+CONTROLLER_STATE_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	217;"	g	line:217
+CR::13	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	116;"	d	line:116
+CW	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	491;"	e	line:491
+CalibrateCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	617;"	m	line:617	union:message_union_type
+CalibrateCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	518;"	m	line:518	struct:calibrate_motor_type
+Ch	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	112;"	v	line:112
+CharacterCount	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	184;"	v	line:184
+CharactersToRead	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	137;"	v	line:137
+CharactersToRead2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	147;"	v	line:147
+ClockTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1585;"	f	line:1585	signature:(void)
+ClockTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	169;"	p	line:169	signature:(void)
+CloseSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	96;"	p	line:96	signature:()
+CloseSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	151;"	p	line:151	signature:()
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	168;"	v	line:168
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	334;"	m	line:334	struct:command_message_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	383;"	m	line:383	struct:get_status_command_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	423;"	m	line:423	struct:sample_command_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	448;"	m	line:448	struct:period_command_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	473;"	m	line:473	struct:reset_command_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	513;"	m	line:513	struct:calibrate_motor_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	537;"	m	line:537	struct:duty_command_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	571;"	m	line:571	struct:get_pot_command_type
+Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	597;"	m	line:597	struct:hold_pot_type
+CommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	336;"	m	line:336	struct:command_message_type
+ComputeChecksum	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2830;"	f	line:2830	signature:(Packet_U *Message, word *Checksum)
+ComputeChecksum	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	303;"	p	line:303	signature:(Packet_U *Message, word *Checksum)
+ComputeShortChecksum	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2854;"	f	line:2854	signature:(ShortPacketData_T *ShortMessage, word *Checksum)
+ComputeShortChecksum	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	304;"	p	line:304	signature:(ShortPacketData_T *ShortMessage, word *Checksum)
+ConfigIntSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	99;"	p	line:99	signature:(unsigned int config)
+ConfigIntSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	154;"	p	line:154	signature:(unsigned int config)
+ConfigureInterrupts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	709;"	p	line:709	signature:(void)
+ConfigureInterrupts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	296;"	p	line:296	signature:(void)
+ControllerDiagnosticCode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	398;"	m	line:398	struct:get_status_command_type
+ControllerDiagnosticCode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	292;"	v	line:292
+ControllerErrorCode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	392;"	m	line:392	struct:get_status_command_type
+ControllerErrorCode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	287;"	v	line:287
+ControllerState	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	385;"	m	line:385	struct:get_status_command_type
+ControllerState	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	250;"	v	line:250
+ControllerState	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	280;"	v	line:280
+ConvertFiveVolts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	200;"	v	line:200
+ConvertThreeVolts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	196;"	v	line:196
+ConvertToDegrees	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	204;"	v	line:204
+ConvertToDegrees8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	206;"	v	line:206
+Count	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1220;"	l	line:1220	file:
+DATA_BUFFER_SIZE::34	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	151;"	d	line:151
+DATA_BUFFER_SIZE::34	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	157;"	d	line:157
+DC_MOTOR_FLAG	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	95;"	d	line:95
+DC_MOTOR_MASTER_TEST::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	131;"	d	line:131
+DELAY_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	296;"	e	line:296	enum:command_type
+DIAGNOSTIC1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	228;"	e	line:228	enum:DIAGNOSTIC_MESSAGE_TYPE
+DIAGNOSTIC2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	228;"	e	line:228	enum:DIAGNOSTIC_MESSAGE_TYPE
+DIAGNOSTIC_CODE_INDEX::6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	210;"	d	line:210
+DIAGNOSTIC_MESSAGE_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	228;"	g	line:228
+DISABLE_SDO_PIN::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	25;"	d	line:25
+DONE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	217;"	e	line:217	enum:CONTROLLER_STATE_TYPE
+DSPIC30F6014::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	23;"	d	line:23
+DUTY_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	245;"	e	line:245	enum:command_type
+DUTY_COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	556;"	t	line:556
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	318;"	m	line:318	struct:message_type
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1235;"	l	line:1235
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1290;"	l	line:1290
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1353;"	l	line:1353
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1419;"	l	line:1419
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1450;"	l	line:1450
+Data	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1485;"	l	line:1485
+DataRdySPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	105;"	p	line:105	signature:()
+DataRdySPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	162;"	p	line:162	signature:()
+DecimalValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2094;"	l	line:2094
+Delay	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2884;"	l	line:2884
+Delay	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3011;"	l	line:3011
+DelayMs	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1145;"	f	line:1145	signature:(unsigned int n)
+DelayMs	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	145;"	p	line:145	signature:(unsigned int n)
+DelayS	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1218;"	f	line:1218	signature:(unsigned int n)
+DelayS	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	146;"	p	line:146	signature:(unsigned int n)
+DelayTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1543;"	f	line:1543	signature:(void)
+DelayTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	167;"	p	line:167	signature:(void)
+DelayUs	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1123;"	f	line:1123	signature:(unsigned int n)
+DelayUs	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	144;"	p	line:144	signature:(unsigned int n)
+DirectionFlags	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	548;"	m	line:548	struct:duty_command_type
+Direction_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	491;"	t	line:491
+DisableIntSPI1::asm("BCLRIEC0,#8")	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	90;"	d	line:90
+DisableIntSPI2::asm("BCLRIEC1,#10")	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	147;"	d	line:147
+Duration	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1109;"	l	line:1109
+Duty	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	543;"	m	line:543	struct:duty_command_type
+Duty	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	266;"	v	line:266
+Duty	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	345;"	l	line:345
+DutyCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	618;"	m	line:618	union:message_union_type
+DutyCommands	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	267;"	v	line:267
+Duty_Input	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	344;"	l	line:344
+Duty_Scaled	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	346;"	l	line:346
+E	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	194;"	v	line:194
+ENABLE_SDO_PIN::0xf7ff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	26;"	d	line:26
+END_OF_MESSAGES	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	306;"	e	line:306	enum:command_type
+ERROR	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	217;"	e	line:217	enum:CONTROLLER_STATE_TYPE
+ERROR_CODE_INDEX::5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	209;"	d	line:209
+ElapsedTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1258;"	l	line:1258
+Elapsed_Time_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	361;"	l	line:361
+Elapsed_Time_2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	364;"	l	line:364
+EnableIntSPI1::asm("BSETIEC0,#8")	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	89;"	d	line:89
+EnableIntSPI2::asm("BSETIEC1,#10")	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	146;"	d	line:146
+EncoderCounts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	546;"	m	line:546	struct:duty_command_type
+EncoderCounts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	274;"	v	line:274
+EndBuffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	141;"	v	line:141
+EndBuffer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	151;"	v	line:151
+ErrorString	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	97;"	v	line:97
+FAIL::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	63;"	d	line:63	file:
+FAILURE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	224;"	e	line:224	enum:CONTROLLER_ERROR_TYPE
+FALSE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	23;"	v	line:23
+FALSE::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	39;"	d	line:39
+FALSE::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	62;"	d	line:62
+FAST::512	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	192;"	d	line:192	file:
+FFT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	281;"	e	line:281	enum:command_type
+FILTER_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	280;"	e	line:280	enum:command_type
+FLAGS_LOADED	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	15;"	d	line:15
+FRAME_ENABLE_OFF::0xbfff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	20;"	d	line:20
+FRAME_ENABLE_ON::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	19;"	d	line:19
+FRAME_SYNC_INPUT::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	22;"	d	line:22
+FRAME_SYNC_OUTPUT::0xdfff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	23;"	d	line:23
+FULL_FORWARD::0x0010	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	198;"	d	line:198
+FULL_FORWARD::103	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	184;"	d	line:184
+FULL_REVERSE::0x03FF	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	195;"	d	line:195
+FULL_REVERSE::201	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	182;"	d	line:182
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	317;"	m	line:317	struct:message_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	330;"	m	line:330	struct:command_message_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	379;"	m	line:379	struct:get_status_command_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	419;"	m	line:419	struct:sample_command_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	444;"	m	line:444	struct:period_command_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	469;"	m	line:469	struct:reset_command_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	509;"	m	line:509	struct:calibrate_motor_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	533;"	m	line:533	struct:duty_command_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	567;"	m	line:567	struct:get_pot_command_type
+Field_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	593;"	m	line:593	struct:hold_pot_type
+Field_2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	319;"	m	line:319	struct:message_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	338;"	m	line:338	struct:command_message_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	405;"	m	line:405	struct:get_status_command_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	430;"	m	line:430	struct:sample_command_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	455;"	m	line:455	struct:period_command_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	479;"	m	line:479	struct:reset_command_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	520;"	m	line:520	struct:calibrate_motor_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	552;"	m	line:552	struct:duty_command_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	578;"	m	line:578	struct:get_pot_command_type
+Filler	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	604;"	m	line:604	struct:hold_pot_type
+FloatDutyCommands	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	270;"	v	line:270
+FloatValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2380;"	m	line:2380	file:
+Float_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2393;"	t	line:2393	file:
+FlushBuffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1052;"	f	line:1052	signature:(void)
+FlushBuffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	248;"	p	line:248	signature:(void)
+FlushBuffer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1073;"	f	line:1073	signature:(void)
+FlushBuffer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	249;"	p	line:249	signature:(void)
+FlushSPIBuffers	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	639;"	p	line:639	signature:(void)
+FlushSPIBuffers	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	120;"	p	line:120	file:	signature:(void)
+Forward_To_Neutral	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	680;"	p	line:680	signature:(void)
+FoundFlag	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2670;"	l	line:2670
+Frequency	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	345;"	l	line:345
+Frequency_Input	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	344;"	l	line:344
+Frequency_Scaled	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	346;"	l	line:346
+GEARBOT::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	132;"	d	line:132
+GET_ANSWERS_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	276;"	e	line:276	enum:command_type
+GET_INTERRUPT_COUNTS_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	299;"	e	line:299	enum:command_type
+GET_JOYSTICK_CALIBRATION_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	266;"	e	line:266	enum:command_type
+GET_POT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	246;"	e	line:246	enum:command_type
+GET_POT_COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	581;"	t	line:581
+GET_RAW_JOYSTICK_DATA_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	268;"	e	line:268	enum:command_type
+GET_RAW_SENSOR_DATA_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	257;"	e	line:257	enum:command_type
+GET_SCALED_JOYSTICK_DATA_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	269;"	e	line:269	enum:command_type
+GET_SCALED_SENSOR_DATA_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	258;"	e	line:258	enum:command_type
+GET_SENSOR_CALIBRATION_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	255;"	e	line:255	enum:command_type
+GET_STATUS_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	303;"	e	line:303	enum:command_type
+GET_STATUS_COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	408;"	t	line:408
+GRAPHUTIL_LOADED	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	17;"	d	line:17
+GetByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1670;"	f	line:1670	signature:(void)
+GetByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	210;"	p	line:210	signature:(void)
+GetByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1699;"	f	line:1699	signature:(void)
+GetByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	215;"	p	line:215	signature:(void)
+GetDouble	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	293;"	p	line:293	signature:(void)
+GetFloat	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2714;"	f	line:2714	signature:(void)
+GetFloat	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	292;"	p	line:292	signature:(void)
+GetKey	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2729;"	f	line:2729	signature:(void)
+GetKey	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	297;"	p	line:297	signature:(void)
+GetMotorPosition	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	710;"	p	line:710	signature:(word MotorID)
+GetMotorStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	711;"	p	line:711	signature:(word MotorID)
+GetPotCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	619;"	m	line:619	union:message_union_type
+GetPotCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	576;"	m	line:576	struct:get_pot_command_type
+GetStatusCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	623;"	m	line:623	union:message_union_type
+GetStatusCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	403;"	m	line:403	struct:get_status_command_type
+GetTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1481;"	f	line:1481	signature:(void)
+GetTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	163;"	p	line:163	signature:(void)
+HISTOGRAM_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	285;"	e	line:285	enum:command_type
+HOLD_POT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	247;"	e	line:247	enum:command_type
+HOLD_POT_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	607;"	t	line:607
+HardLeft	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	684;"	p	line:684	signature:(void)
+HardRight	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	686;"	p	line:686	signature:(void)
+Hb1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	216;"	v	line:216
+Hb2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	216;"	v	line:216
+HexByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2590;"	l	line:2590
+HexByte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2122;"	l	line:2122
+HexByte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2422;"	l	line:2422
+HexByte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2452;"	l	line:2452
+HexByte1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2518;"	l	line:2518
+HexByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2122;"	l	line:2122
+HexByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2422;"	l	line:2422
+HexByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2452;"	l	line:2452
+HexByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2518;"	l	line:2518
+HexByte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2122;"	l	line:2122
+HexByte3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2452;"	l	line:2452
+HexByte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2122;"	l	line:2122
+HexByte4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2452;"	l	line:2452
+HexByte_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	28;"	t	line:28
+HexLongWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2628;"	l	line:2628
+HexLongWord_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	30;"	t	line:30
+HexLookup	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	101;"	v	line:101
+HexNumber	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	113;"	v	line:113
+HexWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2609;"	l	line:2609
+HexWord_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	29;"	t	line:29
+Hlw1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	218;"	v	line:218
+Hlw2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	218;"	v	line:218
+HoldPotCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	620;"	m	line:620	union:message_union_type
+HoldPotCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	602;"	m	line:602	struct:hold_pot_type
+Hours	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	188;"	v	line:188
+Hw1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	217;"	v	line:217
+Hw2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	217;"	v	line:217
+I1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	213;"	v	line:213
+I2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	213;"	v	line:213
+IFFT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	282;"	e	line:282	enum:command_type
+INITIALIZED	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	217;"	e	line:217	enum:CONTROLLER_STATE_TYPE
+INPUT::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	40;"	d	line:40
+INT16::int	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	81;"	d	line:81
+INT32::long	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	83;"	d	line:83
+INT8::char	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	79;"	d	line:79
+InitializeSPI	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	302;"	p	line:302	file:	signature:(void)
+InitializeUart1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	738;"	f	line:738	signature:(unsigned long The_Baud_Rate)
+InitializeUart1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	196;"	p	line:196	signature:(unsigned long The_Baud_Rate)
+InitializeUart2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	819;"	f	line:819	signature:(unsigned long The_Baud_Rate)
+InitializeUart2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	197;"	p	line:197	signature:(unsigned long The_Baud_Rate)
+InputDutyCommands	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	269;"	v	line:269
+IntValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2217;"	m	line:2217	file:
+Int_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2226;"	t	line:2226	file:
+KALMAN_FILTER_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	283;"	e	line:283	enum:command_type
+L1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	214;"	v	line:214
+L2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	214;"	v	line:214
+LCD_Ready	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	90;"	v	line:90
+LED1_OFF::LATDbits.LATD0=1;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	113;"	d	line:113
+LED1_ON::LATDbits.LATD0=0;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	112;"	d	line:112
+LED2_OFF::LATDbits.LATD1=1;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	115;"	d	line:115
+LED2_ON::LATDbits.LATD1=0;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	114;"	d	line:114
+LED3_OFF::LATDbits.LATD2=1;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	117;"	d	line:117
+LED3_ON::LATDbits.LATD2=0;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	116;"	d	line:116
+LED4_OFF::LATDbits.LATD3=1;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	119;"	d	line:119
+LED4_ON::LATDbits.LATD3=0;	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	118;"	d	line:118
+LED_1::PORTDbits.RD0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	63;"	d	line:63
+LED_1_DIR::TRISDbits.TRISD0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	69;"	d	line:69
+LED_2::PORTDbits.RD1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	64;"	d	line:64
+LED_2_DIR::TRISDbits.TRISD1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	70;"	d	line:70
+LED_3::PORTDbits.RD2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	65;"	d	line:65
+LED_3_DIR::TRISDbits.TRISD2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	71;"	d	line:71
+LED_4::PORTDbits.RD3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	66;"	d	line:66
+LED_4_DIR::TRISDbits.TRISD3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	72;"	d	line:72
+LEFT_MOTOR::0x00	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	170;"	d	line:170
+LF::10	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	117;"	d	line:117
+Left	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	683;"	p	line:683	signature:(void)
+Lines	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	273;"	v	line:273
+Lines	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	347;"	l	line:347
+LocalChecksum	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2833;"	l	line:2833
+LocalChecksum	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2857;"	l	line:2857
+LocalData	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	901;"	l	line:901
+LocalData2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	964;"	l	line:964
+LocalMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2886;"	l	line:2886
+LocalShortMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3014;"	l	line:3014
+LocalShortMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3292;"	l	line:3292
+LongValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2296;"	m	line:2296	file:
+Long_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2309;"	t	line:2309	file:
+LookupHexValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2090;"	f	line:2090	signature:(char HexValue)
+LookupHexValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	222;"	p	line:222	file:	signature:(char HexValue)
+Lsn	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2158;"	l	line:2158
+Lsn	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2489;"	l	line:2489
+MASTER_ENABLE_OFF::0xffdf	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	46;"	d	line:46
+MASTER_ENABLE_ON::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	45;"	d	line:45
+MAX_DUTY_WINDOW::1023.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	176;"	d	line:176	file:
+MAX_FREQUENCY_WINDOW::10000.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	172;"	d	line:172	file:
+MAX_MOTORS::6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	168;"	d	line:168
+MAX_MOTOR_VIEWPORT::1023	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	162;"	d	line:162	file:
+MAX_PERIOD_WINDOW::10000.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	168;"	d	line:168	file:
+MAX_POSITION_WINDOW::100.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	180;"	d	line:180	file:
+MAX_POT_VIEWPORT::4095	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	158;"	d	line:158	file:
+MAX_SPEED_WINDOW::10000.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	184;"	d	line:184	file:
+MEDIAN_FILTER_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	284;"	e	line:284	enum:command_type
+MEDIUM::256	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	191;"	d	line:191	file:
+MEDIUM_FORWARD::0x00A5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	185;"	d	line:185
+MEDIUM_FORWARD::0x00A5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	199;"	d	line:199
+MEDIUM_REVERSE::0x032E	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	183;"	d	line:183
+MEDIUM_REVERSE::0x032E	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	196;"	d	line:196
+MESSAGE_BUFFER_SIZE::34	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	152;"	d	line:152
+MESSAGE_BUFFER_SIZE::34	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	158;"	d	line:158
+MESSAGE_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	320;"	t	line:320
+MESSAGE_UNION_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	628;"	t	line:628
+MIN_DUTY_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	174;"	d	line:174	file:
+MIN_FREQUENCY_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	170;"	d	line:170	file:
+MIN_MOTOR_VIEWPORT::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	160;"	d	line:160	file:
+MIN_PERIOD_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	166;"	d	line:166	file:
+MIN_POSITION_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	178;"	d	line:178	file:
+MIN_POT_VIEWPORT::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	156;"	d	line:156	file:
+MIX_SPEED_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	182;"	d	line:182	file:
+MOTOR_0::0x00	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	172;"	d	line:172
+MOTOR_0_BRAKE_FLAG::PORTBbits.RB4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	145;"	d	line:145	file:
+MOTOR_0_DIRECTION::PORTBbits.RB4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	136;"	d	line:136	file:
+MOTOR_0_DIRECTION_DIR::TRISBbits.TRISB4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	137;"	d	line:137	file:
+MOTOR_0_DIR_FLAG_DIR::TRISBbits.TRISB4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	146;"	d	line:146	file:
+MOTOR_1::0x01	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	173;"	d	line:173
+MOTOR_1_DIRECTION::PORTBbits.RB5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	141;"	d	line:141	file:
+MOTOR_1_DIRECTION_DIR::TRISBbits.TRISB5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	142;"	d	line:142	file:
+MOTOR_1_DIR_FLAG::PORTBbits.RB5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	150;"	d	line:150	file:
+MOTOR_1_DIR_FLAG_DIR::TRISBbits.TRISB5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	151;"	d	line:151	file:
+MY_TYPES_LOADED	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	16;"	d	line:16
+MaxWord::0xFFFF	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	76;"	d	line:76
+Maxtimeout	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	59;"	v	line:59
+Member	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2667;"	f	line:2667	signature:(char Ch, char * Set)
+Member	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	290;"	p	line:290	signature:(char Ch, char * Set)
+Message	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	627;"	m	line:627	union:message_union_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	332;"	m	line:332	struct:command_message_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	381;"	m	line:381	struct:get_status_command_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	421;"	m	line:421	struct:sample_command_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	446;"	m	line:446	struct:period_command_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	471;"	m	line:471	struct:reset_command_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	511;"	m	line:511	struct:calibrate_motor_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	535;"	m	line:535	struct:duty_command_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	569;"	m	line:569	struct:get_pot_command_type
+MessageID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	595;"	m	line:595	struct:hold_pot_type
+MessageIndex	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	240;"	v	line:240
+Minus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	192;"	v	line:192
+MinusPowerOf10	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	206;"	v	line:206
+Minutes	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	189;"	v	line:189
+MotorID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	475;"	m	line:475	struct:reset_command_type
+MotorID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	516;"	m	line:516	struct:calibrate_motor_type
+MotorID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	574;"	m	line:574	struct:get_pot_command_type
+MotorID	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	600;"	m	line:600	struct:hold_pot_type
+MotorMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	252;"	v	line:252
+MotorPeriod	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	272;"	v	line:272
+Msg_Counter	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	242;"	v	line:242
+Msn	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2158;"	l	line:2158
+Msn	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2489;"	l	line:2489
+NEUTRAL::0x0200	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	194;"	d	line:194
+NEUTRAL::152	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	181;"	d	line:181
+NOM_DUTY_WINDOW::511.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	175;"	d	line:175	file:
+NOM_FREQUENCY_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	171;"	d	line:171	file:
+NOM_MOTOR_VIEWPORT::511	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	161;"	d	line:161	file:
+NOM_PERIOD_WINDOW::0.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	167;"	d	line:167	file:
+NOM_POSITION_WINDOW::50.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	179;"	d	line:179	file:
+NOM_POT_VIEWPORT::2047	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	157;"	d	line:157	file:
+NOM_SPEED_WINDOW::5000.0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	183;"	d	line:183	file:
+NO_DIAGNOSTICS	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	228;"	e	line:228	enum:DIAGNOSTIC_MESSAGE_TYPE
+NO_ERRORS	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	224;"	e	line:224	enum:CONTROLLER_ERROR_TYPE
+NO_STATES	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	217;"	e	line:217	enum:CONTROLLER_STATE_TYPE
+NUMBER_CYCLES::100	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	165;"	d	line:165
+NUMBER_SAMPLES_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	294;"	e	line:294	enum:command_type
+Neutral	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	678;"	p	line:678	signature:(void)
+Neutral_To_Forward	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	679;"	p	line:679	signature:(void)
+Neutral_To_Reverse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	681;"	p	line:681	signature:(void)
+NumberCharacters	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	136;"	v	line:136
+NumberCharacters2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	146;"	v	line:146
+NumberOfMotors	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	540;"	m	line:540	struct:duty_command_type
+NumberOfSamples	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	426;"	m	line:426	struct:sample_command_type
+Number_Of_Samples	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	352;"	l	line:352
+NumericChars	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	199;"	v	line:199
+OFF::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	45;"	d	line:45
+OK::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	62;"	d	line:62	file:
+ON::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	44;"	d	line:44
+OUTPUT::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	41;"	d	line:41
+OpenSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	117;"	p	line:117	signature:(unsigned int config1,unsigned int config2 )
+OpenSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	158;"	p	line:158	signature:(unsigned int config1,unsigned int config2 )
+Operators	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	196;"	v	line:196
+PAUSE_TEST::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	99;"	d	line:99	file:
+PAUSE_TIME::100	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	200;"	d	line:200
+PAUSE_TIME::250	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	186;"	d	line:186
+PCCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3124;"	l	line:3124
+PCCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3289;"	l	line:3289
+PERIOD_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	295;"	e	line:295	enum:command_type
+PERIOD_COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	459;"	t	line:459
+PLAY_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	293;"	e	line:293	enum:command_type
+PRI_PRESCAL_16_1::0xfffd	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	59;"	d	line:59
+PRI_PRESCAL_1_1::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	57;"	d	line:57
+PRI_PRESCAL_4_1::0xfffe	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	58;"	d	line:58
+PRI_PRESCAL_64_1::0xfffc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	60;"	d	line:60
+PauseTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	814;"	f	line:814	signature:(void)
+PauseTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	166;"	p	line:166	signature:(void)
+Period	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	451;"	m	line:451	struct:period_command_type
+Period	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	345;"	l	line:345
+Period	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	190;"	v	line:190
+PeriodCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	622;"	m	line:622	union:message_union_type
+PeriodCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	453;"	m	line:453	struct:period_command_type
+Period_Input	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	344;"	l	line:344
+Period_Scaled	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	346;"	l	line:346
+Plus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	191;"	v	line:191
+PlusPowerOf10	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	205;"	v	line:205
+Position	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	345;"	l	line:345
+Position_Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	354;"	l	line:354
+Position_Input	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	344;"	l	line:344
+Position_Scaled	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	346;"	l	line:346
+ProcessCalibrateMotorCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	696;"	p	line:696	signature:(word TheMotorID)
+ProcessDutyCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	697;"	p	line:697	signature:(longword *TheDuty, word NumberOfMotors)
+ProcessGetPotCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	698;"	p	line:698	signature:(word TheMotorID)
+ProcessGetStatusCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	703;"	p	line:703	signature:(void)
+ProcessHoldPotCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	699;"	p	line:699	signature:(word TheMotorID)
+ProcessNumberSamplesCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	700;"	p	line:700	signature:(word TheNumberOfSamples)
+ProcessPeriodCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	701;"	p	line:701	signature:(longword ThePeriod)
+ProcessReadMemory	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	309;"	p	line:309	signature:(void)
+ProcessResetCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	702;"	p	line:702	signature:(word TheMotorID)
+ProcessTimer0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	136;"	p	line:136	signature:(void)
+ProcessTimer1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	878;"	f	line:878	signature:(void)
+ProcessTimer1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	137;"	p	line:137	signature:(void)
+ProcessTimer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	915;"	f	line:915	signature:(void)
+ProcessTimer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	138;"	p	line:138	signature:(void)
+ProcessTimer3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	935;"	f	line:935	signature:(void)
+ProcessTimer3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	139;"	p	line:139	signature:(void)
+ProcessTimer4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	953;"	f	line:953	signature:(void)
+ProcessTimer4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	140;"	p	line:140	signature:(void)
+ProcessTimer5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	971;"	f	line:971	signature:(void)
+ProcessTimer5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	141;"	p	line:141	signature:(void)
+ProcessWriteMemory	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	310;"	p	line:310	signature:(void)
+READ::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	42;"	d	line:42
+READ_PORT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	297;"	e	line:297	enum:command_type
+RECALL_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	279;"	e	line:279	enum:command_type
+RECORD_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	292;"	e	line:292	enum:command_type
+RESET_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	304;"	e	line:304	enum:command_type
+RESET_COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	482;"	t	line:482
+RIGHT_MOTOR::0x01	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	171;"	d	line:171
+RX::PORTCbits.RC7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	77;"	d	line:77	file:
+RXDir::TRISCbits.TRISC7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	80;"	d	line:80	file:
+RX_DATA_OFFSET::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	145;"	d	line:145
+RX_Data_Received	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	241;"	v	line:241
+RX_Data_Received2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	242;"	v	line:242
+ReadHexByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1877;"	f	line:1877	signature:(void)
+ReadHexByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1946;"	f	line:1946	signature:(void)
+ReadHexByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	239;"	p	line:239	signature:(void)
+ReadHexFloat	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2067;"	f	line:2067	signature:(void)
+ReadHexFloat	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	244;"	p	line:244	signature:(void)
+ReadHexInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2005;"	f	line:2005	signature:(void)
+ReadHexInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	241;"	p	line:241	signature:(void)
+ReadHexLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2023;"	f	line:2023	signature:(void)
+ReadHexLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	242;"	p	line:242	signature:(void)
+ReadHexUnsignedLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1919;"	f	line:1919	signature:(void)
+ReadHexUnsignedLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1980;"	f	line:1980	signature:(void)
+ReadHexUnsignedLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2045;"	f	line:2045	signature:(void)
+ReadHexUnsignedLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	243;"	p	line:243	signature:(void)
+ReadHexWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1897;"	f	line:1897	signature:(void)
+ReadHexWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1962;"	f	line:1962	signature:(void)
+ReadHexWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	240;"	p	line:240	signature:(void)
+ReadNoWait	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1232;"	f	line:1232	signature:(void)
+ReadNoWait	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	206;"	p	line:206	signature:(void)
+ReadSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	129;"	p	line:129	signature:()
+ReadSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	180;"	p	line:180	signature:()
+ReadyString	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	96;"	v	line:96
+ReceiveCalibrateMotorResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	654;"	p	line:654	signature:(void)
+ReceiveDutyResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	655;"	p	line:655	signature:(void)
+ReceiveGetPotResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	656;"	p	line:656	signature:(void)
+ReceiveGetStatusResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	660;"	p	line:660	signature:(void)
+ReceiveHoldPotResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	657;"	p	line:657	signature:(void)
+ReceiveMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3119;"	f	line:3119	signature:(void)
+ReceiveMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	307;"	p	line:307	signature:(void)
+ReceiveMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	308;"	p	line:308	signature:(void)
+ReceiveNumberSamplesResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	658;"	p	line:658	signature:(void)
+ReceivePeriodResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	659;"	p	line:659	signature:(void)
+ReceiveResetResponse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	661;"	p	line:661	signature:(void)
+ReceiveSPIMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	674;"	p	line:674	signature:(void)
+ReceiveShortMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3284;"	f	line:3284	signature:(void)
+ReceivedDataFlag	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	142;"	v	line:142
+ReceivedDataFlag2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	152;"	v	line:152
+Receiveddata	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	238;"	v	line:238
+ResetCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	624;"	m	line:624	union:message_union_type
+ResetCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	477;"	m	line:477	struct:reset_command_type
+Reverse_To_Neutral	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	682;"	p	line:682	signature:(void)
+Right	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	685;"	p	line:685	signature:(void)
+RingBuffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	138;"	v	line:138
+RingBuffer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	148;"	v	line:148
+RxDataWaiting	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1205;"	f	line:1205	signature:(void)
+RxDataWaiting	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	203;"	p	line:203	signature:(void)
+RxProcessUart1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	899;"	f	line:899	signature:(void)
+RxProcessUart1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	198;"	p	line:198	signature:(void)
+RxProcessUart2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	962;"	f	line:962	signature:(void)
+RxProcessUart2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	199;"	p	line:199	signature:(void)
+RxSerialInterruptCount1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	160;"	v	line:160
+RxSerialInterruptCount2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	161;"	v	line:161
+SAMPLE_COMMAND_TYPE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	433;"	t	line:433
+SCOPE1::PORTDbits.RD0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	83;"	d	line:83	file:
+SEC_PRESCAL_1_1::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	48;"	d	line:48
+SEC_PRESCAL_2_1::0xfffb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	49;"	d	line:49
+SEC_PRESCAL_3_1::0xfff7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	50;"	d	line:50
+SEC_PRESCAL_4_1::0xfff3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	51;"	d	line:51
+SEC_PRESCAL_5_1::0xffef	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	52;"	d	line:52
+SEC_PRESCAL_6_1::0xffeb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	53;"	d	line:53
+SEC_PRESCAL_7_1::0xffe7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	54;"	d	line:54
+SEC_PRESCAL_8_1::0xffe3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	55;"	d	line:55
+SELECT_ALGORITHM_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	259;"	e	line:259	enum:command_type
+SELECT_FILTER_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	300;"	e	line:300	enum:command_type
+SEND_TELEMETRY_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	302;"	e	line:302	enum:command_type
+SERIAL_DRIVER::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	81;"	d	line:81
+SET_JOYSTICK_WINBOW_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	267;"	e	line:267	enum:command_type
+SET_SENSOR_WINDOW_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	256;"	e	line:256	enum:command_type
+SLAVE_ENABLE_OFF::0xff7f	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	40;"	d	line:40
+SLAVE_ENABLE_ON::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	39;"	d	line:39
+SLOW::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	190;"	d	line:190	file:
+SORT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	286;"	e	line:286	enum:command_type
+SPI1BUF_VALUE::0x0000	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	14;"	d	line:14
+SPI1CON_VALUE::0x0000	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	12;"	d	line:12
+SPI1STAT_VALUE::0x0000	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	10;"	d	line:10
+SPI2BUF_VALUE::0x0000	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	15;"	d	line:15
+SPI2CON_VALUE::0x0000	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	13;"	d	line:13
+SPI2STAT_VALUE::0x0000	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	11;"	d	line:11
+SPICONValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	368;"	l	line:368
+SPISTATValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	371;"	l	line:371
+SPIStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	265;"	v	line:265
+SPI_16::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	51;"	d	line:51
+SPI_BUFFER_SIZE::36	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	156;"	d	line:156
+SPI_BUFFER_SIZE::72	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	150;"	d	line:150
+SPI_CKE_OFF::0xfeff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	36;"	d	line:36
+SPI_CKE_ON::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	34;"	d	line:34
+SPI_Communications_Error	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	230;"	v	line:230
+SPI_DISABLE::0x7fff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	66;"	d	line:66
+SPI_Data_In	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	236;"	v	line:236
+SPI_Data_Out	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	237;"	v	line:237
+SPI_ENABLE::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	65;"	d	line:65
+SPI_End_Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	224;"	v	line:224
+SPI_IDLE_CON::0xdfff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	68;"	d	line:68
+SPI_IDLE_STOP::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	69;"	d	line:69
+SPI_INT_DIS::0xfff7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	76;"	d	line:76
+SPI_INT_EN::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	75;"	d	line:75
+SPI_INT_PRI_0::0xfff8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	78;"	d	line:78
+SPI_INT_PRI_1::0xfff9	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	79;"	d	line:79
+SPI_INT_PRI_2::0xfffa	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	80;"	d	line:80
+SPI_INT_PRI_3::0xfffb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	81;"	d	line:81
+SPI_INT_PRI_4::0xfffc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	82;"	d	line:82
+SPI_INT_PRI_5::0xfffd	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	83;"	d	line:83
+SPI_INT_PRI_6::0xfffe	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	84;"	d	line:84
+SPI_INT_PRI_7::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	85;"	d	line:85
+SPI_Interrupt_Count	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	235;"	v	line:235
+SPI_MODE16_OFF::0xfbff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	29;"	d	line:29
+SPI_MODE16_ON::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	28;"	d	line:28
+SPI_Number_Characters	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	229;"	v	line:229
+SPI_RX_OVFLOW_CLR::0xffbf	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	71;"	d	line:71
+SPI_Rx_Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	214;"	v	line:214
+SPI_Rx_Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	219;"	v	line:219
+SPI_Rx_Flag	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	226;"	v	line:226
+SPI_SMP_OFF::0xfdff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	32;"	d	line:32
+SPI_SMP_ON::0xffff	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	31;"	d	line:31
+SPI_SUPPORT::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	49;"	d	line:49
+SPI_Start_Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	223;"	v	line:223
+SPI_Status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	238;"	v	line:238
+SPI_Timeout	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	227;"	v	line:227
+SPI_Timeout_Flag	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	228;"	v	line:228
+SPI_Tx_Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	215;"	v	line:215
+SPI_Tx_Buffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	220;"	v	line:220
+STATE_INDEX::4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	208;"	d	line:208
+STDIO_INTERRUPTS::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	93;"	d	line:93
+STOP::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	189;"	d	line:189	file:
+STORE_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	278;"	e	line:278	enum:command_type
+STRING_SIZE::80	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	121;"	d	line:121
+SUCCESS	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	224;"	e	line:224	enum:CONTROLLER_ERROR_TYPE
+SYNC_BYTE::0xAB	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	141;"	d	line:141
+SYNC_BYTE::255	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	227;"	d	line:227	file:
+SYNC_INDEX::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	206;"	d	line:206
+SYSTEM_FREQUENCY::20	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	83;"	d	line:83
+SampleCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	621;"	m	line:621	union:message_union_type
+SampleCommandStatus	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	428;"	m	line:428	struct:sample_command_type
+Seconds	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	190;"	v	line:190
+SelectedCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	626;"	m	line:626	union:message_union_type
+SelectedCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	253;"	v	line:253
+SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1724;"	f	line:1724	signature:(byte c)
+SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	211;"	p	line:211	signature:(byte c)
+SendByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1735;"	f	line:1735	signature:(byte c)
+SendByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	216;"	p	line:216	signature:(byte c)
+SendCalibrateMotorCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	643;"	p	line:643	signature:(byte TheMotorID)
+SendDutyCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	644;"	p	line:644	signature:(longword *TheDuty, byte NumberOfMotors)
+SendGetPotCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	645;"	p	line:645	signature:(byte TheMotorID)
+SendGetStatusCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	649;"	p	line:649	signature:(void)
+SendHoldPotCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	646;"	p	line:646	signature:(byte TheMotorID)
+SendMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2880;"	f	line:2880	signature:(void)
+SendMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	305;"	p	line:305	signature:(void)
+SendNumberSamplesCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	647;"	p	line:647	signature:(byte TheMotorID, word TheNumberOfSamples)
+SendPeriodCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	648;"	p	line:648	signature:(longword ThePeriod)
+SendResetCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	650;"	p	line:650	signature:(void)
+SendSPIMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	667;"	p	line:667	signature:(void)
+SendShortMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3007;"	f	line:3007	signature:(void)
+SendShortMessage	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	306;"	p	line:306	signature:(void)
+SendmotorCommand	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	712;"	p	line:712	signature:(word MotorID, word Velocity, Direction_T Direction)
+SerialCommunicationsError	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	155;"	v	line:155
+ServiceHighInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	301;"	p	line:301	file:	signature:(void)
+SetDirection	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	715;"	p	line:715	signature:(word MotorID, word Direction)
+SetDuty	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	714;"	p	line:714	signature:(word MotorID, longword Duty)
+SetPeriod	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	713;"	p	line:713	signature:(longword Period)
+SetPriorityIntSPI1::(priority)(IPC2bits.SPI1IP=pri	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	91;"	d	line:91
+SetPriorityIntSPI2::(priority)(IPC6bits.SPI2IP=pri	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	148;"	d	line:148
+SetTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1499;"	f	line:1499	signature:(void)
+SetTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	164;"	p	line:164	signature:(void)
+SetupDCMotors	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	707;"	p	line:707	signature:(void)
+SetupInterrupts	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	134;"	p	line:134	signature:(void)
+SetupTimers	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	360;"	f	line:360	signature:(void)
+SetupTimers	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	133;"	p	line:133	signature:(void)
+Shutdown	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	716;"	p	line:716	signature:(void)
+Sleep1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1090;"	f	line:1090	signature:(int n)
+Sleep1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	155;"	p	line:155	signature:(int n)
+Sound	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1463;"	f	line:1463	signature:(int n)
+Sound	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	159;"	p	line:159	signature:(int n)
+Speed	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	345;"	l	line:345
+Speed_Command	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	355;"	l	line:355
+Speed_Input	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	344;"	l	line:344
+Speed_Scaled	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	346;"	l	line:346
+SplitInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2761;"	f	line:2761	signature:(int IntValue, byte *DataByte1, byte *DataByte2)
+SplitInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	223;"	p	line:223	signature:(int IntValue, byte *DataByte1, byte *DataByte2)
+SplitLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2809;"	f	line:2809	signature:(long int LongIntValue, byte *DataByte1, byte *DataByte2, byte *DataByte3, byte *DataByte4)
+SplitLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	227;"	p	line:227	signature:(long int LongIntValue, byte *DataByte1, byte *DataByte2, byte *DataByte3, byte *DataByte4)
+SplitUnsignedLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2775;"	f	line:2775	signature:(unsigned long int UnsignedLongIntValue, byte *DataByte1, byte *DataByte2, byte *DataByte3, byte *DataByte4)
+SplitUnsignedLongInteger	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	233;"	p	line:233	signature:(unsigned long int UnsignedLongIntValue, byte *DataByte1, byte *DataByte2, byte *DataByte3, byte *DataByte4)
+SplitWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2656;"	f	line:2656	signature:(word WordValue, byte *DataByte1, byte *DataByte2)
+SplitWord	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	218;"	p	line:218	signature:(word WordValue, byte *DataByte1, byte *DataByte2)
+StartBuffer	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	140;"	v	line:140
+StartBuffer2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	150;"	v	line:150
+StartMotor	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	718;"	p	line:718	signature:(word MotorID)
+StartTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1256;"	l	line:1256
+Start_Time	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1004;"	l	line:1004
+Start_Time_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	359;"	l	line:359
+Start_Time_2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	362;"	l	line:362
+Status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1207;"	l	line:1207
+StatusFlags	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	550;"	m	line:550	struct:duty_command_type
+StopMotor	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	717;"	p	line:717	signature:(word MotorID)
+StopTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1257;"	l	line:1257
+Stop_Time_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	360;"	l	line:360
+Stop_Time_2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	363;"	l	line:363
+Stopwatch	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1254;"	f	line:1254	signature:(void)
+Stopwatch	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	148;"	p	line:148	signature:(void)
+StopwatchTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	168;"	p	line:168	signature:(void)
+StringValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3123;"	l	line:3123
+StringValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3288;"	l	line:3288
+T1_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	169;"	v	line:169
+T23_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	175;"	v	line:175
+T2_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	170;"	v	line:170
+T3_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	171;"	v	line:171
+T45_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	176;"	v	line:176
+T4_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	172;"	v	line:172
+T5_Match_Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	173;"	v	line:173
+TEST_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	301;"	e	line:301	enum:command_type
+THE_BAUD_RATE2::115200	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	70;"	d	line:70
+THE_BAUD_RATE::115200	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	62;"	d	line:62
+THE_CLOCK_SPEED::(BASE_CLOCK*16)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	46;"	d	line:46
+THE_CLOCK_SPEED::(BASE_CLOCK*4)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	38;"	d	line:38
+THE_CLOCK_SPEED::(BASE_CLOCK*8)	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	42;"	d	line:42
+TIMER_16_COUNT_1MS::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	142;"	d	line:142	file:
+TIMER_16_COUNT_1MS::28	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	114;"	d	line:114	file:
+TIMER_16_COUNT_1MS::57	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	128;"	d	line:128	file:
+TIMER_16_COUNT_1S::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	141;"	d	line:141	file:
+TIMER_16_COUNT_1S::28800	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	113;"	d	line:113	file:
+TIMER_16_COUNT_1S::57597	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	127;"	d	line:127	file:
+TIMER_16_COUNT_US::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	115;"	d	line:115	file:
+TIMER_16_COUNT_US::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	129;"	d	line:129	file:
+TIMER_16_COUNT_US::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	143;"	d	line:143	file:
+TIMER_32_COUNT_1MS::14745	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	133;"	d	line:133	file:
+TIMER_32_COUNT_1MS::29491	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	147;"	d	line:147	file:
+TIMER_32_COUNT_1MS::7372	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	119;"	d	line:119	file:
+TIMER_32_COUNT_1S::14745600	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	132;"	d	line:132	file:
+TIMER_32_COUNT_1S::29491200	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	146;"	d	line:146	file:
+TIMER_32_COUNT_1S::7372800	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	118;"	d	line:118	file:
+TIMER_32_COUNT_US::14	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	134;"	d	line:134	file:
+TIMER_32_COUNT_US::29	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	148;"	d	line:148	file:
+TIMER_32_COUNT_US::7	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	120;"	d	line:120	file:
+TIMER_INTERRUPTS::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	91;"	d	line:91	file:
+TIMEUTIL_LOADED	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	46;"	d	line:46
+TIME_SCALE_FACTOR::100	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	86;"	d	line:86
+TRUE	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	22;"	v	line:22
+TRUE::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	38;"	d	line:38
+TRUE::1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	61;"	d	line:61
+TX::PORTCbits.RC6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	76;"	d	line:76	file:
+TXDir::TRISCbits.TRISC6	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	79;"	d	line:79	file:
+TX_DATA_OFFSET::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	144;"	d	line:144
+TempValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2692;"	l	line:2692
+TheByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	239;"	v	line:239
+TheByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	240;"	v	line:240
+TheKey	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2731;"	l	line:2731
+TimeDelay	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1546;"	l	line:1546
+Timeout	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	143;"	v	line:143
+TimeoutFlag	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	144;"	v	line:144
+TimerCount0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	181;"	v	line:181
+TimerCount1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	182;"	v	line:182
+TimerCount2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	183;"	v	line:183
+TimerCount3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	184;"	v	line:184
+TimerCount4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	185;"	v	line:185
+TimerCount5	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	186;"	v	line:186
+TimerInterruptTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1706;"	f	line:1706	signature:(void)
+TimerInterruptTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	170;"	p	line:170	signature:(void)
+TriaxData	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	357;"	l	line:357
+Try	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2885;"	l	line:2885
+Try	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3012;"	l	line:3012
+Try	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3125;"	l	line:3125
+Try	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3290;"	l	line:3290
+TxProcessUart1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1021;"	f	line:1021	signature:(void)
+TxProcessUart1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	200;"	p	line:200	signature:(void)
+TxProcessUart2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1034;"	f	line:1034	signature:(void)
+TxProcessUart2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	201;"	p	line:201	signature:(void)
+TxSerialInterruptCount1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	162;"	v	line:162
+TxSerialInterruptCount2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	163;"	v	line:163
+U1MODEvalue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	743;"	l	line:743
+U1STAvalue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	743;"	l	line:743
+U2MODEvalue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	823;"	l	line:823
+U2STAvalue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	823;"	l	line:823
+UARTUTIL_LOADED	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	21;"	d	line:21
+UART_SUPPORT::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	53;"	d	line:53
+UINT16::unsignedint	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	80;"	d	line:80
+UINT32::unsignedlong	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	82;"	d	line:82
+UINT8::unsignedchar	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	78;"	d	line:78
+UL1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	215;"	v	line:215
+UL2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	215;"	v	line:215
+USART_BUFFER_INTERFACE::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	130;"	d	line:130
+USED::-2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	67;"	d	line:67	file:
+USE_TIMER_2_AND_3::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	75;"	d	line:75
+USE_TIMER_2_AND_3::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	88;"	d	line:88	file:
+UnitTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3448;"	f	line:3448	signature:(void)
+UnitTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	311;"	p	line:311	signature:(void)
+UnsignedLongValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2252;"	m	line:2252	file:
+UnsignedLongValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2338;"	m	line:2338	file:
+UnsignedLong_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2265;"	t	line:2265	file:
+UnsignedLong_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2351;"	t	line:2351	file:
+UpdateDCmotors	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	708;"	p	line:708	signature:(void)
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2157;"	l	line:2157
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2191;"	l	line:2191
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2228;"	l	line:2228
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2267;"	l	line:2267
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2311;"	l	line:2311
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2353;"	l	line:2353
+Value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2395;"	l	line:2395
+W1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	212;"	v	line:212
+W2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	212;"	v	line:212
+WATCHDOG_OFF::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	78;"	d	line:78
+WRITE::0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	43;"	d	line:43
+WRITE_PORT_COMMAND	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	298;"	e	line:298	enum:command_type
+WordValue	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2180;"	m	line:2180	file:
+Word_T	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2189;"	t	line:2189	file:
+WriteSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	133;"	p	line:133	signature:(unsigned int data_out)
+WriteSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	184;"	p	line:184	signature:( unsigned int data_out)
+WriteTimer::WriteTimer1_16	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	79;"	d	line:79
+XT_16X_PLL::	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\FLAGS.H	33;"	d	line:33
+Xb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	348;"	l	line:348
+Xc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	350;"	l	line:350
+Xrb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	349;"	l	line:349
+Xrc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	351;"	l	line:351
+Yb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	348;"	l	line:348
+Yc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	350;"	l	line:350
+Yrb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	349;"	l	line:349
+Yrc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	351;"	l	line:351
+Zb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	348;"	l	line:348
+Zc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	350;"	l	line:350
+Zrb	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	349;"	l	line:349
+Zrc	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	351;"	l	line:351
+_SPI1Interrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	325;"	f	line:325	signature:(void)
+_T1Interrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	229;"	f	line:229	signature:(void)
+_T2Interrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	275;"	f	line:275	signature:(void)
+_T3Interrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	297;"	f	line:297	signature:(void)
+_T4Interrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	318;"	f	line:318	signature:(void)
+_T5Interrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	338;"	f	line:338	signature:(void)
+_U1RXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	260;"	f	line:260	signature:(void)
+_U1RXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	299;"	f	line:299	signature:(void)
+_U1TXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	248;"	f	line:248	signature:(void)
+_U1TXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	289;"	f	line:289	signature:(void)
+_U2RXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	276;"	f	line:276	signature:(void)
+_U2RXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	317;"	f	line:317	signature:(void)
+_U2TXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	254;"	f	line:254	signature:(void)
+_U2TXInterrupt	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	294;"	f	line:294	signature:(void)
+__SPI_H	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	5;"	d	line:5
+adc12cfg_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	339;"	l	line:339
+adc12cfg_2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	339;"	l	line:339
+adc12cfg_3	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	339;"	l	line:339
+adc12cfg_p	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	339;"	l	line:339
+adc12cfg_s	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	339;"	l	line:339
+adc4_in	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	343;"	l	line:343
+adc5_in	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	343;"	l	line:343
+adc6_in	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	343;"	l	line:343
+array_read	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	315;"	p	line:315	file:	signature:(unsigned char addhigh, unsigned char addlow, unsigned char *rdptr, unsigned char count)
+arrayrd	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	260;"	v	line:260
+arraywr	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	256;"	v	line:256
+b0	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	104;"	m	line:104	struct:uword16::<anonymous>
+b1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	105;"	m	line:105	struct:uword16::<anonymous>
+baud	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	340;"	l	line:340
+baud	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	743;"	l	line:743
+baud	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	823;"	l	line:823
+bit	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	22;"	t	line:22
+boolean	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	73;"	t	line:73
+both	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	107;"	m	line:107	union:uword16
+btoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2487;"	f	line:2487	signature:(byte ByteValue, HexByte_T HexValue)
+btoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	273;"	p	line:273	signature:(byte ByteValue, HexByte_T HexValue)
+busy_polling	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	308;"	p	line:308	file:	signature:(void)
+byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	24;"	t	line:24
+byte_read	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	318;"	p	line:318	file:	signature:(unsigned char addhigh, unsigned char addlow)
+byte_write	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	311;"	p	line:311	file:	signature:(unsigned char addhigh, unsigned char addlow, unsigned char data)
+bytes	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	106;"	m	line:106	union:uword16
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	358;"	l	line:358
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1672;"	l	line:1672
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1701;"	l	line:1701
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1750;"	l	line:1750
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1780;"	l	line:1780
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1811;"	l	line:1811
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1827;"	l	line:1827
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1845;"	l	line:1845
+c	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	346;"	l	line:346
+calibrate_motor_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	506;"	s	line:506
+channel	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	339;"	l	line:339
+command_message_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	327;"	s	line:327
+command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	238;"	g	line:238
+cursor	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	191;"	f	line:191	signature:(int x, int y, int old_x, int old_y)
+cursor	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	66;"	p	line:66	file:	signature:(int x, int y, int old_x, int old_y)
+cursor	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	67;"	p	line:67	signature:(int x, int y, int old_x, int old_y)
+cursor_color	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	196;"	l	line:196
+datard	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	246;"	v	line:246
+dec	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2645;"	f	line:2645	signature:(int Value)
+dec	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	266;"	p	line:266	signature:(int Value)
+dec::Dec	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	76;"	d	line:76
+draw_grid	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	237;"	f	line:237	signature:(int x, int y, int x_space, int y_space)
+draw_grid	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	67;"	p	line:67	file:	signature:(int x, int y, int x_space, int y_space)
+draw_grid	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	68;"	p	line:68	signature:(int x, int y, int x_space, int y_space)
+duty_command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	530;"	s	line:530
+eps	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	24;"	v	line:24
+error_code	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	52;"	v	line:52
+f1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	342;"	l	line:342
+get_byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1287;"	f	line:1287	signature:(void)
+get_byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1416;"	f	line:1416	signature:(void)
+get_byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1482;"	f	line:1482	signature:(void)
+get_byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	209;"	p	line:209	signature:(void)
+get_byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1350;"	f	line:1350	signature:(void)
+get_byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1447;"	f	line:1447	signature:(void)
+get_byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	214;"	p	line:214	signature:(void)
+get_pot_command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	564;"	s	line:564
+get_status_command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	376;"	s	line:376
+getc1::GetByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	90;"	d	line:90
+getc2::GetByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	98;"	d	line:98
+getc::GetByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	83;"	d	line:83
+getcSPI1::ReadSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	108;"	d	line:108
+getcSPI2::ReadSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	165;"	d	line:165
+getch	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1748;"	f	line:1748	signature:(void)
+getch	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1809;"	f	line:1809	signature:(void)
+getch1::getch	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	91;"	d	line:91
+getch2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1778;"	f	line:1778	signature:(void)
+getch2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1825;"	f	line:1825	signature:(void)
+getchar1::GetByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	92;"	d	line:92
+getchar2::GetByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	100;"	d	line:100
+getchar::GetByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	85;"	d	line:85
+gets1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1842;"	f	line:1842	signature:(char *s)
+getsSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	112;"	p	line:112	signature:(unsigned int length, unsigned int *rdptr, unsigned int spi_data_wait)
+getsSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	168;"	p	line:168	signature:(unsigned int length, unsigned int *rdptr, unsigned int spi_data_wait)
+graph_driver	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	50;"	v	line:50
+graph_mode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	51;"	v	line:51
+hex2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2588;"	f	line:2588	signature:(byte Value)
+hex2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	257;"	p	line:257	signature:(byte Value)
+hex2::Hex2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	78;"	d	line:78
+hex4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2607;"	f	line:2607	signature:(word Value)
+hex4	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	260;"	p	line:260	signature:(word Value)
+hex8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2626;"	f	line:2626	signature:(unsigned long int Value)
+hex8	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	263;"	p	line:263	signature:(unsigned long int Value)
+hex::Hex	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	77;"	d	line:77
+hmax_mouse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	43;"	v	line:43
+hmin_mouse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	43;"	v	line:43
+hold_pot_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	590;"	s	line:590
+htob	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2155;"	f	line:2155	signature:(byte *s )
+htob	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	280;"	p	line:280	signature:(byte *s)
+htof	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2375;"	f	line:2375	signature:(byte *s )
+htof	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	286;"	p	line:286	signature:(byte *s )
+htoi	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2211;"	f	line:2211	signature:(byte *s )
+htoi	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	282;"	p	line:282	signature:(byte *s)
+htol	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2291;"	f	line:2291	signature:(byte *s )
+htol	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	284;"	p	line:284	signature:(byte *s )
+htoul	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2247;"	f	line:2247	signature:(byte *s )
+htoul	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2333;"	f	line:2333	signature:(byte *s )
+htoul	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	285;"	p	line:285	signature:(byte *s )
+htow	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2174;"	f	line:2174	signature:(byte *s )
+htow	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	281;"	p	line:281	signature:(byte *s)
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1545;"	l	line:1545
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	816;"	l	line:816
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	337;"	l	line:337
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	242;"	l	line:242
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1054;"	l	line:1054
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1075;"	l	line:1075
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2093;"	l	line:2093
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2669;"	l	line:2669
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2832;"	l	line:2832
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2856;"	l	line:2856
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2882;"	l	line:2882
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3009;"	l	line:3009
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3121;"	l	line:3121
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3286;"	l	line:3286
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3450;"	l	line:3450
+i	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	345;"	l	line:345
+itoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2419;"	f	line:2419	signature:(int IntValue, HexWord_T HexValue)
+itoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	275;"	p	line:275	signature:(int IntValue, HexWord_T HexValue)
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	1255;"	v	line:1255
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	1261;"	v	line:1261
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	1263;"	v	line:1263
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	1265;"	v	line:1265
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	1321;"	v	line:1321
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	337;"	l	line:337
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	242;"	l	line:242
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3122;"	l	line:3122
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3287;"	l	line:3287
+j	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	3450;"	l	line:3450
+longword	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	26;"	t	line:26
+ltoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2118;"	f	line:2118	signature:(long int LongIntValue, HexLongWord_T HexValue)
+ltoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	276;"	p	line:276	signature:(long int LongIntValue, HexLongWord_T HexValue)
+main	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	206;"	p	line:206	file:	signature:(void)
+main	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	606;"	f	line:606	signature:(void)
+main	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	300;"	p	line:300	file:	signature:(void)
+main	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	334;"	f	line:334	signature:(void)
+main	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	343;"	f	line:343	signature:(void)
+map_viewport_to_window	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	157;"	f	line:157	signature:(int xv, int yv, float * xw, float * yw)
+map_viewport_to_window	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	62;"	p	line:62	file:	signature:(int xv, int yv, float *xw, float *yw)
+map_viewport_to_window	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	61;"	p	line:61	signature:(int xv, int yv, float *xw, float *yw)
+map_window_to_viewport	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	119;"	f	line:119	signature:(float xw, float yw, int * xv, int * yv)
+map_window_to_viewport	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	61;"	p	line:61	file:	signature:(float xw, float yw, int *xv, int *yv)
+map_window_to_viewport	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	60;"	p	line:60	signature:(float xw, float yw, int *xv, int *yv)
+message_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	315;"	s	line:315
+message_union_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	615;"	u	line:615
+nap	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1107;"	f	line:1107	signature:(int n)
+nap	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	156;"	p	line:156	signature:(int n)
+nib	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	23;"	t	line:23
+p	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1844;"	l	line:1844
+page_write	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	313;"	p	line:313	file:	signature:(unsigned char addhigh, unsigned char addlow, unsigned char *wrptr)
+pause	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1002;"	f	line:1002	signature:(unsigned long int n)
+pause	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1020;"	f	line:1020	signature:(unsigned long int n)
+pause	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	990;"	f	line:990	signature:(word Delay)
+pause	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	153;"	p	line:153	signature:(unsigned long int n)
+pauseTest	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	212;"	p	line:212	file:	signature:(void)
+pauseTime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	817;"	l	line:817
+period_command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	441;"	s	line:441
+pow10	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2690;"	f	line:2690	signature:(int x)
+printf	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2542;"	f	line:2542	signature:(const rom char *data)
+putc1::SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	94;"	d	line:94
+putc2::SendByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	102;"	d	line:102
+putc::SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	87;"	d	line:87
+putcSPI1::WriteSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	120;"	d	line:120
+putcSPI2::WriteSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	172;"	d	line:172
+putch1::SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	95;"	d	line:95
+putch2::SendByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	103;"	d	line:103
+putch::SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	88;"	d	line:88
+putchar1::SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	93;"	d	line:93
+putchar2::SendByte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	101;"	d	line:101
+putchar::SendByte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	86;"	d	line:86
+putrs1USART	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2793;"	f	line:2793	signature:(auto const MEM_MODEL rom char *data)
+putsSPI1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	124;"	p	line:124	signature:(unsigned int length, unsigned int *wrptr)
+putsSPI2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\spi.h	175;"	p	line:175	signature:(unsigned int length, unsigned int *wrptr)
+rctime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	1311;"	f	line:1311	signature:(byte Pin, byte State, word *Count)
+rctime	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.H	157;"	p	line:157	signature:(byte Pin, byte State, word *Count)
+rdptr	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	261;"	v	line:261
+reset_command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	466;"	s	line:466
+result	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	195;"	v	line:195
+result	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	341;"	l	line:341
+sample_command_type	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotor.h	416;"	s	line:416
+scale_x	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	162;"	l	line:162
+scale_y	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	162;"	l	line:162
+send_byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1584;"	f	line:1584	signature:(byte c)
+send_byte	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	208;"	p	line:208	signature:(byte c)
+send_byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1626;"	f	line:1626	signature:(byte c)
+send_byte2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	213;"	p	line:213	signature:(byte c)
+set_view	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	60;"	p	line:60	file:	signature:(int x1, int y1, int x2, int y2)
+set_view	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	99;"	f	line:99	signature:(int x1, int y1, int x2, int y2)
+set_view	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	59;"	p	line:59	signature:(int x1, int y1, int x2, int y2)
+set_window	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	59;"	p	line:59	file:	signature:(float x1, float y1, float x2, float y2)
+set_window	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	78;"	f	line:78	signature:(float x1, float y1, float x2, float y2)
+set_window	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.h	58;"	p	line:58	signature:(float x1, float y1, float x2, float y2)
+set_wren	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	307;"	p	line:307	file:	signature:(void)
+spi2cfg_1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	338;"	l	line:338
+spi2cfg_2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	338;"	l	line:338
+status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	104;"	l	line:104
+status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	124;"	l	line:124
+status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	163;"	l	line:163
+status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	199;"	l	line:199
+status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	247;"	l	line:247
+status	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	83;"	l	line:83
+status_read	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	309;"	p	line:309	file:	signature:(void)
+status_write	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	310;"	p	line:310	file:	signature:(unsigned char data)
+str	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	107;"	v	line:107
+string	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1104;"	f	line:1104	signature:(char *s)
+string	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	246;"	p	line:246	signature:(char *s)
+string2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	1155;"	f	line:1155	signature:(char *s)
+string2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	247;"	p	line:247	signature:(char *s)
+timeout	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	374;"	l	line:374
+timer_value	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\TIMEUTIL.C	223;"	v	line:223
+tofloat	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2750;"	f	line:2750	signature:(float Value)
+tofloat	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	269;"	p	line:269	signature:(float Value)
+uartmode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	340;"	l	line:340
+uartmode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	740;"	l	line:740
+uartmode	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	822;"	l	line:822
+uartsta	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	340;"	l	line:340
+uartsta	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	740;"	l	line:740
+uartsta	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	822;"	l	line:822
+ultoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2448;"	f	line:2448	signature:(unsigned long int UnsignedLongIntValue, HexLongWord_T HexValue)
+ultoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	278;"	p	line:278	signature:(unsigned long int UnsignedLongIntValue, HexLongWord_T HexValue)
+uword16	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	102;"	u	line:102
+vmax_mouse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	43;"	v	line:43
+vmin_mouse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	43;"	v	line:43
+word	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\my_types.h	25;"	t	line:25
+wrptr	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	259;"	v	line:259
+wtoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.c	2514;"	f	line:2514	signature:(word WordValue, HexWord_T HexValue)
+wtoh	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\uartutil.h	274;"	p	line:274	signature:(word WordValue, HexWord_T HexValue)
+x	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	338;"	l	line:338
+x_cursor_size	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	197;"	l	line:197
+x_key_mouse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	42;"	v	line:42
+x_lower_limit	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	243;"	l	line:243
+x_upper_limit	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	245;"	l	line:245
+xasp	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	53;"	v	line:53
+xv_max	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	37;"	v	line:37
+xv_min	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	35;"	v	line:35
+xw1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	55;"	v	line:55
+xw2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	55;"	v	line:55
+xw_max	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	30;"	v	line:30
+xw_min	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	28;"	v	line:28
+y	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	338;"	l	line:338
+y_cursor_size	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	198;"	l	line:198
+y_key_mouse	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	42;"	v	line:42
+y_lower_limit	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	244;"	l	line:244
+y_upper_limit	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	246;"	l	line:246
+yasp	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	53;"	v	line:53
+yv_max	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	38;"	v	line:38
+yv_min	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	36;"	v	line:36
+yw1	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	55;"	v	line:55
+yw2	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	55;"	v	line:55
+yw_max	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	31;"	v	line:31
+yw_min	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\graphutil.c	29;"	v	line:29
+z	C:\Microchip Contest\Drive Alert\Code\dcmotorm1\dcmotorm.c	338;"	l	line:338

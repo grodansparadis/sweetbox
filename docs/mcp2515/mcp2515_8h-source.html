@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>canix: mcp2515.h Quellcode</title>
+<link href="mcp2515_8h-source_files/doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.4.2 -->
+<div class="qindex"><a class="qindex" href="http://www.iuse.org/canix-doc/index.html">Hauptseite</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/annotated.html">Datenstrukturen</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/files.html">Auflistung&nbsp;der&nbsp;Dateien</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/functions.html">Datenstruktur-Elemente</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/globals.html">Datei-Elemente</a></div>
+<h1>mcp2515.h</h1><a href="http://www.iuse.org/canix-doc/mcp2515_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment">00001 <span class="comment">/*</span>
+00002 <span class="comment"> *  This file is part of the HCAN tools suite.</span>
+00003 <span class="comment"> *</span>
+00004 <span class="comment"> *  HCAN is free software; you can redistribute it and/or modify it under</span>
+00005 <span class="comment"> *  the terms of the GNU General Public License as published by the Free</span>
+00006 <span class="comment"> *  Software Foundation; either version 2 of the License, or (at your</span>
+00007 <span class="comment"> *  option) any later version.</span>
+00008 <span class="comment"> *</span>
+00009 <span class="comment"> *  HCAN is distributed in the hope that it will be useful, but WITHOUT</span>
+00010 <span class="comment"> *  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span>
+00011 <span class="comment"> *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span>
+00012 <span class="comment"> *  for more details.</span>
+00013 <span class="comment"> *</span>
+00014 <span class="comment"> *  You should have received a copy of the GNU General Public License along</span>
+00015 <span class="comment"> *  with HCAN; if not, write to the Free Software Foundation, Inc., 51</span>
+00016 <span class="comment"> *  Franklin St, Fifth Floor, Boston, MA 02110-1301  USA</span>
+00017 <span class="comment"> *</span>
+00018 <span class="comment"> *  (c) 2006 by Martin Haller, mah (at) iuse (dot) org</span>
+00019 <span class="comment"> *</span>
+00020 <span class="comment"> *</span>
+00021 <span class="comment"> *  Parts of this code are adapted from Florian Greif's MCP2515 Code; he</span>
+00022 <span class="comment"> *  released it under the GPL: </span>
+00023 <span class="comment"> *  http://www.kreatives-chaos.com/index.php?seite=mcp2515_init</span>
+00024 <span class="comment"> *  </span>
+00025 <span class="comment"> *</span>
+00026 <span class="comment"> *  Parts of this code are adapted from Martin Thomas' MCP2515 Code:</span>
+00027 <span class="comment"> *</span>
+00028 <span class="comment"> *****************************************************************************</span>
+00029 <span class="comment"> *</span>
+00030 <span class="comment"> * Controller Area Network (CAN) Demo-Application</span>
+00031 <span class="comment"> * Atmel AVR with Microchip MCP2515 </span>
+00032 <span class="comment"> * </span>
+00033 <span class="comment"> * Copyright (C) 2005 Martin THOMAS, Kaiserslautern, Germany</span>
+00034 <span class="comment"> * &lt;eversmith@heizung-thomas.de&gt;</span>
+00035 <span class="comment"> * http://www.siwawi.arubi.uni-kl.de/avr_projects</span>
+00036 <span class="comment"> *</span>
+00037 <span class="comment"> *****************************************************************************</span>
+00038 <span class="comment"> *</span>
+00039 <span class="comment"> * File    : mcp2515.c</span>
+00040 <span class="comment"> * Version : 0.9</span>
+00041 <span class="comment"> * </span>
+00042 <span class="comment"> * Summary : MCP2515 "low-level" driver</span>
+00043 <span class="comment"> *</span>
+00044 <span class="comment"> * Parts of this code are adapted from a MCP2510 sample-application </span>
+00045 <span class="comment"> * by KVASER AB, http://www.kvaser.com (KVASER-code is marked as free)</span>
+00046 <span class="comment"> *</span>
+00047 <span class="comment"> * This code-module is free to use but you have to keep the copyright</span>
+00048 <span class="comment"> * notice.</span>
+00049 <span class="comment"> *</span>
+00050 <span class="comment"> */</span>
+00051 
+00066 <span class="preprocessor">#ifndef _MCP2515_H_</span>
+<a name="l00067"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a0">00067</a> <span class="preprocessor"></span><span class="preprocessor">#define _MCP2515_H_ 1</span>
+00068 <span class="preprocessor"></span>
+<a name="l00072"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a1">00072</a> <span class="preprocessor">#define SPI_RESET       0xC0</span>
+<a name="l00073"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a2">00073</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_READ        0x03</span>
+<a name="l00074"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a3">00074</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_READ_RX     0x90</span>
+<a name="l00075"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a4">00075</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_WRITE       0x02</span>
+<a name="l00076"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a5">00076</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_WRITE_TX    0x40</span>
+<a name="l00077"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a6">00077</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_RTS         0x80</span>
+<a name="l00078"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a7">00078</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_READ_STATUS 0xA0</span>
+<a name="l00079"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a8">00079</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_RX_STATUS   0xB0</span>
+<a name="l00080"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a9">00080</a> <span class="preprocessor"></span><span class="preprocessor">#define SPI_BIT_MODIFY  0x05</span>
+00081 <span class="preprocessor"></span>
+<a name="l00082"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a10">00082</a> <span class="preprocessor">#define MODE_NORMAL     0x00</span>
+<a name="l00083"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a11">00083</a> <span class="preprocessor"></span><span class="preprocessor">#define MODE_SLEEP      0x20</span>
+<a name="l00084"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a12">00084</a> <span class="preprocessor"></span><span class="preprocessor">#define MODE_LOOPBACK   0x40</span>
+<a name="l00085"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a13">00085</a> <span class="preprocessor"></span><span class="preprocessor">#define MODE_LISTENONLY 0x60</span>
+<a name="l00086"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a14">00086</a> <span class="preprocessor"></span><span class="preprocessor">#define MODE_CONFIG     0x80</span>
+<a name="l00087"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a15">00087</a> <span class="preprocessor"></span><span class="preprocessor">#define MODE_POWERUP    0xE0</span>
+<a name="l00088"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a16">00088</a> <span class="preprocessor"></span><span class="preprocessor">#define MODE_MASK       0xE0</span>
+00089 <span class="preprocessor"></span>
+00090 
+<a name="l00097"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a17">00097</a> <span class="preprocessor">#define RXF0SIDH    0x00</span>
+<a name="l00098"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a18">00098</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF0SIDL    0x01</span>
+<a name="l00099"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a19">00099</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF0EID8    0x02</span>
+<a name="l00100"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a20">00100</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF0EID0    0x03</span>
+<a name="l00101"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a21">00101</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF1SIDH    0x04</span>
+<a name="l00102"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a22">00102</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF1SIDL    0x05</span>
+<a name="l00103"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a23">00103</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF1EID8    0x06</span>
+<a name="l00104"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a24">00104</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF1EID0    0x07</span>
+<a name="l00105"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a25">00105</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF2SIDH    0x08</span>
+<a name="l00106"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a26">00106</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF2SIDL    0x09</span>
+<a name="l00107"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a27">00107</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF2EID8    0x0A</span>
+<a name="l00108"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a28">00108</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF2EID0    0x0B</span>
+<a name="l00109"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a29">00109</a> <span class="preprocessor"></span><span class="preprocessor">#define BFPCTRL     0x0C</span>
+<a name="l00110"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a30">00110</a> <span class="preprocessor"></span><span class="preprocessor">#define TXRTSCTRL   0x0D</span>
+<a name="l00111"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a31">00111</a> <span class="preprocessor"></span><span class="preprocessor">#define CANSTAT     0x0E</span>
+<a name="l00112"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a32">00112</a> <span class="preprocessor"></span><span class="preprocessor">#define CANCTRL     0x0F</span>
+00113 <span class="preprocessor"></span>
+<a name="l00114"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a33">00114</a> <span class="preprocessor">#define RXF3SIDH    0x10</span>
+<a name="l00115"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a34">00115</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF3SIDL    0x11</span>
+<a name="l00116"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a35">00116</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF3EID8    0x12</span>
+<a name="l00117"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a36">00117</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF3EID0    0x13</span>
+<a name="l00118"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a37">00118</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF4SIDH    0x14</span>
+<a name="l00119"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a38">00119</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF4SIDL    0x15</span>
+<a name="l00120"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a39">00120</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF4EID8    0x16</span>
+<a name="l00121"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a40">00121</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF4EID0    0x17</span>
+<a name="l00122"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a41">00122</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF5SIDH    0x18</span>
+<a name="l00123"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a42">00123</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF5SIDL    0x19</span>
+<a name="l00124"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a43">00124</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF5EID8    0x1A</span>
+<a name="l00125"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a44">00125</a> <span class="preprocessor"></span><span class="preprocessor">#define RXF5EID0    0x1B</span>
+<a name="l00126"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a45">00126</a> <span class="preprocessor"></span><span class="preprocessor">#define TEC         0x1C</span>
+<a name="l00127"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a46">00127</a> <span class="preprocessor"></span><span class="preprocessor">#define REC         0x1D</span>
+00128 <span class="preprocessor"></span>
+<a name="l00129"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a47">00129</a> <span class="preprocessor">#define RXM0SIDH    0x20</span>
+<a name="l00130"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a48">00130</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM0SIDL    0x21</span>
+<a name="l00131"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a49">00131</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM0EID8    0x22</span>
+<a name="l00132"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a50">00132</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM0EID0    0x23</span>
+<a name="l00133"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a51">00133</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM1SIDH    0x24</span>
+<a name="l00134"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a52">00134</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM1SIDL    0x25</span>
+<a name="l00135"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a53">00135</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM1EID8    0x26</span>
+<a name="l00136"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a54">00136</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM1EID0    0x27</span>
+00137 <span class="preprocessor"></span><span class="preprocessor">#define CNF3        0x28</span>
+00138 <span class="preprocessor"></span><span class="preprocessor">#define CNF2        0x29</span>
+00139 <span class="preprocessor"></span><span class="preprocessor">#define CNF1        0x2A</span>
+00140 <span class="preprocessor"></span><span class="preprocessor">#define CANINTE     0x2B</span>
+00141 <span class="preprocessor"></span><span class="preprocessor">#define CANINTF     0x2C</span>
+00142 <span class="preprocessor"></span><span class="preprocessor">#define EFLG        0x2D</span>
+00143 <span class="preprocessor"></span>
+<a name="l00144"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a61">00144</a> <span class="preprocessor">#define TXB0CTRL    0x30</span>
+<a name="l00145"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a62">00145</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0SIDH    0x31</span>
+<a name="l00146"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a63">00146</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0SIDL    0x32</span>
+<a name="l00147"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a64">00147</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0EID8    0x33</span>
+<a name="l00148"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a65">00148</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0EID0    0x34</span>
+<a name="l00149"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a66">00149</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0DLC     0x35</span>
+<a name="l00150"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a67">00150</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D0      0x36</span>
+<a name="l00151"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a68">00151</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D1      0x37</span>
+<a name="l00152"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a69">00152</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D2      0x38</span>
+<a name="l00153"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a70">00153</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D3      0x39</span>
+<a name="l00154"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a71">00154</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D4      0x3A</span>
+<a name="l00155"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a72">00155</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D5      0x3B</span>
+<a name="l00156"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a73">00156</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D6      0x3C</span>
+<a name="l00157"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a74">00157</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0D7      0x3D</span>
+00158 <span class="preprocessor"></span>
+<a name="l00159"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a75">00159</a> <span class="preprocessor">#define TXB1CTRL    0x40</span>
+<a name="l00160"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a76">00160</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1SIDH    0x41</span>
+<a name="l00161"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a77">00161</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1SIDL    0x42</span>
+<a name="l00162"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a78">00162</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1EID8    0x43</span>
+<a name="l00163"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a79">00163</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1EID0    0x44</span>
+<a name="l00164"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a80">00164</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1DLC     0x45</span>
+<a name="l00165"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a81">00165</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D0      0x46</span>
+<a name="l00166"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a82">00166</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D1      0x47</span>
+<a name="l00167"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a83">00167</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D2      0x48</span>
+<a name="l00168"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a84">00168</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D3      0x49</span>
+<a name="l00169"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a85">00169</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D4      0x4A</span>
+<a name="l00170"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a86">00170</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D5      0x4B</span>
+<a name="l00171"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a87">00171</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D6      0x4C</span>
+<a name="l00172"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a88">00172</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB1D7      0x4D</span>
+00173 <span class="preprocessor"></span>
+<a name="l00174"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a89">00174</a> <span class="preprocessor">#define TXB2CTRL    0x50</span>
+<a name="l00175"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a90">00175</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2SIDH    0x51</span>
+<a name="l00176"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a91">00176</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2SIDL    0x52</span>
+<a name="l00177"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a92">00177</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2EID8    0x53</span>
+<a name="l00178"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a93">00178</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2EID0    0x54</span>
+<a name="l00179"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a94">00179</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2DLC     0x55</span>
+<a name="l00180"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a95">00180</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D0      0x56</span>
+<a name="l00181"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a96">00181</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D1      0x57</span>
+<a name="l00182"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a97">00182</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D2      0x58</span>
+<a name="l00183"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a98">00183</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D3      0x59</span>
+<a name="l00184"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a99">00184</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D4      0x5A</span>
+<a name="l00185"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a100">00185</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D5      0x5B</span>
+<a name="l00186"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a101">00186</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D6      0x5C</span>
+<a name="l00187"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a102">00187</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB2D7      0x5D</span>
+00188 <span class="preprocessor"></span>
+<a name="l00189"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a103">00189</a> <span class="preprocessor">#define RXB0CTRL    0x60</span>
+<a name="l00190"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a104">00190</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0SIDH    0x61</span>
+<a name="l00191"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a105">00191</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0SIDL    0x62</span>
+<a name="l00192"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a106">00192</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0EID8    0x63</span>
+<a name="l00193"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a107">00193</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0EID0    0x64</span>
+<a name="l00194"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a108">00194</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0DLC     0x65</span>
+<a name="l00195"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a109">00195</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D0      0x66</span>
+<a name="l00196"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a110">00196</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D1      0x67</span>
+<a name="l00197"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a111">00197</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D2      0x68</span>
+<a name="l00198"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a112">00198</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D3      0x69</span>
+<a name="l00199"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a113">00199</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D4      0x6A</span>
+<a name="l00200"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a114">00200</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D5      0x6B</span>
+<a name="l00201"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a115">00201</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D6      0x6C</span>
+<a name="l00202"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a116">00202</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB0D7      0x6D</span>
+00203 <span class="preprocessor"></span>
+<a name="l00204"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a117">00204</a> <span class="preprocessor">#define RXB1CTRL    0x70</span>
+<a name="l00205"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a118">00205</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1SIDH    0x71</span>
+<a name="l00206"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a119">00206</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1SIDL    0x72</span>
+<a name="l00207"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a120">00207</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1EID8    0x73</span>
+<a name="l00208"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a121">00208</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1EID0    0x74</span>
+<a name="l00209"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a122">00209</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1DLC     0x75</span>
+<a name="l00210"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a123">00210</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D0      0x76</span>
+<a name="l00211"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a124">00211</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D1      0x77</span>
+<a name="l00212"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a125">00212</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D2      0x78</span>
+<a name="l00213"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a126">00213</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D3      0x79</span>
+<a name="l00214"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a127">00214</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D4      0x7A</span>
+<a name="l00215"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a128">00215</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D5      0x7B</span>
+<a name="l00216"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a129">00216</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D6      0x7C</span>
+<a name="l00217"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a130">00217</a> <span class="preprocessor"></span><span class="preprocessor">#define RXB1D7      0x7D</span>
+00218 <span class="preprocessor"></span>
+<a name="l00225"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a131">00225</a> <span class="preprocessor">#define B1BFS       5</span>
+<a name="l00226"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a132">00226</a> <span class="preprocessor"></span><span class="preprocessor">#define B0BFS       4</span>
+<a name="l00227"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a133">00227</a> <span class="preprocessor"></span><span class="preprocessor">#define B1BFE       3</span>
+<a name="l00228"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a134">00228</a> <span class="preprocessor"></span><span class="preprocessor">#define B0BFE       2</span>
+<a name="l00229"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a135">00229</a> <span class="preprocessor"></span><span class="preprocessor">#define B1BFM       1</span>
+<a name="l00230"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a136">00230</a> <span class="preprocessor"></span><span class="preprocessor">#define B0BFM       0</span>
+00231 <span class="preprocessor"></span>
+<a name="l00235"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a137">00235</a> <span class="preprocessor">#define B2RTS       5</span>
+<a name="l00236"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a138">00236</a> <span class="preprocessor"></span><span class="preprocessor">#define B1RTS       4</span>
+<a name="l00237"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a139">00237</a> <span class="preprocessor"></span><span class="preprocessor">#define B0RTS       3</span>
+<a name="l00238"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a140">00238</a> <span class="preprocessor"></span><span class="preprocessor">#define B2RTSM      2</span>
+<a name="l00239"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a141">00239</a> <span class="preprocessor"></span><span class="preprocessor">#define B1RTSM      1</span>
+<a name="l00240"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a142">00240</a> <span class="preprocessor"></span><span class="preprocessor">#define B0RTSM      0</span>
+00241 <span class="preprocessor"></span>
+<a name="l00245"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a143">00245</a> <span class="preprocessor">#define OPMOD2      7</span>
+<a name="l00246"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a144">00246</a> <span class="preprocessor"></span><span class="preprocessor">#define OPMOD1      6</span>
+<a name="l00247"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a145">00247</a> <span class="preprocessor"></span><span class="preprocessor">#define OPMOD0      5</span>
+<a name="l00248"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a146">00248</a> <span class="preprocessor"></span><span class="preprocessor">#define ICOD2       3</span>
+<a name="l00249"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a147">00249</a> <span class="preprocessor"></span><span class="preprocessor">#define ICOD1       2</span>
+<a name="l00250"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a148">00250</a> <span class="preprocessor"></span><span class="preprocessor">#define ICOD0       1</span>
+00251 <span class="preprocessor"></span>
+<a name="l00255"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a149">00255</a> <span class="preprocessor">#define REQOP2      7</span>
+<a name="l00256"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a150">00256</a> <span class="preprocessor"></span><span class="preprocessor">#define REQOP1      6</span>
+<a name="l00257"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a151">00257</a> <span class="preprocessor"></span><span class="preprocessor">#define REQOP0      5</span>
+<a name="l00258"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a152">00258</a> <span class="preprocessor"></span><span class="preprocessor">#define ABAT        4</span>
+<a name="l00259"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a153">00259</a> <span class="preprocessor"></span><span class="preprocessor">#define CLKEN       2</span>
+<a name="l00260"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a154">00260</a> <span class="preprocessor"></span><span class="preprocessor">#define CLKPRE1     1</span>
+<a name="l00261"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a155">00261</a> <span class="preprocessor"></span><span class="preprocessor">#define CLKPRE0     0</span>
+00262 <span class="preprocessor"></span>
+00266 <span class="preprocessor">#define WAKFIL      6</span>
+00267 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG22     2</span>
+00268 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG21     1</span>
+00269 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG20     0</span>
+00270 <span class="preprocessor"></span>
+00274 <span class="preprocessor">#define BTLMODE     7</span>
+00275 <span class="preprocessor"></span><span class="preprocessor">#define SAM         6</span>
+00276 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG12     5</span>
+00277 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG11     4</span>
+00278 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG10     3</span>
+00279 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG2      2</span>
+00280 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG1      1</span>
+00281 <span class="preprocessor"></span><span class="preprocessor">#define PHSEG0      0</span>
+00282 <span class="preprocessor"></span>
+00286 <span class="preprocessor">#define SJW1        7</span>
+00287 <span class="preprocessor"></span><span class="preprocessor">#define SJW0        6</span>
+00288 <span class="preprocessor"></span><span class="preprocessor">#define BRP5        5</span>
+00289 <span class="preprocessor"></span><span class="preprocessor">#define BRP4        4</span>
+00290 <span class="preprocessor"></span><span class="preprocessor">#define BRP3        3</span>
+00291 <span class="preprocessor"></span><span class="preprocessor">#define BRP2        2</span>
+00292 <span class="preprocessor"></span><span class="preprocessor">#define BRP1        1</span>
+00293 <span class="preprocessor"></span><span class="preprocessor">#define BRP0        0</span>
+00294 <span class="preprocessor"></span>
+00298 <span class="preprocessor">#define MERRE       7</span>
+00299 <span class="preprocessor"></span><span class="preprocessor">#define WAKIE       6</span>
+00300 <span class="preprocessor"></span><span class="preprocessor">#define ERRIE       5</span>
+00301 <span class="preprocessor"></span><span class="preprocessor">#define TX2IE       4</span>
+00302 <span class="preprocessor"></span><span class="preprocessor">#define TX1IE       3</span>
+00303 <span class="preprocessor"></span><span class="preprocessor">#define TX0IE       2</span>
+00304 <span class="preprocessor"></span><span class="preprocessor">#define RX1IE       1</span>
+00305 <span class="preprocessor"></span><span class="preprocessor">#define RX0IE       0</span>
+00306 <span class="preprocessor"></span>
+<a name="l00310"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a184">00310</a> <span class="preprocessor">#define MERRF       7</span>
+<a name="l00311"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a185">00311</a> <span class="preprocessor"></span><span class="preprocessor">#define WAKIF       6</span>
+<a name="l00312"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a186">00312</a> <span class="preprocessor"></span><span class="preprocessor">#define ERRIF       5</span>
+<a name="l00313"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a187">00313</a> <span class="preprocessor"></span><span class="preprocessor">#define TX2IF       4</span>
+<a name="l00314"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a188">00314</a> <span class="preprocessor"></span><span class="preprocessor">#define TX1IF       3</span>
+<a name="l00315"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a189">00315</a> <span class="preprocessor"></span><span class="preprocessor">#define TX0IF       2</span>
+<a name="l00316"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a190">00316</a> <span class="preprocessor"></span><span class="preprocessor">#define RX1IF       1</span>
+<a name="l00317"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a191">00317</a> <span class="preprocessor"></span><span class="preprocessor">#define RX0IF       0</span>
+00318 <span class="preprocessor"></span>
+<a name="l00322"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a192">00322</a> <span class="preprocessor">#define RX1OVR      7</span>
+<a name="l00323"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a193">00323</a> <span class="preprocessor"></span><span class="preprocessor">#define RX0OVR      6</span>
+<a name="l00324"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a194">00324</a> <span class="preprocessor"></span><span class="preprocessor">#define TXB0        5</span>
+<a name="l00325"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a195">00325</a> <span class="preprocessor"></span><span class="preprocessor">#define TXEP        4</span>
+<a name="l00326"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a196">00326</a> <span class="preprocessor"></span><span class="preprocessor">#define RXEP        3</span>
+<a name="l00327"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a197">00327</a> <span class="preprocessor"></span><span class="preprocessor">#define TXWAR       2</span>
+<a name="l00328"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a198">00328</a> <span class="preprocessor"></span><span class="preprocessor">#define RXWAR       1</span>
+<a name="l00329"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a199">00329</a> <span class="preprocessor"></span><span class="preprocessor">#define EWARN       0</span>
+00330 <span class="preprocessor"></span>
+<a name="l00334"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a200">00334</a> <span class="preprocessor">#define ABTF        6</span>
+<a name="l00335"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a201">00335</a> <span class="preprocessor"></span><span class="preprocessor">#define MLOA        5</span>
+<a name="l00336"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a202">00336</a> <span class="preprocessor"></span><span class="preprocessor">#define TXERR       4</span>
+<a name="l00337"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a203">00337</a> <span class="preprocessor"></span><span class="preprocessor">#define TXREQ       3</span>
+<a name="l00338"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a204">00338</a> <span class="preprocessor"></span><span class="preprocessor">#define TXP1        1</span>
+<a name="l00339"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a205">00339</a> <span class="preprocessor"></span><span class="preprocessor">#define TXP0        0</span>
+00340 <span class="preprocessor"></span>
+<a name="l00344"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a206">00344</a> <span class="preprocessor">#define RXM1        6</span>
+<a name="l00345"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a207">00345</a> <span class="preprocessor"></span><span class="preprocessor">#define RXM0        5</span>
+<a name="l00346"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a208">00346</a> <span class="preprocessor"></span><span class="preprocessor">#define RXRTR       3</span>
+<a name="l00347"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a209">00347</a> <span class="preprocessor"></span><span class="preprocessor">#define BUKT        2</span>
+<a name="l00348"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a210">00348</a> <span class="preprocessor"></span><span class="preprocessor">#define BUKT1       1</span>
+<a name="l00349"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a211">00349</a> <span class="preprocessor"></span><span class="preprocessor">#define FILHIT0     0</span>
+00350 <span class="preprocessor"></span>
+<a name="l00354"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a212">00354</a> <span class="preprocessor">#define EXIDE       3</span>
+00355 <span class="preprocessor"></span>
+<a name="l00361"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a213">00361</a> <span class="preprocessor">#define FILHIT2     2</span>
+<a name="l00362"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a214">00362</a> <span class="preprocessor"></span><span class="preprocessor">#define FILHIT1     1</span>
+00363 <span class="preprocessor"></span>
+<a name="l00367"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a215">00367</a> <span class="preprocessor">#define SRR         4</span>
+<a name="l00368"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a216">00368</a> <span class="preprocessor"></span><span class="preprocessor">#define IDE         3</span>
+00369 <span class="preprocessor"></span>
+<a name="l00375"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a217">00375</a> <span class="preprocessor">#define RTR         6</span>
+<a name="l00376"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a218">00376</a> <span class="preprocessor"></span><span class="preprocessor">#define DLC3        3</span>
+<a name="l00377"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a219">00377</a> <span class="preprocessor"></span><span class="preprocessor">#define DLC2        2</span>
+<a name="l00378"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a220">00378</a> <span class="preprocessor"></span><span class="preprocessor">#define DLC1        1</span>
+<a name="l00379"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a221">00379</a> <span class="preprocessor"></span><span class="preprocessor">#define DLC0        0</span>
+00380 <span class="preprocessor"></span>
+<a name="l00386"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a222">00386</a> <span class="preprocessor">#define SJW1        7</span>
+00387 <span class="preprocessor"></span><span class="preprocessor">#define SJW0        6</span>
+<a name="l00388"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a223">00388</a> <span class="preprocessor"></span><span class="preprocessor">#define BRP5        5</span>
+<a name="l00389"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a224">00389</a> <span class="preprocessor"></span><span class="preprocessor">#define BRP4        4</span>
+<a name="l00390"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a225">00390</a> <span class="preprocessor"></span><span class="preprocessor">#define BRP3        3</span>
+<a name="l00391"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a226">00391</a> <span class="preprocessor"></span><span class="preprocessor">#define BRP2        2</span>
+<a name="l00392"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a227">00392</a> <span class="preprocessor"></span><span class="preprocessor">#define BRP1        1</span>
+<a name="l00393"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a228">00393</a> <span class="preprocessor"></span><span class="preprocessor">#define BRP0        0</span>
+<a name="l00394"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a229">00394</a> <span class="preprocessor"></span>
+00398 <span class="preprocessor">#define WAKFIL      6</span>
+<a name="l00399"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a230">00399</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG22     2</span>
+<a name="l00400"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a231">00400</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG21     1</span>
+<a name="l00401"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a232">00401</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG20     0</span>
+<a name="l00402"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a233">00402</a> <span class="preprocessor"></span>
+00406 <span class="preprocessor">#define BTLMODE     7</span>
+<a name="l00407"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a234">00407</a> <span class="preprocessor"></span><span class="preprocessor">#define SAM         6</span>
+<a name="l00408"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a235">00408</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG12     5</span>
+<a name="l00409"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a236">00409</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG11     4</span>
+<a name="l00410"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a237">00410</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG10     3</span>
+<a name="l00411"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a238">00411</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG2      2</span>
+<a name="l00412"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a239">00412</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG1      1</span>
+<a name="l00413"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a240">00413</a> <span class="preprocessor"></span><span class="preprocessor">#define PHSEG0      0</span>
+<a name="l00414"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a241">00414</a> <span class="preprocessor"></span>
+00418 <span class="preprocessor">#define MERRE       7</span>
+<a name="l00419"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a242">00419</a> <span class="preprocessor"></span><span class="preprocessor">#define WAKIE       6</span>
+<a name="l00420"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a243">00420</a> <span class="preprocessor"></span><span class="preprocessor">#define ERRIE       5</span>
+<a name="l00421"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a244">00421</a> <span class="preprocessor"></span><span class="preprocessor">#define TX2IE       4</span>
+<a name="l00422"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a245">00422</a> <span class="preprocessor"></span><span class="preprocessor">#define TX1IE       3</span>
+<a name="l00423"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a246">00423</a> <span class="preprocessor"></span><span class="preprocessor">#define TX0IE       2</span>
+<a name="l00424"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a247">00424</a> <span class="preprocessor"></span><span class="preprocessor">#define RX1IE       1</span>
+<a name="l00425"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a248">00425</a> <span class="preprocessor"></span><span class="preprocessor">#define RX0IE       0</span>
+<a name="l00426"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a249">00426</a> <span class="preprocessor"></span>
+00427 <span class="preprocessor">#define CNF3        0x28</span>
+<a name="l00428"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a250">00428</a> <span class="preprocessor"></span><span class="preprocessor">#define CNF2        0x29</span>
+<a name="l00429"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a251">00429</a> <span class="preprocessor"></span><span class="preprocessor">#define CNF1        0x2A</span>
+<a name="l00430"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a252">00430</a> <span class="preprocessor"></span><span class="preprocessor">#define CANINTE     0x2B</span>
+<a name="l00431"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a253">00431</a> <span class="preprocessor"></span><span class="preprocessor">#define CANINTF     0x2C</span>
+<a name="l00432"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a254">00432</a> <span class="preprocessor"></span><span class="preprocessor">#define EFLG        0x2D</span>
+<a name="l00433"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a255">00433</a> <span class="preprocessor"></span>
+00434 
+00435 
+00436 
+00437 <span class="preprocessor">#define CAN_RTR     0x80</span>
+<a name="l00438"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a256">00438</a> <span class="preprocessor"></span><span class="preprocessor">#define CAN_EID     0x40</span>
+<a name="l00439"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a257">00439</a> <span class="preprocessor"></span>
+00440 <span class="preprocessor">#include "<a class="code" href="http://www.iuse.org/canix-doc/canix_8h.html">canix.h</a>"</span>
+00441 
+00446 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a2">spi_init</a>(<span class="keywordtype">void</span>);
+00447 
+00453 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>( uint8_t data );
+00454 
+00459 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a4">spi_getc</a>(<span class="keywordtype">void</span>);
+00460 
+00464 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>(<span class="keywordtype">void</span>);
+00465 
+00469 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>(<span class="keywordtype">void</span>);
+00470 
+00480 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a7">mcp2515_bit_modify</a>(uint8_t adress, uint8_t mask, uint8_t data);
+00481 
+00485 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>(<span class="keyword">const</span> uint8_t address);
+00486 
+00490 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>(uint8_t adress, uint8_t data );
+00491 
+00500 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a10">mcp2515_set_mode</a>(uint8_t mode);
+00501 
+00502 <span class="comment">/*      </span>
+00503 <span class="comment"> * Beschreibt mehrere Register des MCP2515 auf einmal</span>
+00504 <span class="comment"> * @param adress Adresse des ersten Registers</span>
+00505 <span class="comment"> * @param data Zeiger auf die Quell-Daten</span>
+00506 <span class="comment"> * @param length Anzahl der zu kopierenden Bytes</span>
+00507 <span class="comment"> */</span>
+00508 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a11">mcp2515_write_register_p</a>(uint8_t adress, <span class="keyword">const</span> uint8_t *data, 
+00509         uint8_t length );
+00510 
+00511 <span class="comment">/*      </span>
+00512 <span class="comment"> * Liest mehrere Register des MCP2515 auf einmal</span>
+00513 <span class="comment"> * @param adress Adresse des ersten Registers</span>
+00514 <span class="comment"> * @param data Zeiger auf die Quell-Daten</span>
+00515 <span class="comment"> * @param length Anzahl der zu kopierenden Bytes</span>
+00516 <span class="comment"> *</span>
+00517 <span class="comment"> * ACHTUNG: in data muessen mindestens length Bytes Platz sein !</span>
+00518 <span class="comment"> */</span>
+00519 <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a12">mcp2515_read_register_p</a>(uint8_t adress, uint8_t *data, uint8_t length );
+00520 
+00533 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a13">can_open_interface</a>(<span class="keywordtype">void</span>);
+00534 
+00541 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a14">can_send_message</a>(uint32_t <span class="keywordtype">id</span>, <span class="keyword">const</span> uint8_t *data, uint8_t length);
+00542 
+00547 <span class="keywordtype">bool</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a15">can_message_available</a>(<span class="keywordtype">void</span>);
+00548 
+00555 uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a16">can_read_message</a>(uint32_t *extended, <span class="keywordtype">char</span> *data);
+00556 
+00562 uint16_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a17">can_error_counters</a>(<span class="keywordtype">void</span>);
+00563 
+00564 <span class="preprocessor">#endif // _MCP2515_H_</span>
+</pre></div><hr size="1"><address style=""><small>Erzeugt am Sat Jun 24 12:03:14 2006 für canix von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="mcp2515_8h-source_files/doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.2 </small></address>
+</body></html>

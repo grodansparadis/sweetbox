@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NXP Semiconductors - I2C [NXP LED Dimmer Demoboard]</title>
+<meta name="description" content="NXP Standard ICs logic, I2C, interface, microcontrollers, analog, and RF datasheets, manuals, application notes, IBIS models, FAQ, software, packages, and more">
+<meta name="keywords" content="74HC, BiCMOS, buffers, circuits, clocks, datasheets, digital, DQFN, drivers, electronics, FAST, gates, glue, HEF4000, I2C, IBIS, latches, logic, LVC, memory, models, motherboard, network, NXP, packages, packaging, PCIe, Philips, Phillips, PLL, quality, reliability, semiconductors, simulation, SMBus, SPICE, support, transceivers, TTL, UARTs">
+<meta name="author" content="NXP Semiconductors">
+<meta name="copyright" content="Copyright (C) 2007 NXP Semiconductors USA, Inc., and its licensors. All Rights Reserved.">
+<meta name="language" content="en-US">
+<meta name="robots" content="noarchive">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Expires" content="Tue, 01 Jan 1980 01:00:00 GMT">
+<script type="text/javascript" language="JavaScript">var strlt=unescape('%3C');var strgt=unescape('%3E');document.write(strlt+'meta http-equiv="Expires" content="Tue, 01 Jan 1980 01:00:00 GMT"'+strgt);</script><meta http-equiv="Expires" content="Tue, 01 Jan 1980 01:00:00 GMT">
+<link type="text/css" rel="stylesheet" href="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/com.css">
+<script type="text/javascript" language="JavaScript" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/all.js"></script>
+<link type="text/css" rel="stylesheet" href="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/ns.css">
+<script type="text/javascript" language="JavaScript" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/ns.js"></script>
+</head><body onload="sInit(); return true;">
+<div style="visibility: hidden;" id="sTip"></div>
+<a name="top"></a>
+
+<table>
+<tbody><tr>
+	<td id="r1c1" class="noprint" onclick="sLangOff(); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/t.gif" alt="" width="5"></td>
+	<td id="r1c2" onclick="sLangOff(); return true;"><a href="http://www.standardics.nxp.com/to/" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/nxplogo.gif" alt=""></a></td>
+	<td id="r1c3" onclick="sLangOff(); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/t.gif" alt="" width="5"></td>
+	<td id="r1c4" onclick="sLangOff(); return true;"><table><tbody><tr><td width="100%"></td><td><script language="Javascript" type="text/javascript">sTopNav();</script><table id="sTopNav"><tbody><tr><td><a href="http://www.standardics.nxp.com/to/" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;">Home</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/profile/" onmouseover="fnStatusSet('http://www.nxp.com/profile/'); return true;" onmouseout="fnStatusSet(''); return true;">About&nbsp;NXP</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/news/" onmouseover="fnStatusSet('http://www.nxp.com/news/'); return true;" onmouseout="fnStatusSet(''); return true;">News</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/infocus/" onmouseover="fnStatusSet('http://www.nxp.com/infocus/'); return true;" onmouseout="fnStatusSet(''); return true;">In&nbsp;Focus</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/jobs/" onmouseover="fnStatusSet('http://www.nxp.com/jobs/'); return true;" onmouseout="fnStatusSet(''); return true;">Careers</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/investor/" onmouseover="fnStatusSet('http://www.nxp.com/investor/'); return true;" onmouseout="fnStatusSet(''); return true;">Investors</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/support/" onmouseover="fnStatusSet('http://www.nxp.com/support/'); return true;" onmouseout="fnStatusSet(''); return true;">Contact</a></td><td class="sTopNavSpace">|</td><td><a href="http://www.standardics.nxp.com/to/my/" onmouseover="fnStatusSet('http://www.nxp.com/my/'); return true;" onmouseout="fnStatusSet(''); return true;">my.NXP</a></td></tr></tbody></table></td></tr></tbody></table></td>
+	<td id="r1c5" class="noprint" onclick="sLangOff(); return true;"></td>
+	<td id="r1c6" class="noprint"><script language="Javascript" type="text/javascript">sR1C6();</script><table style="width: 100%;"><tbody><tr><td style="width: 15px;" onclick="sLangOff(); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r1c6_c1.gif" alt=""></td><td style="background: transparent url(/images/nxp/r1c6_c2.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; padding-right: 3px;"><div style="padding-top: 10px;"><table><tbody><tr><td onclick="sLangOff(); return true;"><span style="font-weight: bold; white-space: nowrap;">Select site:</span></td><td width="100%"><div id="sLangDropDown"><div id="sLangCurrent">English</div><div id="sLangButton" onclick="sLangToggle(); return false;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/dropdown.gif" alt=""></div></div><div id="sLangSelect" style="visibility: hidden;"><div id="sLangItemGlobal" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;">Global site</div><div id="sLangItemEn" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;" onclick="window.location.href='/to/'; return false;">English</div><div id="sLangItemJp" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;" onclick="window.location.href='/go/http://www.jp.nxp.com/'; return false;" title="Japanese">日本語</div><div id="sLangItemKr" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;" onclick="window.location.href='/go/http://www.kr.nxp.com/'; return false;" title="Korean">한국어</div><div id="sLangItemCn" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;" onclick="window.location.href='/go/http://www.scn.nxp.com/'; return false;" title="Simplified Chinese">中文(简体)</div><div id="sLangItemTw" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;" onclick="window.location.href='/go/http://www.tcn.nxp.com/'; return false;" title="Traditional Chinese">中文(繁體)</div><div id="sLangItemRu" onmouseover="this.style.backgroundColor='#cccccc'; return true;" onmouseout="this.style.backgroundColor='#ffffff'; return true;" onclick="window.location.href='/go/http://www.ru.nxp.com/'; return false;" title="Russian">Русский</div></div></td></tr></tbody></table></div><div id="sNxpSearch" onclick="sLangOff(); return true;"><form action="/search/nxpsearch.cgi" method="get"><table style="width: 100%;"><tbody><tr><td id="sNxpSearchWidth"><input id="sNxpSearchInput" onfocus="this.value=''; this.style.color='#000000'; return true;" name="search" maxlength="30" value="Type search here" type="text"></td><td><input style="padding: 0px;" name="Search" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/b_search.gif" type="image"></td></tr><tr><td colspan="2"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/t.gif" alt="" width="160" height="2"></td></tr><tr><td id="sNxpSearchRadio" colspan="2"><table><tbody><tr><td><input class="sRadio" style="margin-left: 0px;" name="where" value="part" checked="checked" type="radio"></td><td class="sLabel">Type #</td><td><input class="sRadio" name="where" value="cross" type="radio"></td><td class="sLabel">Cross-ref</td><td><input class="sRadio" name="where" value="site" type="radio"></td><td class="sLabel">Site</td></tr></tbody></table></td></tr></tbody></table></form></div><div style="margin-bottom: 0px; padding-top: 2px;" onclick="sLangOff(); return true;"><ul class="arrowbulletwhite"><li><a href="http://www.standardics.nxp.com/to/search/" onmouseover="fnStatusSet('http://www.nxp.com/search/'); return true;" onmouseout="fnStatusSet(''); return true;"><span style="color: rgb(255, 255, 255); font-weight: bold;">Advanced search</span></a></li></ul></div></td><td style="width: 10px;" onclick="sLangOff(); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r1c6_c3.gif" alt=""></td></tr></tbody></table><noscript><div class="sNoscript"><img src="/images/t.gif" alt="" height="120" width="188" /></div></noscript></td>
+	<td id="r1c7" class="noprint" onclick="sLangOff(); return true;"></td>
+</tr>
+<tr onclick="sLangOff(); return true;">
+	<td id="r2c1" class="noprint"></td>
+	<td id="r2c2" colspan="3">
+		<table id="crumbs"><tbody><tr><td><a href="http://www.standardics.nxp.com/to/" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;">Products</a></td><td><a href="http://www.standardics.nxp.com/i2c/">I<sup>2</sup>C</a></td><td><a href="http://www.standardics.nxp.com/support/">Support</a></td><td><a id="here" href="http://www.standardics.nxp.com/support/tools/">Support Tools</a></td></tr></tbody></table>
+	</td>
+	<td id="r2c5" class="noprint"></td>
+	<td id="r2c6" class="noprint"><script language="Javascript" type="text/javascript">sR2C6();</script><table><tbody><tr><td rowspan="3"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r2c6_c1.gif" alt=""></td><td colspan="3" style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r1.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 3px;"></td><td rowspan="3"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r2c6_c5.gif" alt=""></td><td colspan="3" style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r1.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 3px;"></td><td rowspan="3"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r2c6_c9.gif" alt=""></td></tr><tr><td style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r2a.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; cursor: pointer; height: 20px; width: 6px;" onclick="window.location.href='/to/'; return false;" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"></td><td style="cursor: pointer; height: 20px; width: 66px;" onclick="window.location.href='/to/'; return false;" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r2c6_r2_applications.gif" alt="" width="66"></td><td style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r2a.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; cursor: pointer; height: 20px; width: 40px;" onclick="window.location.href='/to/'; return false;" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"></td><td style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r2b.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; cursor: pointer; height: 20px; width: 6px;" onclick="window.location.href='/to/'; return false;" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"></td><td style="cursor: pointer; height: 20px; width: 60px;" onclick="window.location.href='/to/'; return false;" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r2c6_r2_looking.gif" alt="" width="60"></td><td style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r2b.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; cursor: pointer; height: 20px; width: 40px;" onclick="window.location.href='/to/'; return false;" onmouseover="fnStatusSet('http://www.nxp.com/'); return true;" onmouseout="fnStatusSet(''); return true;"></td></tr><tr><td colspan="3" style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r3.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 17px;"></td><td colspan="3" style="background: transparent url(http://198.65.99.86/images/nxp/r2c6_r3.gif) repeat-x scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 17px;"></td></tr></tbody></table><noscript><div class="sNoscript"></div></noscript></td>
+	<td id="r2c7" class="noprint"></td>
+</tr>
+<tr onclick="sLangOff(); return true;">
+	<td id="r3c1" class="noprint"></td>
+	<td id="r3c2" colspan="3">
+		<img class="noprint" style="margin: 0px; position: relative;" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r3c2_right.gif" alt="" align="right">
+		<div id="sExpandL">
+
+<!--start content_index-->
+<h1>NXP LED dimmer demoboard</h1>
+
+<div>
+<table>
+<tbody><tr>
+	<td style="padding-right: 10px;">
+		<ul>
+		<li><a href="#Introduction" title="Scroll Down">Introduction</a></li>
+		<li><a href="#Support" title="Scroll Down">Support</a></li>
+		<li><a href="#3rd-PartyTools" title="Scroll Down">3rd-Party&nbsp;Tools</a></li>
+		</ul>
+	</td>
+	<td style="padding-right: 10px;">
+		<ul>
+		<li><a href="#MoreInfo" title="Scroll Down">More&nbsp;Info</a></li>
+		</ul>
+	</td>
+</tr>
+</tbody></table>
+</div>
+
+<a name="Introduction"></a>
+<div class="h2off" onclick="window.location.href='#top'; return false;" onmouseover="this.className='h2on'; fnStatusSet('http://www.standardics.nxp.com/support/boards/leddemo/#top'); sTipOff(); return true;" onmouseout="this.className='h2off'; fnStatusSet(''); return true;">Introduction</div>
+
+
+<div class="indent">
+	The LED dimmer demoboard demonstrates the capability of the I<sup>2</sup>C-bus to perform red/green/blue color LED lighting and mixing operations. 
+	Two separate control cards comprise the demoboard: 
+</div>
+<div class="indent">
+	<ul>
+	<li>The Keypad Control Card contains a microcontroller, a 16-key keypad/controller, and a power supply/regulator module. </li>
+	<li>The LED Control Card contains LEDs (red, green, blue, white, RGB) and the devices used to control them. </li>
+	</ul>
+</div>
+<div class="indent" align="center"><img style="padding-bottom: 27px;" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/keypad.jpg" alt="" title="Keypad Control Card"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/led.jpg" alt="" title="LED Control Card"></div>
+<div class="indent">
+	The two control cards directly connect to each other without the need of external cables. 
+</div>
+<div class="indent">
+	The keypad control card contains an NXP P89LV51RD2 microcontroller interfacing with a NXP PCA9564 I<sup>2</sup>C-bus controller to generate the I<sup>2</sup>C
+commands. The microcontroller is programmed to allow the 16-key keypad
+to control the RGB color mixing, generate fun light patterns, and
+emulate battery status monitoring. The LED control card accepts input
+from the keypad control card's keypad. Power is supplied to the LED
+dimmer demoboard via the keypad control card by either an external 9V
+power supply or by a 9V battery. </div>
+<div class="indent">
+	The control devices on the demoboard are:
+</div>
+<div class="indent">
+	<ul>
+	<li>NXP P89LV51RD2 microcontroller master controlling all the I<sup>2</sup>C slave devices on the demoboard with embedded firmware. </li>
+	<li>NXP PCA9564 I<sup>2</sup>C-bus controller interfacing between the microcontroller and the I<sup>2</sup>C-bus via an 8-bit parallel port and control signals. </li>
+	<li>NXP PCA9555PW 16-bit GPIO controlling the 16-key keypad. </li>
+	<li>Four NXP PCA9531PW 8-bit LED dimmers and one NXP PCA9533DP/01 4-bit LED dimmer controlling the LED dimming and color mixing. </li>
+	</ul> 
+</div>
+<div align="center"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/keypad.gif" alt="" title="Keypad Control Card Block Diagram" width="315" height="397"></div>
+<div align="center"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/led.gif" alt="" title="LED Control Card Block Diagram" width="354" height="375"></div>
+<div class="indent"> Firmware in the P89LV51RD2 microcontroller
+emulates a cell phone application. It generates fun patterns and
+controls the brightness of a virtual display. A battery discharge
+emulation with a visual charge status can also be performed. The
+firmware is intended to show a specific application (cell phone), but
+the demoboard can be used and reprogrammed externally for any
+application that requires keypad control and LED lighting/color mixing.
+Most of the code, written in C language, has been borrowed from the
+PCA9564 Evaluation Board (drivers and main interfacing files between
+the P89LV51RD2 and the PCA9564). Only the upper layer files have been
+modified to implement the code specific to the LED Dimmer Demoboard.
+Programming has to be performed using an external microcontroller
+programmer or the <a href="http://www.standardics.nxp.com/support/boards/pca9564/"><b>PCA9564 Evaluation Board Kit</b></a>. 
+</div>
+<div class="indent">
+	The default firmware in the P89LV51RD2 allows the user to: 
+</div>
+<div class="indent">
+	<ul>
+	<li>Control the 16-key keypad (numbers from 0 to 9 are displayed in binary code)</li>
+	<li>Control the RGB LEDs and program 3 different colors/display speeds via the keypad</li>
+	<li>Control the brightness of the white LEDs through the keypad</li>
+	<li>Emulate a battery discharge scenario</li>
+	<li>Enable a Demo Mode showing fun light application/RGB mixing</li>
+	</ul>
+</div>
+<div class="indent"> The P89LV51RD2 can be programmed with any
+user-defined firmware. The demoboard, however, does not have any
+built-in programming functionality, so the user must program the
+microcontroller with an external programmer or the <a href="http://www.standardics.nxp.com/support/boards/pca9564/"><b>PCA9564 Evaluation Board Kit</b></a>. 
+</div>
+<div class="indent">
+	For more information about the PCA9564 Evaluation Board, its drivers and code, refer to:
+</div>
+<div class="indent">
+	<ul>
+	<li class="pdf"><a href="http://www.standardics.nxp.com/support/documents/i2c/pdf/an10149.pdf">AN10149 PCA9564 Evaluation Board, V2 (Aug 19, 2004)</a> </li>
+	</ul>
+</div>
+<div class="indent">
+	<ul>
+	<li class="htm"><a href="http://www.standardics.nxp.com/support/boards/pca9564/">PCA9564 Evaluation Board</a> Main Page</li>
+	</ul>
+</div>
+
+<a name="Support"></a>
+<div class="h2off" onclick="window.location.href='#top'; return false;" onmouseover="this.className='h2on'; fnStatusSet('http://www.standardics.nxp.com/support/boards/leddemo/#top'); sTipOff(); return true;" onmouseout="this.className='h2off'; fnStatusSet(''); return true;">Support</div>
+
+
+<h3>Schematic</h3>
+<div class="indent">
+	<ul class="pdf">
+	<li>LED Dimmer Demoboard <a href="http://www.standardics.nxp.com/support/boards/leddemo/pdf/keypadcontrolcard.pdf"><b>Keypad Control Card Schematic</b></a></li>
+	<li>LED Dimmer Demoboard <a href="http://www.standardics.nxp.com/support/boards/leddemo/pdf/ledcontrolcard.pdf"><b>LED Control Card Schematic</b></a></li>
+	</ul>
+</div>
+
+<h3>Source Code</h3>
+<div class="indent">
+	Below is C language source code for programming the P89LV51RD2 microcontroller. 
+	Please check back occasionally for the latest revisions. 
+</div>
+<div class="indent">
+	<ul class="zip">
+	<li>P89LV51RD2 Microcontroller <a href="http://www.standardics.nxp.com/support/boards/leddemo/sourcecode.zip"><b>Source Code</b></a></li>
+	</ul>
+</div>
+
+<h3>Application Notes</h3>
+<div class="indent">
+	<ul>
+	<li class="pdf"><a href="http://www.standardics.nxp.com/support/documents/i2c/pdf/an10315.pdf">AN10315 LED Dimmer Demoboard, V1 (Jan 7, 2005)</a> </li>
+	</ul>
+</div>
+
+<a name="3rd-PartyTools"></a>
+<div class="h2off" onclick="window.location.href='#top'; return false;" onmouseover="this.className='h2on'; fnStatusSet('http://www.standardics.nxp.com/support/boards/leddemo/#top'); sTipOff(); return true;" onmouseout="this.className='h2off'; fnStatusSet(''); return true;">3rd-Party&nbsp;Tools</div>
+
+
+<div class="indent">
+	Below are links to third party software tools that you can use with the demoboard. 
+	(Disclaimer: Access, use, and support of these tools is subject to conditions set by the third parties.)
+</div>
+
+<h3>Flash Magic</h3>
+<div class="indent">
+	Flash Magic can be obtained from Embedded Systems Academy. 
+	This software can be used to load the microcontroller with compiled hex files. 
+	Please visit <a href="http://www.standardics.nxp.com/i2c/go/http://www.esacademy.com/software/flashmagic/"><b>http://www.esacademy.com/software/flashmagic/</b></a> for more information, release notes, application notes, and to obtain the software. 
+	Flash Magic is sponsored by 
+NXP Semiconductors.</div>
+
+<h3>Raisonance</h3>
+<div class="indent">
+	The Raisonance 8051 Development Kit, from American Raisonance, may be used to develop, debug, and compile C language code. 
+	Please visit <a href="http://www.standardics.nxp.com/i2c/go/http://www.amrai.com/amrai.htm"><b>http://www.amrai.com/amrai.htm</b></a> for more information. 
+	To obtain an evaluation version of the software which allows you to compile up to 4Kb of code: 
+</div>
+<div class="indent">
+	<ol>
+	<li>Visit the link above. </li>
+	<li>Under the Software heading in the yellow box, click 8051. </li>
+	<li>Complete the evaluation form. </li>
+	<li>Download GettingStartedManual.pdf. </li>
+	<li>Download and install kit51.exe. </li>
+	</ol>
+</div>
+<div class="indent">
+	The full development kit can also be purchased through the American Raisonance sales department. 
+</div>
+
+<a name="MoreInfo"></a>
+<div class="h2off" onclick="window.location.href='#top'; return false;" onmouseover="this.className='h2on'; fnStatusSet('http://www.standardics.nxp.com/support/boards/leddemo/#top'); sTipOff(); return true;" onmouseout="this.className='h2off'; fnStatusSet(''); return true;">More&nbsp;Information</div>
+
+
+<h3>Literature</h3>
+<div class="indent">
+	<table class="widthindent sLiterature" cellspacing="0">
+	<tbody><tr class="y" onclick="window.location.href='/literature/leaflets/i2c/pdf/led.dimmer.demo.board.pdf'; return false;" onmouseover="this.className='y over'; fnStatusSet('http://www.standardics.nxp.com/literature/leaflets/i2c/pdf/led.dimmer.demo.board.pdf'); sTip(this,'/literature/leaflets/i2c/images/led.dimmer.demo.board.png','img',event); return true;" onmouseout="this.className='y hand'; fnStatusSet(''); sTip(''); return true;"><td class="sLeft sBot"><a href="http://www.standardics.nxp.com/literature/leaflets/i2c/pdf/led.dimmer.demo.board.pdf"><img class="thumb" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/led_002.gif" alt=""></a><span class="sZoom"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoommore.gif" alt="" title="Preview Available"></span></td><td class="sRight sBot"><a href="http://www.standardics.nxp.com/literature/leaflets/i2c/pdf/led.dimmer.demo.board.pdf"><b>Quickly demonstrate keypad and LED functions</b></a><br>NXP LED dimmer demonstration board OM6279<br>© November 2006; English; Ordering code: 9397 750 15692</td></tr>
+	</tbody></table>
+</div>
+
+<h3>Referenced Products</h3>
+<div class="indent">
+	Click <img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pdf.gif" alt="" title="PDF"> for <b>datasheet</b>. Also, see <a href="http://www.standardics.nxp.com/products/pdf/disclaimer.pdf"><b>datasheet disclaimer</b></a>. 	<br><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/check.gif" alt="" title="Production">, <img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/caution.gif" alt="" title="Development/Sampling/Last Time Buy">, <img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/del.gif" alt="" title="Discontinued"> indicate product status. Click <img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomin.gif" alt="" title="Zoom In"> or <img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomout.gif" alt="" title="Zoom Out"> for more or less detail. 
+</div>
+<div class="indent">
+	<table class="zoom widthindent">
+	<tbody><tr id="tr1PCA9531" class="y"><td class="nowrap"><a name="PCA9531"></a><a href="http://www.standardics.nxp.com/products/pca/datasheet/pca9531.pdf"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pdf.gif" alt="" title="Datasheet PDF"></a>&nbsp;<a href="http://www.standardics.nxp.com/support/boards/leddemo/%7EPCA9531/#PCA9531"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomin.gif" alt="" title="Show More Information"></a></td><td><span><b>PCA9531</b></span></td><td><img class="icon status" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/clear.gif" alt="" title="Varies"></td><td width="100%">8-Bit I<sup>2</sup>C LED Dimmer</td></tr>
+	<tr id="tr2PCA9531" class="y"><td class="sBorderBot"></td><td colspan="3" class="sBorderBot"><div id="td2PCA9531" style="margin-bottom: 0px;"></div></td></tr>
+	<tr id="tr1PCA9533" class="w"><td class="nowrap"><a name="PCA9533"></a><a href="http://www.standardics.nxp.com/products/pca/datasheet/pca9533.pdf"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pdf.gif" alt="" title="Datasheet PDF"></a>&nbsp;<a href="http://www.standardics.nxp.com/support/boards/leddemo/%7EPCA9533/#PCA9533"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomin.gif" alt="" title="Show More Information"></a></td><td><span><b>PCA9533</b></span></td><td><img class="icon status" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/check.gif" alt="" title="Production"></td><td width="100%">4-Bit I<sup>2</sup>C LED Dimmer</td></tr>
+	<tr id="tr2PCA9533" class="w"><td class="sBorderBot"></td><td colspan="3" class="sBorderBot"><div id="td2PCA9533" style="margin-bottom: 0px;"></div></td></tr>
+	<tr id="tr1PCA9555" class="y"><td class="nowrap"><a name="PCA9555"></a><a href="http://www.standardics.nxp.com/products/pca/datasheet/pca9555.pdf"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pdf.gif" alt="" title="Datasheet PDF"></a>&nbsp;<a href="http://www.standardics.nxp.com/support/boards/leddemo/%7EPCA9555/#PCA9555"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomin.gif" alt="" title="Show More Information"></a></td><td><span><b>PCA9555</b></span></td><td><img class="icon status" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/check.gif" alt="" title="Production"></td><td width="100%">16-Bit I<sup>2</sup>C I/O Port with Interrupt</td></tr>
+	<tr id="tr2PCA9555" class="y"><td class="sBorderBot"></td><td colspan="3" class="sBorderBot"><div id="td2PCA9555" style="margin-bottom: 0px;"></div></td></tr>
+	<tr id="tr1PCA9564" class="w"><td class="nowrap"><a name="PCA9564"></a><a href="http://www.standardics.nxp.com/products/pca/datasheet/pca9564.pdf"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pdf.gif" alt="" title="Datasheet PDF"></a>&nbsp;<a href="http://www.standardics.nxp.com/support/boards/leddemo/%7EPCA9564/#PCA9564"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomin.gif" alt="" title="Show More Information"></a></td><td><span><b>PCA9564</b></span></td><td><img class="icon status" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/check.gif" alt="" title="Production"></td><td width="100%">Parallel Bus to I<sup>2</sup>C Bus Controller</td></tr>
+	<tr id="tr2PCA9564" class="w"><td class="sBorderBot"></td><td colspan="3" class="sBorderBot"><div id="td2PCA9564" style="margin-bottom: 0px;"></div></td></tr>
+	<tr id="tr1P89LV51RD2" class="y"><td class="nowrap"><a name="P89LV51RD2"></a><a href="http://www.standardics.nxp.com/products/80c51/datasheet/p89lv51rb2.p89lv51rc2.p89lv51rd2.pdf"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pdf.gif" alt="" title="Datasheet PDF"></a>&nbsp;<a href="http://www.standardics.nxp.com/support/boards/leddemo/%7EP89LV51RD2/#P89LV51RD2"><img class="icon" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/zoomin.gif" alt="" title="Show More Information"></a></td><td><span><b>P89LV51RD2</b></span></td><td><img class="icon status" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/check.gif" alt="" title="Production"></td><td width="100%">3V low power microcontroller with 64KB flash, 1KB RAM</td></tr>
+	<tr id="tr2P89LV51RD2" class="y"><td class="sBorderBot"></td><td colspan="3" class="sBorderBot"><div id="td2P89LV51RD2" style="margin-bottom: 0px;"></div></td></tr>
+	</tbody></table>
+</div>
+
+<h3>Ordering Information</h3>
+<div class="indent">
+	<b>Part Number OM6279:</b> NXP LED Dimmer Demoboard
+</div>
+<div class="indent">
+	The demoboard can be purchased from authorized distributors: 
+</div>
+<div class="indent">
+	<ul class="ext">
+	<li>Order Online at <a href="http://www.standardics.nxp.com/i2c/go/http://www.em.avnet.com/evk/home/0,1719,RID%253D0%2526CID%253D34749%2526CCD%253DUSA%2526SID%253D32214%2526DID%253DDF2%2526SRT%253D1%2526LID%253D32232%2526PRT%253D0%2526PVW%253D%2526BID%253DDF2%2526CTP%253DEVK,00.html"><b>Avnet</b></a></li>
+	<li>Order Online at <a href="http://www.standardics.nxp.com/i2c/go/http://www.digi-key.com/scripts/DkSearch/dksus.dll?KeywordSearch?site=US&amp;keywords=OM6279"><b>Digi-Key</b></a></li>
+	</ul>
+</div>
+<div class="indent">
+	<ul class="ext">
+	<li>Contact <a href="http://www.standardics.nxp.com/i2c/go/http://www.arrow.com/"><b>Arrow</b></a></li>
+	<li>Contact <a href="http://www.standardics.nxp.com/i2c/go/http://www.futureelectronics.com/"><b>Future</b></a></li>
+	</ul>
+</div>
+
+<h3>Links</h3>
+<div class="indent">
+	<ul>
+	<li class="htm"><a href="http://www.standardics.nxp.com/support/boards/pca9564/">PCA9564 Evaluation Board Kit</a></li>
+	</ul>
+</div>
+<div class="indent">
+	<ul>
+	<li class="htm">PCA <a href="http://www.standardics.nxp.com/support/models/pca/">Circuit Simulation Models</a></li>
+	</ul>
+</div>
+<div class="indent">
+	<ul>
+	<li class="htm"><a href="http://www.standardics.nxp.com/products/i2c.led.controllers/">I<sup>2</sup>C LED Controllers</a></li>
+	<li class="htm"><a href="http://www.standardics.nxp.com/products/gpio.expanders/i2c/">I<sup>2</sup>C General Purpose I/O Expanders</a></li>
+	</ul>
+</div>
+<div class="indent">
+	<ul class="htm">
+	<li>NXP <a href="http://www.standardics.nxp.com/i2c/">I<sup>2</sup>C</a> Home Page</li>
+	<li>NXP <a href="http://www.standardics.nxp.com/microcontrollers/">Microcontrollers</a> Home Page</li>
+	</ul>
+</div>
+<!--end content_index-->
+
+		</div>
+	</td>
+	<td id="r3c5" class="noprint"></td>
+	<td id="r3c6" class="noprint" onmouseover="sTipOff(); return true;">
+		<div id="sExpandR">
+			<table class="sSide">
+			<tbody><tr><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r3c6_r1c1.gif" alt=""></td><td id="sFind">Standard ICs quick find</td><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/r3c6_r1c3.gif" alt=""></td></tr>
+			<tr>
+				<td class="sLeft"></td>
+				<td class="sMid" style="padding-right: 3px;">
+					<form action="/search/search.cgi" method="get"><table><tbody><tr><td style="width: 100%;"><input id="sFindInput" onfocus="this.style.color='#000000'; return true;" name="search" maxlength="30" value="" type="text"></td><td><input style="padding: 0px;" name="Search" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/b_qf.gif" type="image"></td></tr></tbody></table></form>
+				</td>
+				<td class="sRight"></td>
+			</tr>
+			<tr><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider3c1.gif" alt=""></td><td class="sBot"></td><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider3c3.gif" alt=""></td></tr>
+			</tbody></table>
+			<table class="sSide">
+			<tbody><tr><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider1c1.gif" alt=""></td><td class="sTop">Standard ICs sections</td><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider1c3.gif" alt=""></td></tr>
+			<tr>
+				<td class="sLeft"></td>
+				<td class="sMid">
+					<ul class="arrowbullet">
+					<li><a href="http://www.standardics.nxp.com/"><b>Product</b></a> families &amp; functions</li>
+					<li><a href="http://www.standardics.nxp.com/literature/"><b>Literature</b></a> brochures, leaflets, presentations</li>
+					<li><a href="http://www.standardics.nxp.com/packaging/"><b>Packaging</b></a> specs &amp; SOT #s</li>
+					<li><a href="http://www.standardics.nxp.com/support/"><b>Support</b></a> manuals, models, FAQ, software, demoboards, tools, training</li>
+					<li><a href="http://www.standardics.nxp.com/quality/"><b>Quality</b></a> handbook, markings</li>
+					<li><a href="http://www.standardics.nxp.com/contact/"><b>Contact</b></a> sales, distributors</li>
+					</ul>
+				</td>
+				<td class="sRight"></td>
+			</tr>
+			<tr><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider3c1.gif" alt=""></td><td class="sBot"></td><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider3c3.gif" alt=""></td></tr>
+			</tbody></table>
+			<table class="sSide">
+			<tbody><tr><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider1c1.gif" alt=""></td><td class="sTop">See also</td><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider1c3.gif" alt=""></td></tr>
+			<tr>
+				<td class="sLeft"></td>
+				<td class="sMid">
+					<ul class="arrowbullet" style="padding-bottom: 10px;">
+					<li><a href="http://www.standardics.nxp.com/literature/?type=presentation"><b>Presentations</b></a> <img class="hot" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pd-hot.gif" alt=""></li>
+					<li><a href="http://www.standardics.nxp.com/literature/?type=book"><b>Hand books</b></a> <img class="hot" src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/pd-hot.gif" alt=""></li>
+					</ul>
+					<ul class="arrowbullet">
+					<li><a href="http://www.standardics.nxp.com/support/consultants/">Consultants</a></li>
+					</ul>
+				</td>
+				<td class="sRight"></td>
+			</tr>
+			<tr><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider3c1.gif" alt=""></td><td class="sBot"></td><td><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/sider3c3.gif" alt=""></td></tr>
+			</tbody></table>
+		</div>
+	</td>
+	<td id="r3c7" class="noprint"></td>
+</tr>
+<tr><td class="noprint"></td><td id="r4c2" colspan="5"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/t.gif" alt="" width="5" align="left"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/t.gif" alt="" width="4" align="right"></td><td class="noprint"></td></tr>
+<tr><td class="noprint"></td><td id="r5c2" colspan="3"><script language="Javascript" type="text/javascript">sFooter();</script><a href="http://www.standardics.nxp.com/to/siteowner/" onmouseover="fnStatusSet('http://www.nxp.com/siteowner/'); return true;" onmouseout="fnStatusSet(''); return true;">NXP</a> | <a href="http://www.standardics.nxp.com/to/privacypolicy/" onmouseover="fnStatusSet('http://www.nxp.com/privacypolicy/'); return true;" onmouseout="fnStatusSet(''); return true;">Privacy policy</a> | <a href="http://www.standardics.nxp.com/to/terms/" onmouseover="fnStatusSet('http://www.nxp.com/terms/'); return true;" onmouseout="fnStatusSet(''); return true;">Terms of use</a><br>©2006-2008 NXP Semiconductors. All rights reserved. </td><td class="noprint right" style="padding: 10px 4px 0px 0px;" colspan="2"><img src="NXP%20Semiconductors%20-%20I2C%20%5BNXP%20LED%20Dimmer%20Demoboard%5D_files/by.gif" alt=""></td><td class="noprint"></td></tr>
+</tbody></table>
+</body></html>

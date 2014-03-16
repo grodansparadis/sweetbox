@@ -1,0 +1,385 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>canix: mcp2515.c Quellcode</title>
+<link href="mcp2515_8c-source_files/doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.4.2 -->
+<div class="qindex"><a class="qindex" href="http://www.iuse.org/canix-doc/index.html">Hauptseite</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/annotated.html">Datenstrukturen</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/files.html">Auflistung&nbsp;der&nbsp;Dateien</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/functions.html">Datenstruktur-Elemente</a> | <a class="qindex" href="http://www.iuse.org/canix-doc/globals.html">Datei-Elemente</a></div>
+<h1>mcp2515.c</h1><a href="http://www.iuse.org/canix-doc/mcp2515_8c.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment">00001 <span class="comment">/*</span>
+00002 <span class="comment"> *  This file is part of the HCAN tools suite.</span>
+00003 <span class="comment"> *</span>
+00004 <span class="comment"> *  HCAN is free software; you can redistribute it and/or modify it under</span>
+00005 <span class="comment"> *  the terms of the GNU General Public License as published by the Free</span>
+00006 <span class="comment"> *  Software Foundation; either version 2 of the License, or (at your</span>
+00007 <span class="comment"> *  option) any later version.</span>
+00008 <span class="comment"> *</span>
+00009 <span class="comment"> *  HCAN is distributed in the hope that it will be useful, but WITHOUT</span>
+00010 <span class="comment"> *  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span>
+00011 <span class="comment"> *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span>
+00012 <span class="comment"> *  for more details.</span>
+00013 <span class="comment"> *</span>
+00014 <span class="comment"> *  You should have received a copy of the GNU General Public License along</span>
+00015 <span class="comment"> *  with HCAN; if not, write to the Free Software Foundation, Inc., 51</span>
+00016 <span class="comment"> *  Franklin St, Fifth Floor, Boston, MA 02110-1301  USA</span>
+00017 <span class="comment"> *</span>
+00018 <span class="comment"> *  (c) 2006 by Martin Haller, mah (at) iuse (dot) org</span>
+00019 <span class="comment"> *</span>
+00020 <span class="comment"> *</span>
+00021 <span class="comment"> *  Parts of this code are adapted from Florian Greif's MCP2515 Code; he</span>
+00022 <span class="comment"> *  released it under the GPL: </span>
+00023 <span class="comment"> *  http://www.kreatives-chaos.com/index.php?seite=mcp2515_init</span>
+00024 <span class="comment"> *</span>
+00025 <span class="comment"> *  </span>
+00026 <span class="comment"> *  Parts of this code are adapted from Martin Thomas' MCP2515 Code:</span>
+00027 <span class="comment"> *</span>
+00028 <span class="comment"> *****************************************************************************</span>
+00029 <span class="comment"> *</span>
+00030 <span class="comment"> * Controller Area Network (CAN) Demo-Application</span>
+00031 <span class="comment"> * Atmel AVR with Microchip MCP2515 </span>
+00032 <span class="comment"> * </span>
+00033 <span class="comment"> * Copyright (C) 2005 Martin THOMAS, Kaiserslautern, Germany</span>
+00034 <span class="comment"> * &lt;eversmith@heizung-thomas.de&gt;</span>
+00035 <span class="comment"> * http://www.siwawi.arubi.uni-kl.de/avr_projects</span>
+00036 <span class="comment"> *</span>
+00037 <span class="comment"> *****************************************************************************</span>
+00038 <span class="comment"> *</span>
+00039 <span class="comment"> * File    : mcp2515.c</span>
+00040 <span class="comment"> * Version : 0.9</span>
+00041 <span class="comment"> * </span>
+00042 <span class="comment"> * Summary : MCP2515 "low-level" driver</span>
+00043 <span class="comment"> *</span>
+00044 <span class="comment"> * Parts of this code are adapted from a MCP2510 sample-application </span>
+00045 <span class="comment"> * by KVASER AB, http://www.kvaser.com (KVASER-code is marked as free)</span>
+00046 <span class="comment"> *</span>
+00047 <span class="comment"> * This code-module is free to use but you have to keep the copyright</span>
+00048 <span class="comment"> * notice.</span>
+00049 <span class="comment"> *</span>
+00050 <span class="comment"> */</span>
+00051 
+00052 <span class="preprocessor">#include &lt;avr/io.h&gt;</span>
+00053 <span class="preprocessor">#include &lt;avr/interrupt.h&gt;</span>
+00054 <span class="preprocessor">#include &lt;avr/signal.h&gt;</span>
+00055 <span class="preprocessor">#include &lt;avr/wdt.h&gt;</span>
+00056 
+00057 <span class="preprocessor">#include "<a class="code" href="http://www.iuse.org/canix-doc/chipdef_8h.html">chipdef.h</a>"</span>
+00058 <span class="preprocessor">#include "<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html">mcp2515.h</a>"</span>
+00059 <span class="preprocessor">#include "<a class="code" href="http://www.iuse.org/canix-doc/mcp2515__defs_8h.html">mcp2515_defs.h</a>"</span>
+00060 
+00061 <span class="preprocessor">#include "<a class="code" href="http://www.iuse.org/canix-doc/canix_8h.html">canix.h</a>"</span>
+00062 <span class="preprocessor">#include "<a class="code" href="http://www.iuse.org/canix-doc/tools_8h.html">tools.h</a>"</span>
+00063 
+00064 <span class="preprocessor">#ifdef MCU_atmega8</span>
+00065 <span class="preprocessor"></span>
+00066 <span class="preprocessor">#define SPI_PORT_DDR DDRB</span>
+00067 <span class="preprocessor"></span><span class="preprocessor">#define SPI_PORT     PORTB</span>
+00068 <span class="preprocessor"></span><span class="preprocessor">#define SPI_MISO    4</span>
+00069 <span class="preprocessor"></span><span class="preprocessor">#define SPI_MOSI    3</span>
+00070 <span class="preprocessor"></span><span class="preprocessor">#define SPI_SCK     5</span>
+00071 <span class="preprocessor"></span><span class="preprocessor">#define SPI_CS_PORT_DDR DDRD</span>
+00072 <span class="preprocessor"></span><span class="preprocessor">#define SPI_CS_PORT     PORTD</span>
+00073 <span class="preprocessor"></span><span class="preprocessor">#define SPI_CS      3</span>
+00074 <span class="preprocessor"></span>
+00075 <span class="preprocessor">#elif MCU_atmega32</span>
+00076 <span class="preprocessor"></span>
+00077 <span class="preprocessor">#define SPI_PORT_DDR DDRB</span>
+00078 <span class="preprocessor"></span><span class="preprocessor">#define SPI_PORT     PORTB</span>
+00079 <span class="preprocessor"></span><span class="preprocessor">#define SPI_MISO    6</span>
+00080 <span class="preprocessor"></span><span class="preprocessor">#define SPI_MOSI    5</span>
+00081 <span class="preprocessor"></span><span class="preprocessor">#define SPI_SCK     7</span>
+00082 <span class="preprocessor"></span><span class="preprocessor">#define SPI_CS_PORT_DDR DDRB</span>
+00083 <span class="preprocessor"></span><span class="preprocessor">#define SPI_CS_PORT     PORTB</span>
+00084 <span class="preprocessor"></span><span class="preprocessor">#define SPI_CS      4</span>
+00085 <span class="preprocessor"></span>
+00086 <span class="preprocessor">#else</span>
+00087 <span class="preprocessor"></span>
+00088 <span class="preprocessor">#error "NO MCU type defined"</span>
+00089 <span class="preprocessor"></span>
+00090 <span class="preprocessor">#endif</span>
+00091 <span class="preprocessor"></span>
+<a name="l00092"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a0">00092</a> <span class="preprocessor">#define MCP2515_OK         (0)</span>
+<a name="l00093"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a1">00093</a> <span class="preprocessor"></span><span class="preprocessor">#define MCP2515_FAIL       (1)</span>
+00094 <span class="preprocessor"></span>
+<a name="l00095"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a258">00095</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a2">spi_init</a>(<span class="keywordtype">void</span>)
+00096 {
+00097     <span class="comment">// Aktivieren der SCK, MISO und MOSI Ports</span>
+00098     <span class="comment">// Die CS Ports (ChipSelect) werden von den can_open_interface</span>
+00099     <span class="comment">// Aufrufen initialisiert</span>
+00100     
+00101     SPI_PORT_DDR |= (1&lt;&lt;SPI_SCK)|(1&lt;&lt;SPI_MOSI);
+00102     SPI_PORT &amp;= ~(1&lt;&lt;SPI_SCK)|(1&lt;&lt;SPI_MOSI)|(1&lt;&lt;SPI_MISO);
+00103 
+00104     <span class="comment">// SPI Masterinterface aktivieren</span>
+00105     <span class="comment">// f(spi) = f(cpu) / 2 (Double-Speed, da wir Master sind)</span>
+00106     
+00107     SPCR = (1&lt;&lt;SPE)|(1&lt;&lt;MSTR);
+00108     SPSR = (1&lt;&lt;SPI2X);
+00109 }
+00110 
+<a name="l00111"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a259">00111</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>( uint8_t data )
+00112 {
+00113     <span class="comment">/* Sendet ein Byte */</span>
+00114     SPDR = data;
+00115 
+00116     <span class="comment">/* Wartet bis Byte gesendet wurde */</span>
+00117     <span class="keywordflow">while</span>( !( SPSR &amp; (1&lt;&lt;SPIF) ) )
+00118         ;
+00119 
+00120     <span class="keywordflow">return</span> SPDR;
+00121 }
+00122 
+<a name="l00123"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a260">00123</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a4">spi_getc</a>(<span class="keywordtype">void</span>)
+00124 {
+00125     <span class="keywordflow">return</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(0);
+00126 }
+00127 
+<a name="l00128"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a261">00128</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>(<span class="keywordtype">void</span>)
+00129 {
+00130     SPI_CS_PORT &amp;= ~(1&lt;&lt; SPI_CS);
+00131 }
+00132 
+<a name="l00133"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a262">00133</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>(<span class="keywordtype">void</span>)
+00134 {
+00135     SPI_CS_PORT |= (1&lt;&lt; SPI_CS);
+00136 }
+00137 
+<a name="l00138"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a263">00138</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a7">mcp2515_bit_modify</a>(uint8_t adress, uint8_t mask, uint8_t data)
+00139 {
+00140     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00141     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a9">SPI_BIT_MODIFY</a>);
+00142     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(adress);
+00143     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(mask);
+00144     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(data);
+00145     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00146 }
+00147 
+<a name="l00148"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a264">00148</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>(<span class="keyword">const</span> uint8_t address)
+00149 {
+00150     uint8_t ret;
+00151 
+00152     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00153     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a2">SPI_READ</a>);
+00154     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(address);
+00155     ret = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a4">spi_getc</a>();
+00156     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00157 
+00158     <span class="keywordflow">return</span> ret;
+00159 }
+00160 
+<a name="l00161"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a265">00161</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>(uint8_t adress, uint8_t data )
+00162 {
+00163     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00164     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a4">SPI_WRITE</a>);
+00165     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(adress);
+00166     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(data);
+00167     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00168 }
+00169 
+<a name="l00170"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a266">00170</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a10">mcp2515_set_mode</a>(uint8_t mode)
+00171 {
+00172     uint8_t i;
+00173 
+00174     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a7">mcp2515_bit_modify</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515__defs_8h.html#a48">MCP_CANCTRL</a>, <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a16">MODE_MASK</a>, mode);
+00175 
+00176     <span class="comment">// verify as advised in datasheet</span>
+00177     i = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515__defs_8h.html#a48">MCP_CANCTRL</a>);
+00178     i &amp;= <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a16">MODE_MASK</a>;
+00179 
+00180     <span class="keywordflow">if</span> ( i == mode )
+00181         <span class="keywordflow">return</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a0">MCP2515_OK</a>;
+00182     <span class="keywordflow">else</span>
+00183     {
+00184         <span class="keywordflow">return</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a1">MCP2515_FAIL</a>;
+00185     }
+00186 }
+00187 
+<a name="l00188"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a267">00188</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a11">mcp2515_write_register_p</a>(uint8_t adress, <span class="keyword">const</span> uint8_t *data, 
+00189         uint8_t length )
+00190 {       
+00191     uint8_t i;
+00192     
+00193     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00194 
+00195     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a4">SPI_WRITE</a>);
+00196     
+00197     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(adress);
+00198 
+00199     <span class="keywordflow">for</span> (i=0; i&lt;length ;i++ )
+00200         <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(*data++);
+00201     
+00202     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00203 }       
+00204 
+<a name="l00205"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a268">00205</a> <span class="keywordtype">void</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a12">mcp2515_read_register_p</a>(uint8_t adress, uint8_t *data, uint8_t length )
+00206 {   
+00207     uint8_t i;
+00208 
+00209     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00210  
+00211     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a2">SPI_READ</a>);
+00212 
+00213     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(adress);
+00214 
+00215     <span class="keywordflow">for</span> (i=0; i&lt;length ;i++ )
+00216         *data++ = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(0xff);
+00217 
+00218     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00219 }
+00220 
+<a name="l00221"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a269">00221</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a13">can_open_interface</a>(<span class="keywordtype">void</span>)
+00222 {
+00223     uint8_t res;
+00224 
+00225     <span class="comment">// 1. Aktivieren des CS Pins</span>
+00226     SPI_CS_PORT_DDR |= (1&lt;&lt; SPI_CS);
+00227     SPI_CS_PORT |= (1&lt;&lt; SPI_CS);
+00228 
+00229     <span class="comment">// 2. MCP2515 Software Reset</span>
+00230     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00231     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a1">SPI_RESET</a>);
+00232     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00233 
+00234     <a class="code" href="http://www.iuse.org/canix-doc/tools_8c.html#a0">delay</a>(255); 
+00235 
+00236     <span class="comment">// Device in den Konfigurations Modus versetzten</span>
+00237     res = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a10">mcp2515_set_mode</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a14">MODE_CONFIG</a>);
+00238     <span class="keywordflow">if</span> (res)
+00239         <span class="keywordflow">return</span> res;
+00240 
+00241     <span class="comment">// Speed einstellen: </span>
+00242     <span class="comment">// BRP = F_CAN / (CAN_SPEED*2*8)) - 1</span>
+00243     <span class="comment">//</span>
+00244     <span class="comment">// d.h. fuer </span>
+00245     <span class="comment">// F_CAN = 8MHz:</span>
+00246     <span class="comment">// - CAN_SPEED: 125 KHz: BRP = 3</span>
+00247     <span class="comment">// - CAN_SPEED: 250 KHz: BRP = 1</span>
+00248     <span class="comment">// - CAN_SPEED: 500 KHz: BRP = 0</span>
+00249     <span class="comment">//</span>
+00250     <span class="comment">//mcp2515_write_register( CNF1, (1&lt;&lt;BRP0)|(1&lt;&lt;BRP1)|(1&lt;&lt;BRP2));</span>
+00251     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a57">CNF1</a>, (F_CAN / (CAN_SPEED*2*8)) - 1);
+00252 
+00253     <span class="comment">// Prop Seg und Phase Seg1 einstellen</span>
+00254     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a56">CNF2</a>, (1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a160">BTLMODE</a>)|(1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a163">PHSEG11</a>) );
+00255 
+00256     <span class="comment">// Wake-up Filter deaktivieren, Phase Seg2 einstelen</span>
+00257     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a55">CNF3</a>, (1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a158">PHSEG21</a>) );
+00258 
+00259     <span class="comment">// Aktivieren der Rx Buffer Interrupts</span>
+00260     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a58">CANINTE</a>, <span class="comment">/*(1&lt;&lt;RX1IE)|(1&lt;&lt;RX0IE)*/</span> 0);
+00261 
+00262     <span class="comment">// Buffer 0 : Empfangen aller Nachrichten, kein Rollover (siehe unten)</span>
+00263     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a103">RXB0CTRL</a>, (1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a206">RXM1</a>)|(1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a207">RXM0</a>));
+00264 
+00265     <span class="comment">/* Buffer 1 : wird nicht verwendet, da der folgender Effekt aufgetreten</span>
+00266 <span class="comment">     * ist: Wenn man Buffer 1 + Rollover (BUKT) aktiviert, dann kann es bei</span>
+00267 <span class="comment">     * hoher Empfangsframerate passieren, dass der MCP kein Paket mehr</span>
+00268 <span class="comment">     * meldet. Nach einem Reset geht es wieder. Effekt tritt auf, wenn man</span>
+00269 <span class="comment">     * per HCAN Syslog einen ganzen Stoss an Frames sendet</span>
+00270 <span class="comment">     */</span>
+00271 
+00272     <span class="comment">// Deaktivieren der Pins RXnBF Pins ( High Impedance State )</span>
+00273     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a29">BFPCTRL</a>, 0 );
+00274 
+00275     <span class="comment">// TXnRTS Bits als Inputs schalten</span>
+00276     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a30">TXRTSCTRL</a>, 0 );
+00277 
+00278     <span class="comment">// Zurueck in den Normal-Mode</span>
+00279     res = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a10">mcp2515_set_mode</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a10">MODE_NORMAL</a>);
+00280     <span class="keywordflow">if</span> (res)
+00281         <span class="keywordflow">return</span> res;
+00282         
+00283     <span class="keywordflow">return</span> 0;
+00284 }
+00285 
+<a name="l00286"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a270">00286</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a14">can_send_message</a>(uint32_t <span class="keywordtype">id</span>, <span class="keyword">const</span> uint8_t *data, uint8_t length)
+00287 {
+00288     uint8_t <span class="keywordflow">try</span>;
+00289 
+00290     <span class="comment">// 10 Versuche, jeweils 100msc warten; nach insg. 1 Sekunde abbrechen</span>
+00291     <span class="comment">// denn dann wird der Bus wohl nicht mehr frei</span>
+00292     <span class="comment">//</span>
+00293     <span class="comment">// Wichtig: Wir resetten hier *nicht* den WDT, sonst werden wir in einer</span>
+00294     <span class="comment">// Endlosschleife nicht resettet.</span>
+00295     <span class="comment">//</span>
+00296     <span class="keywordflow">for</span> (<span class="keywordflow">try</span> = 0; <span class="keywordflow">try</span> &lt; 50; <span class="keywordflow">try</span>++)
+00297     {
+00298         <span class="comment">// Es gab Probleme beim Verwenden mehrer Sende-Puffer, daher wird</span>
+00299         <span class="comment">// nur einer verwendet.</span>
+00300         uint8_t v = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a61">TXB0CTRL</a> );
+00301         <span class="keywordflow">if</span> (! (v &amp; (1 &lt;&lt; <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a203">TXREQ</a>)))
+00302         {
+00303             <span class="comment">// Dieser Buffer frei, also hier einfuettern</span>
+00304             uint8_t temp[4];
+00305 
+00306             <span class="comment">// Identifier einstellen</span>
+00307             temp[0] = (uint8_t) (<span class="keywordtype">id</span>&gt;&gt;21);
+00308             temp[1] = (((uint8_t) (<span class="keywordtype">id</span>&gt;&gt;16)) &amp; 0x03) |
+00309                 (((uint8_t) (<span class="keywordtype">id</span>&gt;&gt;13)) &amp; 0xE0) | (1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a212">EXIDE</a>);
+00310             temp[2] = (uint8_t) (<span class="keywordtype">id</span>&gt;&gt;8);
+00311             temp[3] = (uint8_t) id;
+00312             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a11">mcp2515_write_register_p</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a62">TXB0SIDH</a>, temp, 4 );
+00313 
+00314             <span class="comment">// Datenlänge einstellen</span>
+00315             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a9">mcp2515_write_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a66">TXB0DLC</a>, length );
+00316 
+00317             <span class="comment">// Datenbytes schreiben</span>
+00318             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a11">mcp2515_write_register_p</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a67">TXB0D0</a>, data, length );
+00319 
+00320             <span class="comment">// REQ Bit setzen</span>
+00321             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a7">mcp2515_bit_modify</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a61">TXB0CTRL</a>, (1 &lt;&lt; <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a203">TXREQ</a>), (1&lt;&lt;<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a203">TXREQ</a>));
+00322 
+00323             <span class="comment">// Nachricht senden</span>
+00324             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a5">can_enable_mcp2515</a>();
+00325             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a3">spi_putc</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a6">SPI_RTS</a> | 0x01);
+00326             <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a6">can_disable_mcp2515</a>();
+00327             <span class="keywordflow">return</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a0">MCP2515_OK</a>;
+00328         }
+00329         <a class="code" href="http://www.iuse.org/canix-doc/tools_8c.html#a0">delay</a>(10);
+00330     }
+00331 
+00332     <span class="keywordflow">return</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a1">MCP2515_FAIL</a>;
+00333 }
+00334 
+<a name="l00335"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a271">00335</a> <span class="keywordtype">bool</span> <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a15">can_message_available</a>(<span class="keywordtype">void</span>)
+00336 {
+00337     <span class="keywordtype">char</span> temp;
+00338     temp = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a59">CANINTF</a>);
+00339     <span class="keywordflow">return</span> (temp &amp; ((1 &lt;&lt; <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a191">RX0IF</a>)));
+00340 }
+00341 
+<a name="l00342"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a272">00342</a> uint8_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a16">can_read_message</a>(uint32_t *extended, <span class="keywordtype">char</span> *data)
+00343 {
+00344     uint8_t size;
+00345     uint8_t <span class="keywordtype">id</span>[4];
+00346     uint8_t i;
+00347 
+00348     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a12">mcp2515_read_register_p</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a104">RXB0SIDH</a>, <span class="keywordtype">id</span>, 4 );
+00349     *extended = <span class="keywordtype">id</span>[3] | 
+00350         (((uint32_t) <span class="keywordtype">id</span>[2]) &lt;&lt; 8) |
+00351         (((uint32_t) <span class="keywordtype">id</span>[1] &amp; 0x03) &lt;&lt; 16) | 
+00352         (((uint32_t) <span class="keywordtype">id</span>[1] &amp; 0xe0) &gt;&gt; 3 &lt;&lt; 16) | 
+00353         (((uint32_t) <span class="keywordtype">id</span>[0]) &lt;&lt; 21);
+00354 
+00355     <span class="comment">// Frame Payload size</span>
+00356     size = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a108">RXB0DLC</a>) &amp; 0x0F;
+00357 
+00358     <span class="comment">// Daten kopieren</span>
+00359     <span class="keywordflow">for</span> (i = 0; i &lt; size; i++)
+00360         data[i] = <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>( <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a109">RXB0D0</a> + i);
+00361 
+00362     <span class="comment">// RX0 Interrupt Flag loeschen</span>
+00363     <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a7">mcp2515_bit_modify</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a59">CANINTF</a>, 0x01, 0x00 );
+00364 
+00365     <span class="keywordflow">return</span> size;
+00366 }
+00367 
+<a name="l00368"></a><a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a273">00368</a> uint16_t <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a17">can_error_counters</a>(<span class="keywordtype">void</span>)
+00369 {
+00370     <span class="keywordflow">return</span> (<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a46">REC</a>) &lt;&lt; 8) |
+00371         <a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8c.html#a8">mcp2515_read_register</a>(<a class="code" href="http://www.iuse.org/canix-doc/mcp2515_8h.html#a45">TEC</a>);
+00372 }
+00373 
+</pre></div><hr size="1"><address style=""><small>Erzeugt am Sat Jun 24 12:03:14 2006 für canix von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="mcp2515_8c-source_files/doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.2 </small></address>
+</body></html>

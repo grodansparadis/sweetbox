@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="blockdiagram1.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/akhe/development/hardware/sweetbox - room controler/docs/blockdiagram1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="333.4775"
+     inkscape:cy="906.97232"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="642"
+     inkscape:window-height="722"
+     inkscape:window-x="185"
+     inkscape:window-y="25" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:33.94490433px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+       x="22.904474"
+       y="60.482536"
+       id="text2385"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0998441,0.9092198)"><tspan
+         sodipodi:role="line"
+         id="tspan2467"
+         x="22.904474"
+         y="60.482536">Sweetbox - VSCP Room Contoller</tspan></text>
+    <g
+       id="g2678"
+       transform="translate(-15.556349,2.8284271)">
+      <rect
+         y="152.32152"
+         x="162.25293"
+         height="487.36771"
+         width="481.22485"
+         id="rect2383"
+         style="fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.20371985px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2397"
+         y="202.09299"
+         x="211.46442"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="202.09299"
+           x="211.46442"
+           id="tspan2637"
+           sodipodi:role="line">RF Interface(VSCP over MiWi)</tspan><tspan
+           y="232.09299"
+           x="211.46442"
+           id="tspan2639"
+           sodipodi:role="line">Ethernet</tspan><tspan
+           y="262.09299"
+           x="211.46442"
+           id="tspan2641"
+           sodipodi:role="line">CAN bus</tspan><tspan
+           y="292.09299"
+           x="211.46442"
+           id="tspan2643"
+           sodipodi:role="line">Ambient Light Sensor</tspan><tspan
+           y="322.09299"
+           x="211.46442"
+           id="tspan2645"
+           sodipodi:role="line">IR-Receiver</tspan><tspan
+           y="352.09299"
+           x="211.46442"
+           id="tspan2647"
+           sodipodi:role="line">Temp</tspan><tspan
+           y="382.09299"
+           x="211.46442"
+           id="tspan2649"
+           sodipodi:role="line">Humidity</tspan><tspan
+           y="412.09299"
+           x="211.46442"
+           id="tspan2651"
+           sodipodi:role="line">CO2 Sensor</tspan><tspan
+           y="442.09299"
+           x="211.46442"
+           id="tspan2653"
+           sodipodi:role="line">Proximity Sensor</tspan><tspan
+           y="472.09299"
+           x="211.46442"
+           id="tspan2655"
+           sodipodi:role="line">Siren</tspan><tspan
+           y="502.09299"
+           x="211.46442"
+           id="tspan2657"
+           sodipodi:role="line">Stereo Speaker System</tspan><tspan
+           y="532.09302"
+           x="211.46442"
+           id="tspan2659"
+           sodipodi:role="line">Microphone.</tspan><tspan
+           y="562.09302"
+           x="211.46442"
+           id="tspan2661"
+           sodipodi:role="line">Optional video camera connection</tspan><tspan
+           y="592.09302"
+           x="211.46442"
+           id="tspan2663"
+           sodipodi:role="line">Standard alarm NC/NO inputs,</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:23.21015739px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="387.03076"
+       y="97.611877"
+       id="text2437"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9670899,1.0340301)"><tspan
+         sodipodi:role="line"
+         id="tspan2469"
+         x="387.03076"
+         y="97.611877">A VSCP Controlled device</tspan><tspan
+         sodipodi:role="line"
+         id="tspan2471"
+         x="387.03076"
+         y="126.62458">http://www.vscp.org</tspan></text>
+    <g
+       id="g2673"
+       transform="translate(7.0710646,-12.727922)">
+      <rect
+         y="724.26465"
+         x="33.941124"
+         height="76.367531"
+         width="103.23759"
+         id="rect2665"
+         style="fill:#ffff00" />
+      <text
+         id="text2669"
+         y="776.59058"
+         x="67.882256"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="776.59058"
+           x="67.882256"
+           id="tspan2671"
+           sodipodi:role="line">N</tspan></text>
+    </g>
+    <g
+       id="g2696"
+       transform="translate(82.731496,-36.769564)">
+      <rect
+         y="724.26465"
+         x="33.941124"
+         height="76.367531"
+         width="103.23759"
+         id="rect2698"
+         style="fill:#ffff00" />
+      <text
+         id="text2700"
+         y="776.59058"
+         x="67.882256"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="776.59058"
+           x="67.882256"
+           id="tspan2702"
+           sodipodi:role="line">N</tspan></text>
+    </g>
+    <g
+       id="g2704"
+       transform="translate(156.2706,4.2426335)">
+      <rect
+         y="724.26465"
+         x="33.941124"
+         height="76.367531"
+         width="103.23759"
+         id="rect2706"
+         style="fill:#ffff00" />
+      <text
+         id="text2708"
+         y="776.59058"
+         x="67.882256"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="776.59058"
+           x="67.882256"
+           id="tspan2710"
+           sodipodi:role="line">N</tspan></text>
+    </g>
+    <g
+       id="g2712"
+       transform="translate(70.003574,49.497468)">
+      <rect
+         y="724.26465"
+         x="33.941124"
+         height="76.367531"
+         width="103.23759"
+         id="rect2714"
+         style="fill:#ffff00" />
+      <text
+         id="text2716"
+         y="776.59058"
+         x="67.882256"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="776.59058"
+           x="67.882256"
+           id="tspan2718"
+           sodipodi:role="line">N</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="38.183769"
+       y="902.45557"
+       id="text2720"><tspan
+         sodipodi:role="line"
+         id="tspan2722"
+         x="38.183769"
+         y="902.45557">Interface other </tspan><tspan
+         sodipodi:role="line"
+         x="38.183769"
+         y="952.45557"
+         id="tspan2724">VSCP nodes</tspan></text>
+    <rect
+       style="fill:#00ff00"
+       id="rect2726"
+       width="190.91882"
+       height="103.23759"
+       x="448.30569"
+       y="691.73773" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="449.71994"
+       y="837.40173"
+       id="text2728"><tspan
+         sodipodi:role="line"
+         id="tspan2730"
+         x="449.71994"
+         y="837.40173">Interface</tspan><tspan
+         sodipodi:role="line"
+         x="449.71994"
+         y="887.40173"
+         id="tspan2732">Computers</tspan></text>
+  </g>
+</svg>

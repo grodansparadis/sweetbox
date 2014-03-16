@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>SweetBox Update 2008-09-20</title>
+
+</head><body>
+<div style="text-align: center;"><br>
+</div>
+<div style="text-align: center;"><a href="http://www.mypic32.com/web/guest/contestantsprofiles?profileID=43308"><img src="http://www.atmosphereinrock.com/images/logo_sweetbox.png" title="SweetBox" alt="SweetBox Logo" style="border: 0px solid ; width: 600px; height: 125px;"></a><br></div>
+<p style="font-weight: bold; text-align: center;"><big><big>Update</big></big></p><p>
+Been one of those nice weeks when the phone has been quiet most of the
+time and I could spend time on my favorite project at the moment, <span style="font-weight: bold;">SweetBox</span>. This with
+a quiet phone can somtimes be troublesome. Being&nbsp;an open
+source programmer I need to do consulting work to get money to be able
+to do the things I dream of doing&nbsp;so It should not be quite
+to long either as you all understand. Happens to me to often I'm afraid.<br>
+<br>
+I have started to verify the prototype. At the moment Ethernet, CAN,
+EEPROM's (two 24AA1025), Tempsensor (MCP9801) is verified. I will
+attend to IR receiver, IR transmitter, Barometer, Buzzer now but all of
+theese are things I have done before so I expect no big problems there.
+Next is audio. Both the recording and the output. I expect a lot of
+tweking here before it's perfect. <br>
+<br>
+Then it's time to verify the RF section with the lovely <span style="font-weight: bold;">MRF24J40MA</span>. I would have done
+this by now if I had the hardware but have to wait until I get my hands
+on some modules. This is completly new to me but my personal main goal
+with this project is to implemet VSCP over MiWi. This way I win even
+if I don't go to the next phase. I will do this also for the CC2500 and
+Simlicity from Texas Instruments but not on the <span style="font-weight: bold;">SweetBox</span> at least not if I get
+the boards in time. As always this code will be&nbsp;available for free use from the <a href="http://www.vscp.org">VSCP site</a>&nbsp;.<br>
+<br>
+I kindly got sponsored with a CO2 sensor from the world leading CO2
+sensor company <a href="http://www.senseair.se"><span style="font-weight: bold;">SenseAir</span></a>
+yesterday. This sensor is not available on <span style="font-weight: bold;">DigiKey</span> (<big style="color: red;">It should be!</big>) and I will
+therefore have it outside of my construction. Probably do a VSCP design
+around it so the <span style="font-weight: bold;">SweetBox</span>
+can use it as any other VSCP module. <br>
+<br>
+I though I definitly was an ARM man but I must say I like this MIPS
+thingi after this initial work. To be honest MPLAB is not my favorite
+tool. It's a bit to unstable and unpredictable for that but never the
+less I end up using it on most of my project. It's that little
+PIC that always makes it in some way in all my designs. Even if latley
+theres been a lot of ARM cores to.&nbsp; <br>
+<br>
+I will add support for an external GPRS module also in the firmware.
+Easier to&nbsp;contol the thing in remote areas with this added. This means
+remote control via text messages or web interface. As the <span style="font-weight: bold;">SweetBox</span> is VSCP aware
+a lot of things can be controlled/monitored. Want to remotley fill up the bath tube anyone?<br>
+<br><br>
+<br>
+<span style="font-weight: bold;">What can the SweetBox be
+used for? </span><br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Hearing
+aid</span><br>
+Let the SweetBox light up in different patterns when
+different&nbsp; <br>
+things are detected on the VSCP network. Let it say some words
+to&nbsp; <br>
+indicate a certain condition. <br>
+&nbsp;<br>
+<span style="color: rgb(0, 153, 0); font-weight: bold;">Baby
+sitter </span><br>
+Let the SweetBox listen for your kid and inform you when he/she is
+awake.&nbsp; <br>
+You can even get an SMS when things happen.&nbsp;&nbsp; <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">As
+a remote alarm module </span><br>
+Connect it to a NC/NO alarm sensor net. Get an email or SMS when
+soemthing happens or <br>
+let the SweetBox take actions.&nbsp; <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Remote
+control of cottage heat and more&nbsp;</span><br>
+Connect some other VSCP modules to the SweetBox and remotly control
+things in your cottage. <br>
+What is the temperature? Turn on heat. Alarm? Anyone present? etc etc.
+Add things as you need things. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Play
+your audio book </span><br>
+Play your audio book on the SweetBox. If you have several boxes let the
+book follow <br>
+you from room to room. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Keep
+a nice climate in a room </span><br>
+Let the SweetBox control the temperature in your room. Let it tun/on
+off radiators. Detect <br>
+if windows are open. Detect if a fan need to be started because the air
+quality is bad.&nbsp; <br>
+React on moister, pressure, temp etc and with everything else via other
+VSCP modules. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Leave
+a message </span><br>
+Record a message on the SweetBox that your kids can listen to when they
+arrive home or just&nbsp; <br>
+record a reminder of something you need to shop. <br>
+&nbsp;<br>
+<span style="color: rgb(0, 153, 0); font-weight: bold;">IR
+Remote </span><br>
+Let the SweetBox control things with it's IR remote transmitter or be
+controled with any IR&nbsp; <br>
+remote control. You can use your TV remote to control the Window blinds
+and more. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Email/voice
+messages </span><br>
+Let the SweetBox indicate that you got a message and read it to you if
+you want. Let it tell <br>
+you the current temperature, pressure, moister level etc <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Remote
+unlock of the front door </span><br>
+Listen to someone at the front door and unlock it with your remote
+control and or talk back. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Alarm
+</span><br>
+Sound alarm if something serious happens. Both light and sound.
+Different light patterns <br>
+can be used to indiate different things. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Party
+mode </span><br>
+Let the SweetBox light patterns give an extra dimension to your party. <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Energy
+Saving </span><br>
+Let the SweetBox shutdown unneeded resources when no one is home or
+lower the temperature&nbsp; <br>
+during night.&nbsp;&nbsp; <br>
+&nbsp;<br>
+<span style="font-weight: bold; color: rgb(0, 153, 0);">Alarm
+Clock </span><br>
+Use the SweetBox as an alarm clock and wake you up in the morning or
+remind you of things from <br>
+your calender. Let it start your coffy machine, turn on lights increase
+the heat just in time to&nbsp; <br>
+get your favorite morning location nice and warm. When you go to bed.
+Let the SweetBox lock your&nbsp; <br>
+doors, shut of water, turn off lights. <br>
+<br>
+<span style="font-style: italic; color: rgb(51, 51, 255);">All
+this, an more, is possible due to&nbsp;the <span style="font-weight: bold; text-decoration: underline;">VSCP
+decision matrix</span> that is available in the device.</span></p><p><span style="font-style: italic; color: rgb(51, 51, 255);"></span></p><p>
+BTW it would have been nice to know from which countries everyone is
+from.</p><p></p><p>
+</p></body></html>

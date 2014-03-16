@@ -1,0 +1,4 @@
+Warning[2054] C:\usb_motor\user\usb_motor.c 591 : suspicious pointer conversion
+Warning[2054] C:\usb_motor\user\usb_motor.c 1251 : suspicious pointer conversion
+Warning[2054] C:\usb_motor\user\usb_motor.c 1298 : suspicious pointer conversion
+Warning[2054] C:\usb_motor\user\usb_motor.c 1703 : suspicious pointer conversion

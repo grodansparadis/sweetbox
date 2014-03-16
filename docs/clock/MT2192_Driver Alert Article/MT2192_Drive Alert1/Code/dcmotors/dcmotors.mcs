@@ -1,0 +1,91 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\TIMEUTIL.o
+Folder=Intermediary
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=-g -O2
+TraceCmdString=
+[File001]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\viport.o
+Folder=Intermediary
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=-g -O2
+TraceCmdString=
+[File002]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\uartutil.o
+Folder=Intermediary
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=-g -O2
+TraceCmdString=
+[File003]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\dcmotors.o
+Folder=Intermediary
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=-g -O2
+TraceCmdString=
+[File004]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\spislave.o
+Folder=Intermediary
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=-g -O2
+TraceCmdString=
+[File005]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\dcmotors.cof
+Folder=Output
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=--heap=24 --no-check-sections --defsym=__ICD2RAM=1 -o"$(TARGETBASE).$(TARGETSUFFIX)"
+TraceCmdString=
+[File006]
+Location=C:\Microchip Contest\Drive Alert\Code\dcmotors\dcmotors.hex
+Folder=Output
+DeviceName=dsPIC30F4011
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\pic30_tools\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc||$(INCDIR)|C:\microchp\c30\dspic30f2010\Example Code||$(LIBDIR)|C:\Program Files\MPLAB IDE\dsPIC_Tools\lib||$(LKRDIR)||
+SOLK=<src>|TIMEUTIL.C|viport.c|uartutil.c|dcmotors.c|spislave.c||<obj>||<lib>|C:\pic30_tools\lib\libp30F4011-coff.a||<lkr>|C:\pic30_tools\support\gld\p30f4011.gld||
+SuiteArgsString=
+ToolArgsString=--heap=24 --no-check-sections --defsym=__ICD2RAM=1 -o"$(TARGETBASE).$(TARGETSUFFIX)"
+TraceCmdString=
+[TOOL_LOC_STAMPS]
+tool_loc{DE18EB1A-B46B-486B-B96F-A811A635DFAC}=C:\Program Files\MPLAB IDE\dsPIC_Tools\Bin\pic30-as.exe
+tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=C:\pic30_tools\bin\pic30-gcc.exe
+tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=C:\pic30_tools\bin\pic30-ld.exe

@@ -1,0 +1,28 @@
+
+    -- Motor controller Message buffer type
+    type MOTOR_BUFFER_TYPE is array (1 .. MAX_MOTORS) of win32.ULONG;
+   
+--**********************************************************************************
+--*     Dmm,xxxx  - Send PWM duty command message range xxxx (0000..FFFF) to motor *
+--*                 mm range (00..01). This command is used to vary                *
+--*                 the motor speed and direction.                                 *
+--**********************************************************************************
+    type  DUTY_COMMAND_TYPE is
+        record
+
+            MessageID : Win32.USHORT;                              -- Message ID range (0000 - FFFF) Hex              +1
+            Command : Win32.USHORT;                                -- Duty Command to SPI Slave                       +1
+                                                                   -- (see enumeration declaration above.)  
+            NumberOfMotors : Win32.USHORT;                         -- Total number of motors range (0..MAX_MOTORS)    +1
+            Duty : MOTOR_BUFFER_TYPE;                              -- Duty Cycle range (00000000 - FFFFFFFF) Hex     +12
+            EncoderCounts : MOTOR_BUFFER_TYPE;                     -- Encoder counts for each motor 
+                                                                   -- range (00000000 - FFFFFFFF) Hex                +12  
+            DirectionFlags : Win32.USHORT;                         -- Direction bits for each motor (CW=0, CCW=1)     +1
+            StatusFlags : Win32.USHORT;                            -- Status bits                                     +1
+            Checksum : Win32.USHORT;                               -- Duty command message checksum                   +1
+            Filler : PADDING (1 .. 2);                             -- Padding (total of 32 words)                     +2
+                                                                   --                                                ----
+                                                                   --                                              32 Words
+
+        end record;
+

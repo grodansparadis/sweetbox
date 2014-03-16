@@ -1,0 +1,61 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsSourceDir
+dir_src=
+dir_bin=
+dir_tmp=
+dir_sin=C:\Program Files\MPLAB IDE\dsPIC_Tools\support\inc
+dir_inc=C:\microchp\c30\dspic30f2010\Example Code
+dir_lib=C:\Program Files\MPLAB IDE\dsPIC_Tools\lib
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.s;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.a
+filter_lkr=*.gld
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=no
+[FILE_INFO]
+file_000=TIMEUTIL.C
+file_001=viport.c
+file_002=uartutil.c
+file_003=dcmotors.c
+file_004=spislave.c
+file_005=FLAGS.H
+file_006=uartutil.h
+file_007=TIMEUTIL.H
+file_008=my_types.h
+file_009=viport.h
+file_010=dcmotor.h
+file_011=spislave.h
+file_012=C:\pic30_tools\lib\libp30F4011-coff.a
+file_013=C:\pic30_tools\support\gld\p30f4011.gld
+[SUITE_INFO]
+suite_guid={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+suite_state=
+[TOOL_SETTINGS]
+TS{7D9C6ECE-785D-44CB-BA22-17BF2E119622}=-g
+TS{25AC22BD-2378-4FDB-BFB6-7345A15512D3}=-g -O2
+TS{25AC22BD-2378-4FDB-BFB6-7345A15512D3}_alt=yes
+TS{7DAC9A1D-4C45-45D6-B25A-D117C74E8F5A}=--heap=24 --no-check-sections --defsym=__ICD2RAM=1 -o"$(TARGETBASE).$(TARGETSUFFIX)"
+TS{509E5861-1E2A-483B-8B6B-CA8DB7F2DD78}=
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0

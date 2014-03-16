@@ -1,0 +1,102 @@
+.
+.
+.
+--*********************************************************************************************
+--* Send_Duty_Command - Generates motor PWM duty command messages and computes the checksum.  
+--* It then sends the message to the PIC18F4550 USB Controller.
+--*********************************************************************************************
+procedure Send_Duty_Command (Com_Port : in Com_Ports.Handle_Type;
+      Duty : IN Win32.Short) IS
+            
+      -- Local Message Checksum
+      Message_Checksum : Win32.USHORT:= 0;
+      
+begin -- Send_Duty_Command
+      -- Initialize message checksum using during computations
+      Message_Checksum := 0;
+      Message_Count := Message_Count + 1;
+      
+      -- Test message 1 - Build a Motor Message to send to the  USB Motor Controller.   
+      Duty_Message.DUTY_COMMAND_RECORD.MessageID    := Win32.USHORT(Message_Count);        -- Message ID (0000 - FFFF) Hex 
+ 
+ 
+      Duty_Message.DUTY_COMMAND_RECORD.Command      := 1;      -- Send a PWM Duty Command to the selected motor   
+                                                                 --           positions and button states
+                                                                 --           Motor Command to  USB                        
+                                                                 -- (see enumeration declaration above.)  
+      Duty_Message.DUTY_COMMAND_RECORD.NumberOfMotors := 1;                         -- Total number of motors range (0..MAX_MOTORS)     
+      Duty_Message.DUTY_COMMAND_RECORD.Duty(1) := Interfaces.C.unsigned_long(Duty); -- Duty Cycle range (00000000 - FFFFFFFF) Hex     
+                                                               -- range (00000000 - FFFFFFFF) Hex                  
+      Duty_Message.DUTY_COMMAND_RECORD.DirectionFlags := 0;    -- Direction bits for each motor (CW=0, CCW=1)      
+      Duty_Message.DUTY_COMMAND_RECORD.Checksum     := 0;      -- Motor Message Checksum                        
+ 
+      -- Convert Motor Command Record back to an array of bytes in order to compute checksum  
+      Message_Buffer := FROM_DUTY_MESSAGE_RECORD  (Duty_Message);
+  
+      -- Compute the 2 byte Message Checksum so that it can be appended to the end of the message.  Skip over the 
+      -- GNAT Ada 95 4 byte header and also skip over the 2 byte checksum location (last two bytes in message)     
+      Message_Checksum := 0;
+      FOR I IN 1..Message_Buffer'Last-6 LOOP
+          -- Compute Message Checksum
+          Message_Checksum := Message_Checksum + Win32.USHORT(Message_Buffer(I+4));    -- Skip over the GNAT Ada 95 header (4 bytes)
+      END LOOP;
+ 
+      -- Convert message back to Motor format and update the message checksum
+      Duty_Message := TO_DUTY_MESSAGE_RECORD(Message_Buffer);
+      
+      --Add the message checksum to the Motor Message
+      Duty_Message. DUTY_COMMAND_RECORD.Checksum := 16#FFFF# - Message_Checksum;          -- complement of Motor Message Checksum  
+ 
+      -- Convert Motor Command Record to an array of bytes used to send servo commands to the servo controller
+      Message_Buffer := FROM_DUTY_MESSAGE_RECORD  (Duty_Message);
+
+      Put("Message Checksum = ");
+      Ada.Integer_Text_Io.Put(Item=> integer(Message_Checksum), Width=>10, Base=>16);
+      New_Line;
+ 
+      -- Send the Motor Message including checksum to the controller but skip the 4 byte GNAT Ada 95 header
+      FOR I IN 1..Message_Buffer'last-4 LOOP   
+         Com_Ports.Put_Byte (Joystick_Driver.Com4, Message_Buffer(I+4)); -- Send message (bytes) skip the GNAT Ada 95 Header (4 bytes)
+         -- Read Motor data from COM4
+         Read_Line_Com (Joystick_Driver.Com4);
+      END LOOP;
+  
+      exception
+        when E: others =>
+            ADA.TEXT_IO.Put_Line (Ada.Exceptions.Exception_Name (E)    & "---" &
+                                  Ada.Exceptions.Exception_Message (E));  
+            ADA.TEXT_IO.Put_Line ("Usb_Motor.Send_Duty_Command: exception 'others' ");
+end Send_Duty_Command;
+
+BEGIN -- usb_motor  
+   
+.
+.
+.
+      
+    Put_Line ("USB Motor Controller Test ...");
+
+   --**********************************************************************************
+   --* test 1 - Cycle the motor from 0 (rest) to 1023 (full speed) and back
+   -- from 1023 (full speed) to 0 (rest).
+   --**********************************************************************************
+   WHILE (TRUE) LOOP
+  
+      FOR I IN 0..1023 LOOP
+         Send_Duty_Command(Joystick_Driver.Com4, Interfaces.C.short(I));
+         delay 0.1;
+      END LOOP;
+      
+      DELAY 2.0;
+      
+      FOR I IN reverse 0..1023 LOOP
+         Send_Duty_Command(Joystick_Driver.Com4, Interfaces.C.short(I));
+         delay 0.1;
+      END LOOP;
+  
+  end loop; 
+ 
+.
+.
+. 
+

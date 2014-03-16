@@ -1,0 +1,1695 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+   
+  
+  
+
+
+
+
+
+
+<script language="JavaScript">
+function getLocaleLabel(lbl)
+{
+	var mainlbl = "";
+	var templbl = "";
+	mainlbl = lbl;
+	for(var i=0;i<SiteMapsLocales.length;i++)
+	{
+		 templbl = SiteMapsLocales[i][0];
+		 if (mainlbl == templbl) {
+		 		mainlbl = SiteMapsLocales[i][1];
+		 		break;
+		 }
+		 
+	}	
+	
+	return mainlbl;
+	
+}
+</script>
+
+<!-- Now only calling Get_English_Labels for all languages.  It will pull back all labels. -->
+<script language="JavaScript">
+		
+		var SiteMapsLocales = new Array();
+		
+		
+			SiteMapsLocales[0] = ["wwwsm16bitPICmicroForums","16-bit PIC&#174;MCU Forums"];
+			
+		
+			SiteMapsLocales[1] = ["wwwsm247Tech","24/7 Tech Support"];
+			
+		
+			SiteMapsLocales[2] = ["wwwsm3partydevtoolsnDezRes","3rd Party Dev Tools and Design Resources"];
+			
+		
+			SiteMapsLocales[3] = ["wwwsm3VSysDez","3V System Designs"];
+			
+		
+			SiteMapsLocales[4] = ["wwwsm8-bit MCU","8-bit PIC&#174; Microcontrollers"];
+			
+		
+			SiteMapsLocales[5] = ["wwwsm8-bitMCU","8-bit PIC&#174; Microcontrollers"];
+			
+		
+			SiteMapsLocales[6] = ["wwwsm8bitPICmicroForums","8-bit PIC&#174; MCU Forums"];
+			
+		
+			SiteMapsLocales[7] = ["wwwsmAddingIntelligenceLightingLEDLightingSolutions","Adding Intelligence to Lighting LED Lighting Solutions"];
+			
+		
+			SiteMapsLocales[8] = ["wwwsmAdvancedDatasheetSearch","Advanced Datasheet Search"];
+			
+		
+			SiteMapsLocales[9] = ["wwwsmAdvancedGraphics","Advanced Graphics"];
+			
+		
+			SiteMapsLocales[10] = ["wwwsmAdvSearch","Advanced Search"];
+			
+		
+			SiteMapsLocales[11] = ["wwwsmAfrica","Africa"];
+			
+		
+			SiteMapsLocales[12] = ["wwwsmAfrica","Africa"];
+			
+		
+			SiteMapsLocales[13] = ["wwwsmAmericaTraining","America Training"];
+			
+		
+			SiteMapsLocales[14] = ["wwwsmAnalog","Analog & Interface Products"];
+			
+		
+			SiteMapsLocales[15] = ["wwwsmAnalog and Interface Products Main Page","Analog and Interface Products Main Page"];
+			
+		
+			SiteMapsLocales[16] = ["wwwsmAnalogDeznSimTool","Analog Design & Sim Tool"];
+			
+		
+			SiteMapsLocales[17] = ["wwwsmApllications","Applications"];
+			
+		
+			SiteMapsLocales[18] = ["wwwsmAppDesignCenters","Application Design Centers"];
+			
+		
+			SiteMapsLocales[19] = ["wwwsmAppDezCenters","Application Design Centers"];
+			
+		
+			SiteMapsLocales[20] = ["wwwsmApplicationMaestroSoftware","Application Maestro Software"];
+			
+		
+			SiteMapsLocales[21] = ["wwwsmApplicationNotes","Application Notes"];
+			
+		
+			SiteMapsLocales[22] = ["wwwsmApplicationNotesSourceCode","Application Notes - Source Code"];
+			
+		
+			SiteMapsLocales[23] = ["wwwsmApplications","Applications"];
+			
+		
+			SiteMapsLocales[24] = ["wwwsmApplicationSpotlight","Application Spotlight"];
+			
+		
+			SiteMapsLocales[25] = ["wwwsmAppnotes","App Notes"];
+			
+		
+			SiteMapsLocales[26] = ["wwwsmAppNotes","App Notes"];
+			
+		
+			SiteMapsLocales[27] = ["wwwsmAppNotesnSoftware","Application Notes & Software"];
+			
+		
+			SiteMapsLocales[28] = ["wwwsmAppNotesReleaseDate","Application Notes by Release Date"];
+			
+		
+			SiteMapsLocales[29] = ["wwwsmAppSpotlight","Application Spotlight"];
+			
+		
+			SiteMapsLocales[30] = ["wwwsmAsiaPacific","Asia-Pacific"];
+			
+		
+			SiteMapsLocales[31] = ["wwwsmAsia-Pacific","Asia-Pacific"];
+			
+		
+			SiteMapsLocales[32] = ["wwwsmAsiaTraining","Asia Training"];
+			
+		
+			SiteMapsLocales[33] = ["wwwsmAudionSpeechSol","Audio & Speech Solutions"];
+			
+		
+			SiteMapsLocales[34] = ["wwwsmAutomotive","Automotive"];
+			
+		
+			SiteMapsLocales[35] = ["wwwsmAutomotiveBusinessDirection","Automotive Business Direction"];
+			
+		
+			SiteMapsLocales[36] = ["wwwsmAutomotiveBusinessHistory","Automotive Business History"];
+			
+		
+			SiteMapsLocales[37] = ["wwwsmAutomotiveDesignCenter","Automotive Design Center"];
+			
+		
+			SiteMapsLocales[38] = ["wwwsmAuxiliaryWatchdogSupervisoryMCU","Auxiliary Watchdog Supervisory MCU"];
+			
+		
+			SiteMapsLocales[39] = ["wwwsmBattery Management Fuel Gauge ICs Main Page","Battery Management Fuel Gauge ICs Main Page"];
+			
+		
+			SiteMapsLocales[40] = ["wwwsmBatteryManagement","Battery Management"];
+			
+		
+			SiteMapsLocales[41] = ["wwwsmBatteryManagementDesignCenter","Battery Management Design Center"];
+			
+		
+			SiteMapsLocales[42] = ["wwwsmBinarynBCDAD","Binary and BCD A/D Converters"];
+			
+		
+			SiteMapsLocales[43] = ["wwwsmBrowserSpec","Browser Specification"];
+			
+		
+			SiteMapsLocales[44] = ["wwwsmBrushlessDC","Brushless DC Fan Controllers"];
+			
+		
+			SiteMapsLocales[45] = ["wwwsmBuy.Microchip","Purchase Online"];
+			
+		
+			SiteMapsLocales[46] = ["wwwsmBuy.Microchipcom","Buy Online"];
+			
+		
+			SiteMapsLocales[47] = ["wwwsmBuySample","Buy/Sample"];
+			
+		
+			SiteMapsLocales[48] = ["wwwsmCAN","Controller Area Network (CAN)"];
+			
+		
+			SiteMapsLocales[49] = ["wwwsmCAN","CAN"];
+			
+		
+			SiteMapsLocales[50] = ["wwwsmCAN","CAN"];
+			
+		
+			SiteMapsLocales[51] = ["wwwsmCareers","Careers"];
+			
+		
+			SiteMapsLocales[52] = ["wwwsmChargePumpDC","Charge Pump DC-to-DC Converters"];
+			
+		
+			SiteMapsLocales[53] = ["wwwsmChinese","Chinese \u4e2d\u6587"];
+			
+		
+			SiteMapsLocales[54] = ["wwwsmCodeExamples","Code Examples"];
+			
+		
+			SiteMapsLocales[55] = ["wwwsmCodeTemplates","Code Templates"];
+			
+		
+			SiteMapsLocales[56] = ["wwwsmCompany Information","Company Information"];
+			
+		
+			SiteMapsLocales[57] = ["wwwsmCompanyInformation","Company Information"];
+			
+		
+			SiteMapsLocales[58] = ["wwwsmComparators","Comparators"];
+			
+		
+			SiteMapsLocales[59] = ["wwwsmCompleteAnalogListing","Analog & Interface Products"];
+			
+		
+			SiteMapsLocales[60] = ["wwwsmConnectivityDesignCenter","Connectivity Design Center"];
+			
+		
+			SiteMapsLocales[61] = ["wwwsmConsultants","Consultants"];
+			
+		
+			SiteMapsLocales[62] = ["wwwsmConsultants2","Design Partners"];
+			
+		
+			SiteMapsLocales[63] = ["wwwsmContact Information","Contact Information"];
+			
+		
+			SiteMapsLocales[64] = ["wwwsmContactInfo","Contact Info"];
+			
+		
+			SiteMapsLocales[65] = ["wwwsmContactInformation","Contact Information"];
+			
+		
+			SiteMapsLocales[66] = ["wwwsmContactInformation","Contact Information"];
+			
+		
+			SiteMapsLocales[67] = ["wwwsmCorporate","Corporate"];
+			
+		
+			SiteMapsLocales[68] = ["wwwsmCorporate Home Page","Corporate Home Page"];
+			
+		
+			SiteMapsLocales[69] = ["wwwsmCPUSysSuper","CPU/System Supervisors"];
+			
+		
+			SiteMapsLocales[70] = ["wwwsmCustomerChangeNotification","Customer Change Notification"];
+			
+		
+			SiteMapsLocales[71] = ["wwwsmDAConverter","D/A Converter"];
+			
+		
+			SiteMapsLocales[72] = ["wwwsmDatasheetFinder","Data Sheet Finder"];
+			
+		
+			SiteMapsLocales[73] = ["wwwsmDatasheetFinderPage","Datasheet Finder Page"];
+			
+		
+			SiteMapsLocales[74] = ["wwwsmDataSheets","Data Sheets"];
+			
+		
+			SiteMapsLocales[75] = ["wwwsmDatasheetsAlpha","Datasheets Listed Alphabetically"];
+			
+		
+			SiteMapsLocales[76] = ["wwwsmDatasheetSearch","Datasheet Search"];
+			
+		
+			SiteMapsLocales[77] = ["wwwsmDataSheetSearch","Datasheet Search"];
+			
+		
+			SiteMapsLocales[78] = ["wwwsmDeltaSigmaAD","Delta- Sigma A/D Converters"];
+			
+		
+			SiteMapsLocales[79] = ["wwwsmDesign","Design"];
+			
+		
+			SiteMapsLocales[80] = ["wwwsmDesign Centers","Design Centers "];
+			
+		
+			SiteMapsLocales[81] = ["wwwsmDesign Centers Home Page","Design Centers Home Page"];
+			
+		
+			SiteMapsLocales[82] = ["wwwsmDesign Centers\r\n","Design Centers"];
+			
+		
+			SiteMapsLocales[83] = ["wwwsmDesign FAQ Home Page","Design FAQ Home"];
+			
+		
+			SiteMapsLocales[84] = ["wwwsmDesign Resources Main Page","Design Resources Main Page"];
+			
+		
+			SiteMapsLocales[85] = ["wwwsmDesignCenters","Design Centers"];
+			
+		
+			SiteMapsLocales[86] = ["wwwsmDesignCenters","Design Centers"];
+			
+		
+			SiteMapsLocales[87] = ["wwwsmDesignFAQ","FAQ"];
+			
+		
+			SiteMapsLocales[88] = ["wwwsmDesignFAQs","Design FAQs (Frequently Asked Questions)"];
+			
+		
+			SiteMapsLocales[89] = ["wwwsmDesignFAQsConnectivity","Design FAQs - Connectivity"];
+			
+		
+			SiteMapsLocales[90] = ["wwwsmDesignFAQsMCUs","Design FAQs - MCUs"];
+			
+		
+			SiteMapsLocales[91] = ["wwwsmDesignNotes","Design Notes"];
+			
+		
+			SiteMapsLocales[92] = ["wwwsmDevelopment","Development Tools"];
+			
+		
+			SiteMapsLocales[93] = ["wwwsmDevelopment","Development Tools"];
+			
+		
+			SiteMapsLocales[94] = ["wwwsmDevelopment Tools Main Page","Development Tools Main Page"];
+			
+		
+			SiteMapsLocales[95] = ["wwwsmdevSoftware","Development Software"];
+			
+		
+			SiteMapsLocales[96] = ["wwwsmDevToolsForums","Development Tools Forums"];
+			
+		
+			SiteMapsLocales[97] = ["wwwsmDevToolsSelector","Development Tools Selector"];
+			
+		
+			SiteMapsLocales[98] = ["wwwsmDevtoolThirdParty","Third Party Development Tools and Design Resources"];
+			
+		
+			SiteMapsLocales[99] = ["wwwsmDigiPots","Digital Potentiometers"];
+			
+		
+			SiteMapsLocales[100] = ["wwwsmDisplayAD","Display A/D Converters"];
+			
+		
+			SiteMapsLocales[101] = ["wwwsmDistributors","Distributors"];
+			
+		
+			SiteMapsLocales[102] = ["wwwsmDocSearch","Document Search"];
+			
+		
+			SiteMapsLocales[103] = ["wwwsmDocuments","Technical  Documentation"];
+			
+		
+			SiteMapsLocales[104] = ["wwwsmdsPIC","16-bit PIC&reg; MCUs & dsPIC\u00ae DSCs"];
+			
+		
+			SiteMapsLocales[105] = ["wwwsmdsPIC Digital Signal Controllers Main Page","16-bit PIC&#174; MCUs & dsPIC<sup>&#174;</sup> Digital Signal Controllers"];
+			
+		
+			SiteMapsLocales[106] = ["wwwsmDualSlopeAD","Dual Slope A/D Converters"];
+			
+		
+			SiteMapsLocales[107] = ["wwwsmEMCDesignCenter","EMC Design Center"];
+			
+		
+			SiteMapsLocales[108] = ["wwwsmEMCDezSol","EMC Design Solutions"];
+			
+		
+			SiteMapsLocales[109] = ["wwwsmEMCNewsletter","EMC Newsletter"];
+			
+		
+			SiteMapsLocales[110] = ["wwwsmEmployment","Careers"];
+			
+		
+			SiteMapsLocales[111] = ["wwwsmEmployment Main Page","Employment Main Page"];
+			
+		
+			SiteMapsLocales[112] = ["wwwsmEnergyMeasurement","Energy Measurement"];
+			
+		
+			SiteMapsLocales[113] = ["wwwsmENewsletter","eNewsletter"];
+			
+		
+			SiteMapsLocales[114] = ["wwwsmEnglish","English"];
+			
+		
+			SiteMapsLocales[115] = ["wwwsmEnvironmentalInfo","Environmental Health and Safety"];
+			
+		
+			SiteMapsLocales[116] = ["wwwsmEnvironQuality","Environmental Health and Safety"];
+			
+		
+			SiteMapsLocales[117] = ["wwwsmErrata","Errata"];
+			
+		
+			SiteMapsLocales[118] = ["wwwsmErratasbyRelease","Erratas Ordered by Release Date"];
+			
+		
+			SiteMapsLocales[119] = ["wwwsmErrataSearch","Errata List"];
+			
+		
+			SiteMapsLocales[120] = ["wwwsmEthernet","Ethernet"];
+			
+		
+			SiteMapsLocales[121] = ["wwwsmEthernet","Ethernet"];
+			
+		
+			SiteMapsLocales[122] = ["wwwsmEthernetSolutions","Ethernet Solutions"];
+			
+		
+			SiteMapsLocales[123] = ["wwwsmEurope","Europe"];
+			
+		
+			SiteMapsLocales[124] = ["wwwsmEurope","Europe"];
+			
+		
+			SiteMapsLocales[125] = ["wwwsmEuropeTraining","Europe Training"];
+			
+		
+			SiteMapsLocales[126] = ["wwwsmFailureAnalysis","Failure Analysis"];
+			
+		
+			SiteMapsLocales[127] = ["wwwsmFAQs","FAQs (Frequently Asked Questions)"];
+			
+		
+			SiteMapsLocales[128] = ["wwwsmFindaProduct","Find a Product"];
+			
+		
+			SiteMapsLocales[129] = ["wwwsmFirmwareDrivers","Firmware Drivers"];
+			
+		
+			SiteMapsLocales[130] = ["wwwsmForum","Forum"];
+			
+		
+			SiteMapsLocales[131] = ["wwwsmFreqtoVoltandBackAgain","Frequency-to-Voltage/ Voltage-to-Frequency Converters"];
+			
+		
+			SiteMapsLocales[132] = ["wwwsmFuel Gauge ICs","Battery Management"];
+			
+		
+			SiteMapsLocales[133] = ["wwwsmFuelGaugeICs","Battery Management"];
+			
+		
+			SiteMapsLocales[134] = ["wwwsmGetting Started with Microchip.com","Getting Started with Microchip.com"];
+			
+		
+			SiteMapsLocales[135] = ["wwwsmGettingStarted","Getting Started"];
+			
+		
+			SiteMapsLocales[136] = ["wwwsmGittinStatd16MCUDSC","Getting Started with 16-bit MCUs and DSCs"];
+			
+		
+			SiteMapsLocales[137] = ["wwwsmGittinStatdbestMCU","How to Select the Best Microcontroller"];
+			
+		
+			SiteMapsLocales[138] = ["wwwsmGittinStatdbestPICDevTools","About PIC<sup>&#174;</sup> Development Tools"];
+			
+		
+			SiteMapsLocales[139] = ["wwwsmGittinStatdDevTools","Getting Started with Development Tools"];
+			
+		
+			SiteMapsLocales[140] = ["wwwsmGittinStatdFirstMCUDesign","Your First PIC<sup>&#174;</sup> MCU Design"];
+			
+		
+			SiteMapsLocales[141] = ["wwwsmGittinStatdOpAmps","Getting Started with Analog Op Amps"];
+			
+		
+			SiteMapsLocales[142] = ["wwwsmGittinStatdPIC","Getting Started with PIC&#174; Microcontrollers"];
+			
+		
+			SiteMapsLocales[143] = ["wwwsmGittinStatdRTC","Getting Started with Regional Training Centers"];
+			
+		
+			SiteMapsLocales[144] = ["wwwsmGittinStatdRTC","Getting Started with Regional Training Centers"];
+			
+		
+			SiteMapsLocales[145] = ["wwwsmGittinStatdSerialEEPROMS","Getting Started with Microchip&rsquo;s Serial EEPROMS"];
+			
+		
+			SiteMapsLocales[146] = ["wwwsmGlobalSalesDistribution","Sales"];
+			
+		
+			SiteMapsLocales[147] = ["wwwsmGlossaryofTerms","Glossary of Terms"];
+			
+		
+			SiteMapsLocales[148] = ["wwwsmHI","Human Interface"];
+			
+		
+			SiteMapsLocales[149] = ["wwwsmHome","Home"];
+			
+		
+			SiteMapsLocales[150] = ["wwwsmHomeAppliance","Home Appliance"];
+			
+		
+			SiteMapsLocales[151] = ["wwwsmHomeApplianceSolutionsDesignCenter","Home Appliance Solutions Design Center"];
+			
+		
+			SiteMapsLocales[152] = ["wwwsmHotSwapController","Hot Swap Controller"];
+			
+		
+			SiteMapsLocales[153] = ["wwwsmicwiki","ICwiki"];
+			
+		
+			SiteMapsLocales[154] = ["wwwsmInfrared","Infrared"];
+			
+		
+			SiteMapsLocales[155] = ["wwwsmInfrared","Infrared"];
+			
+		
+			SiteMapsLocales[156] = ["wwwsmInfraredCommunication","Infrared Communication"];
+			
+		
+			SiteMapsLocales[157] = ["wwwsmInfraredProducts","Infrared Products"];
+			
+		
+			SiteMapsLocales[158] = ["wwwsmIntegrateDevices","Integrated Devices"];
+			
+		
+			SiteMapsLocales[159] = ["wwwsmIntelligentPowerSuppliesDesignCenter","Intelligent Power Supplies Design Center"];
+			
+		
+			SiteMapsLocales[160] = ["wwwsmIntelligentPowerSupply","Intelligent Power Supply"];
+			
+		
+			SiteMapsLocales[161] = ["wwwsmInterface","Interface Products"];
+			
+		
+			SiteMapsLocales[162] = ["wwwsmInvestors","Investors"];
+			
+		
+			SiteMapsLocales[163] = ["wwwsmInvestors Main Page","Investors Main Page"];
+			
+		
+			SiteMapsLocales[164] = ["wwwsmJapanese","Japanese \u65e5\u672c\u8a9e"];
+			
+		
+			SiteMapsLocales[165] = ["wwwsmKeeLoQ Authentication Devices Main Page","KEELOQ<sup>&#174;</sup> Authentication Devices Main Page"];
+			
+		
+			SiteMapsLocales[166] = ["wwwsmKeeloqAuthentic","KEELOQ<sup>&#174;</sup> Authentication"];
+			
+		
+			SiteMapsLocales[167] = ["wwwsmKeeLoQDesignCenter","KEELOQ Design Center"];
+			
+		
+			SiteMapsLocales[168] = ["wwwsmLCDDesignCenterRoadmap","LCD Design Center Roadmap"];
+			
+		
+			SiteMapsLocales[169] = ["wwwsmLCDDesignSolutions","LCD Design Solutions"];
+			
+		
+			SiteMapsLocales[170] = ["wwwsmLCDDrivers","LCD Drivers"];
+			
+		
+			SiteMapsLocales[171] = ["wwwsmLegal Information","Legal Information"];
+			
+		
+			SiteMapsLocales[172] = ["wwwsmLegal Information Main Page","Legal Information Main Page"];
+			
+		
+			SiteMapsLocales[173] = ["wwwsmLegalInformation","Legal Information"];
+			
+		
+			SiteMapsLocales[174] = ["wwwsmLighting","Lighting"];
+			
+		
+			SiteMapsLocales[175] = ["wwwsmLIN","LIN"];
+			
+		
+			SiteMapsLocales[176] = ["wwwsmLIN","LIN"];
+			
+		
+			SiteMapsLocales[177] = ["wwwsmLinear","Linear"];
+			
+		
+			SiteMapsLocales[178] = ["wwwsmLinearRegulators","Linear Regulators"];
+			
+		
+			SiteMapsLocales[179] = ["wwwsmLINTrans","LIN Transceiver"];
+			
+		
+			SiteMapsLocales[180] = ["wwwsmLogin","Login"];
+			
+		
+			SiteMapsLocales[181] = ["wwwsmLowPowerSol","Low Power Solutions"];
+			
+		
+			SiteMapsLocales[182] = ["wwwsmLowPowerSolutions","Low Power Solutions"];
+			
+		
+			SiteMapsLocales[183] = ["wwwsmmasters2006","MASTERs 2006"];
+			
+		
+			SiteMapsLocales[184] = ["wwwsmmasters2007","MASTERs 2007"];
+			
+		
+			SiteMapsLocales[185] = ["wwwsmmasters2008","MASTERs 2008"];
+			
+		
+			SiteMapsLocales[186] = ["wwwsmMchpHomeLogin","myMicrochip Login"];
+			
+		
+			SiteMapsLocales[187] = ["wwwsmMechatronics","Mechatronics"];
+			
+		
+			SiteMapsLocales[188] = ["wwwsmMechatronicsDesignCenter","Mechatronics Design Center"];
+			
+		
+			SiteMapsLocales[189] = ["wwwsmMedicalDesignCenter","Medical Design Center"];
+			
+		
+			SiteMapsLocales[190] = ["wwwsmMedicalSolutions","Medical Solutions"];
+			
+		
+			SiteMapsLocales[191] = ["wwwsmMemory","Memory"];
+			
+		
+			SiteMapsLocales[192] = ["wwwsmMemory Products Main Page","Memory Products Main Page"];
+			
+		
+			SiteMapsLocales[193] = ["wwwsmMicrochip Contact Information","Microchip Contact Information"];
+			
+		
+			SiteMapsLocales[194] = ["wwwsmMicrochip Home Page","Home"];
+			
+		
+			SiteMapsLocales[195] = ["wwwsmMicrochipDIRECT","MicrochipDIRECT"];
+			
+		
+			SiteMapsLocales[196] = ["wwwsmMicrochipSite","Home"];
+			
+		
+			SiteMapsLocales[197] = ["wwwsmMicroSolutions","microSOLUTIONS eNewsletter"];
+			
+		
+			SiteMapsLocales[198] = ["wwwsmMicrosolutions eNewsletter","MicroSolutions Newsletter"];
+			
+		
+			SiteMapsLocales[199] = ["wwwsmmicroSolutoinseNewsletter","microSolutions eNewsletter"];
+			
+		
+			SiteMapsLocales[200] = ["wwwsmMiddleEast","Middle East"];
+			
+		
+			SiteMapsLocales[201] = ["wwwsmMiddleEast","Middle East"];
+			
+		
+			SiteMapsLocales[202] = ["wwwsmMigrationDocs","Migration Documents"];
+			
+		
+			SiteMapsLocales[203] = ["wwwsmMixedSignal","Mixed Signal"];
+			
+		
+			SiteMapsLocales[204] = ["wwwsmMotorControl","Motor Control"];
+			
+		
+			SiteMapsLocales[205] = ["wwwsmMotorControlDesignCenter","Motor Control Design Center"];
+			
+		
+			SiteMapsLocales[206] = ["wwwsmMPLABIDE","MPLAB&#174; Integrated Development Environment"];
+			
+		
+			SiteMapsLocales[207] = ["wwwsmMTouchDezCenter","mTouch\u2122  Design Center"];
+			
+		
+			SiteMapsLocales[208] = ["wwwsmMyMicrochip","myMICROCHIP"];
+			
+		
+			SiteMapsLocales[209] = ["wwwsmNews and Events","News and Events"];
+			
+		
+			SiteMapsLocales[210] = ["wwwsmNews and Events Main Page","News and Events Main Page"];
+			
+		
+			SiteMapsLocales[211] = ["wwwsmNewsandEvents","News and Events"];
+			
+		
+			SiteMapsLocales[212] = ["wwwsmNorthAmerica","North America"];
+			
+		
+			SiteMapsLocales[213] = ["wwwsmNorthAmerica","North America"];
+			
+		
+			SiteMapsLocales[214] = ["wwwsmOnlineDiscussion","Online Discussion Groups"];
+			
+		
+			SiteMapsLocales[215] = ["wwwsmOnlineDiscussion","Online Discussion Groups"];
+			
+		
+			SiteMapsLocales[216] = ["wwwsmOpAmps","Op Amps"];
+			
+		
+			SiteMapsLocales[217] = ["wwwsmPackagingSpec","Packaging Specifications"];
+			
+		
+			SiteMapsLocales[218] = ["wwwsmPackagingSpecifications","Packaging Specifications"];
+			
+		
+			SiteMapsLocales[219] = ["wwwsmPassiveKeyless","Passive-Keyless-Entry Analog Front End"];
+			
+		
+			SiteMapsLocales[220] = ["wwwsmPB Free","Pb Free"];
+			
+		
+			SiteMapsLocales[221] = ["wwwsmPBFree","Pb Free"];
+			
+		
+			SiteMapsLocales[222] = ["wwwsmPBfreeInfo","PB-Free Information"];
+			
+		
+			SiteMapsLocales[223] = ["wwwsmPIC32Micro","32-bit PIC\u00ae Microcontrollers"];
+			
+		
+			SiteMapsLocales[224] = ["wwwsmPICmicro Microcontrollers (32-bit MCUs)","32-bit PIC<sup>&reg;</sup> Microcontrollers"];
+			
+		
+			SiteMapsLocales[225] = ["wwwsmPICmicro Microcontrollerss (8-bit MCU) Main Page","8-bit PIC&#174; Microcontrollers"];
+			
+		
+			SiteMapsLocales[226] = ["wwwsmPLineSelectorGuide","Product Selection Tools (MAPS)"];
+			
+		
+			SiteMapsLocales[227] = ["wwwsmPowerMangement","Power Management"];
+			
+		
+			SiteMapsLocales[228] = ["wwwsmPowerMOSFET","Power MOSFET Drivers"];
+			
+		
+			SiteMapsLocales[229] = ["wwwsmPress Releases","Press Releases"];
+			
+		
+			SiteMapsLocales[230] = ["wwwsmPressRelease","Press Release"];
+			
+		
+			SiteMapsLocales[231] = ["wwwsmPressReleases","Press Releases"];
+			
+		
+			SiteMapsLocales[232] = ["wwwsmPressReleases","Press Releases"];
+			
+		
+			SiteMapsLocales[233] = ["wwwsmProdBrosures","Product Brochures"];
+			
+		
+			SiteMapsLocales[234] = ["wwwsmProduct Selector","Product Selector"];
+			
+		
+			SiteMapsLocales[235] = ["wwwsmProductDocSearch","Product Documentation Search"];
+			
+		
+			SiteMapsLocales[236] = ["wwwsmProducts","Products"];
+			
+		
+			SiteMapsLocales[237] = ["wwwsmProducts Home Page","Products Home Page"];
+			
+		
+			SiteMapsLocales[238] = ["wwwsmProductSelector","Product Selector"];
+			
+		
+			SiteMapsLocales[239] = ["wwwsmProgGainAmp","Programmable Gain Amplifiers"];
+			
+		
+			SiteMapsLocales[240] = ["wwwsmProgramming","Programming"];
+			
+		
+			SiteMapsLocales[241] = ["wwwsmProgramming Home Page","Programming Home Page"];
+			
+		
+			SiteMapsLocales[242] = ["wwwsmProgrammingSpecifications","Programming Specifications"];
+			
+		
+			SiteMapsLocales[243] = ["wwwsmPurchaseOnline","Purchase Online"];
+			
+		
+			SiteMapsLocales[244] = ["wwwsmPWMControllers","PWM Controllers"];
+			
+		
+			SiteMapsLocales[245] = ["wwwsmQuality","Quality & Reliability"];
+			
+		
+			SiteMapsLocales[246] = ["wwwsmQuality &amp; Reliability Home Page","Quality &amp; Reliability Home Page"];
+			
+		
+			SiteMapsLocales[247] = ["wwwsmQualityReliability","Quality &amp; Reliability"];
+			
+		
+			SiteMapsLocales[248] = ["wwwsmQuickSearch","Quick Links"];
+			
+		
+			SiteMapsLocales[249] = ["wwwsmRadio Frequency Devices Main Page","Radio Frequency Devices Main Page"];
+			
+		
+			SiteMapsLocales[250] = ["wwwsmRadioFrequency","Radio Frequency"];
+			
+		
+			SiteMapsLocales[251] = ["wwwsmRadioFrequency","Radio Frequency"];
+			
+		
+			SiteMapsLocales[252] = ["wwwsmRecentDatasheets","Recently Released Datasheets"];
+			
+		
+			SiteMapsLocales[253] = ["wwwsmRecentlyUpdatedDevice","Recently Updated:"];
+			
+		
+			SiteMapsLocales[254] = ["wwwsmRefManuals","Reference Manuals"];
+			
+		
+			SiteMapsLocales[255] = ["wwwsmReliabiltyData","Reliabilty Data"];
+			
+		
+			SiteMapsLocales[256] = ["wwwsmRequestAdditionalLiterature","Request Additional Literature"];
+			
+		
+			SiteMapsLocales[257] = ["wwwsmRF","RF"];
+			
+		
+			SiteMapsLocales[258] = ["wwwsmRSS","RSS Feeds"];
+			
+		
+			SiteMapsLocales[259] = ["wwwsmRTC","Regional Training Centers "];
+			
+		
+			SiteMapsLocales[260] = ["wwwsmRUDevices","Devices"];
+			
+		
+			SiteMapsLocales[261] = ["wwwsmRUSoftware","Software"];
+			
+		
+			SiteMapsLocales[262] = ["wwwsmRUTechDoc","Technical Doc"];
+			
+		
+			SiteMapsLocales[263] = ["wwwsmSales","Sales Contacts"];
+			
+		
+			SiteMapsLocales[264] = ["wwwsmSales Home Page","Sales Home Page"];
+			
+		
+			SiteMapsLocales[265] = ["wwwsmSample.Microchip","Sample"];
+			
+		
+			SiteMapsLocales[266] = ["wwwsmSARADConverters","Successive Approximation Register (SAR) A/D Converters"];
+			
+		
+			SiteMapsLocales[267] = ["wwwsmSearch","Search"];
+			
+		
+			SiteMapsLocales[268] = ["wwwsmSecurity","Security"];
+			
+		
+			SiteMapsLocales[269] = ["wwwsmSegementedLCD","Segmented LCD"];
+			
+		
+			SiteMapsLocales[270] = ["wwwsmSelGainAmp","Selectable Gain Amplifiers"];
+			
+		
+			SiteMapsLocales[271] = ["wwwsmSerialDrivers","Serial Peripherals"];
+			
+		
+			SiteMapsLocales[272] = ["wwwsmSerialEEPROM","Serial EEPROMS"];
+			
+		
+			SiteMapsLocales[273] = ["wwwsmSiteFAQ","Site FAQs"];
+			
+		
+			SiteMapsLocales[274] = ["wwwsmSiteFAQs","Site FAQs"];
+			
+		
+			SiteMapsLocales[275] = ["wwwsmSiteMap","Site Map"];
+			
+		
+			SiteMapsLocales[276] = ["wwwsmSiteSearch","Site Search"];
+			
+		
+			SiteMapsLocales[277] = ["wwwsmSoftLib","Software Libraries"];
+			
+		
+			SiteMapsLocales[278] = ["wwwsmSoftware","Software"];
+			
+		
+			SiteMapsLocales[279] = ["wwwsmSouthAmerica","South America"];
+			
+		
+			SiteMapsLocales[280] = ["wwwsmSouthAmerica","South America"];
+			
+		
+			SiteMapsLocales[281] = ["wwwsmSpiceModels","Spice Models"];
+			
+		
+			SiteMapsLocales[282] = ["wwwsmSupport","Support"];
+			
+		
+			SiteMapsLocales[283] = ["wwwsmSwitchingRegulators","Switching Regulators"];
+			
+		
+			SiteMapsLocales[284] = ["wwwsmSystemDesign","System Design"];
+			
+		
+			SiteMapsLocales[285] = ["wwwsmTCPIP","TCP/IP"];
+			
+		
+			SiteMapsLocales[286] = ["wwwsmTechDocs","Product Document List"];
+			
+		
+			SiteMapsLocales[287] = ["wwwsmTechnical Documentation","Technical Documentation"];
+			
+		
+			SiteMapsLocales[288] = ["wwwsmTechnicalDocumentation","Technical Documentation"];
+			
+		
+			SiteMapsLocales[289] = ["wwwsmTechnicalSupport","Technical Support"];
+			
+		
+			SiteMapsLocales[290] = ["wwwsmTechnicalSupport","Technical Support"];
+			
+		
+			SiteMapsLocales[291] = ["wwwsmTechnicalTrainingEducation","Technical Training &amp; Education"];
+			
+		
+			SiteMapsLocales[292] = ["wwwsmTechSupport","Tech Support"];
+			
+		
+			SiteMapsLocales[293] = ["wwwsmTemperatureSensors","Temperature Sensors"];
+			
+		
+			SiteMapsLocales[294] = ["wwwsmThermalManagement","Thermal Management"];
+			
+		
+			SiteMapsLocales[295] = ["wwwsmThird Party Development Tools","Third Party Development Tools"];
+			
+		
+			SiteMapsLocales[296] = ["wwwsmThirdParty","Third Party Development Tools"];
+			
+		
+			SiteMapsLocales[297] = ["wwwsmThirdPartyDemoSoftware","Third Party Demo Software"];
+			
+		
+			SiteMapsLocales[298] = ["wwwsmThirdPartyDevelopmentTools","Third Party Development Tools"];
+			
+		
+			SiteMapsLocales[299] = ["wwwsmThirdPartyHandsOnTraining","Third Party Hands-On Training"];
+			
+		
+			SiteMapsLocales[300] = ["wwwsmTraining","Training"];
+			
+		
+			SiteMapsLocales[301] = ["wwwsmTraining & Support Home Page","Training & Support Home Page"];
+			
+		
+			SiteMapsLocales[302] = ["wwwsmTraining & Support Home Page","Training & Support Home Page"];
+			
+		
+			SiteMapsLocales[303] = ["wwwsmTraining & Support Home Page","Training & Support Home Page"];
+			
+		
+			SiteMapsLocales[304] = ["wwwsmTraining &amp; Support","Training &amp; Support"];
+			
+		
+			SiteMapsLocales[305] = ["wwwsmTraining &amp; Support Home Page","Training &amp; Support Home Page"];
+			
+		
+			SiteMapsLocales[306] = ["wwwsmTraining\\x20\\x26\\x20Support","Training & Support"];
+			
+		
+			SiteMapsLocales[307] = ["wwwsmTrainingSupport","Training & Support"];
+			
+		
+			SiteMapsLocales[308] = ["wwwsmTutorials","Tutorials"];
+			
+		
+			SiteMapsLocales[309] = ["wwwsmUniversityCorner","University/Academic Corner"];
+			
+		
+			SiteMapsLocales[310] = ["wwwsmUnsupportedSourceCode","Unsupported Source Code"];
+			
+		
+			SiteMapsLocales[311] = ["wwwsmUSB","USB"];
+			
+		
+			SiteMapsLocales[312] = ["wwwsmUSB","USB"];
+			
+		
+			SiteMapsLocales[313] = ["wwwsmUserGuides","User Guides"];
+			
+		
+			SiteMapsLocales[314] = ["wwwsmUtilityMetering","Utility Metering"];
+			
+		
+			SiteMapsLocales[315] = ["wwwsmUtilityMeteringDesignCenter","Utility Metering Design Center"];
+			
+		
+			SiteMapsLocales[316] = ["wwwsmVoltageDetectors","Voltage Detectors"];
+			
+		
+			SiteMapsLocales[317] = ["wwwsmVoltageReferences","Voltage References"];
+			
+		
+			SiteMapsLocales[318] = ["wwwsmVPrice","Volume Pricing"];
+			
+		
+			SiteMapsLocales[319] = ["wwwsmWebinar","Web Seminars"];
+			
+		
+			SiteMapsLocales[320] = ["wwwsmWhat&#8217;s New - Press Releases","What&#8217;s New - Press Releases"];
+			
+		
+			SiteMapsLocales[321] = ["wwwsmWhatNew","What\'s New"];
+			
+		
+			SiteMapsLocales[322] = ["wwwsmWhat\'s New","What\'s New"];
+			
+		
+			SiteMapsLocales[323] = ["wwwsmWhat\'s New - Press Releases","New - Press Releases"];
+			
+		
+			SiteMapsLocales[324] = ["wwwsmWhat\'s New - Software","New - Software"];
+			
+		
+			SiteMapsLocales[325] = ["wwwsmWhat\'s New - Technical Documents","New - Technical Documents"];
+			
+		
+			SiteMapsLocales[326] = ["wwwsmWhatsNew","What`s New"];
+			
+		
+			SiteMapsLocales[327] = ["wwwsmWired","Wired Connectivity"];
+			
+		
+			SiteMapsLocales[328] = ["wwwsmWireless","Wireless Products"];
+			
+		
+			SiteMapsLocales[329] = ["wwwsmWirelessApplications","Wireless Connectivity"];
+			
+		
+			SiteMapsLocales[330] = ["wwwsmWNRecentlyupdatedDevices","Recently Updated Devices"];
+			
+		
+			SiteMapsLocales[331] = ["wwwsmWorldwideTrainingSupport","Worldwide Training &amp; Support"];
+			
+		
+	
+
+</script>
+
+<script language="JavaScript">
+<!-- FUNCTION TO SET FOCUS ON SEARCH BOX ** START ** -->
+//onload function
+function focusSearch()
+{
+   try{
+	  if (document.layers) { //Netscape 4
+		     searchObj = eval('document.q');
+	  }
+	  else if (navigator.userAgent.indexOf("Opera") != -1) { //Opera
+		     searchObj = eval('document.all.q');
+	    }
+	  else if (document.all && !document.getElementById) { //IE 4
+		     searchObj = eval('document.all.q');
+	  }
+		  else if (document.getElementById) { //Netscape 6 & IE 5 & FireFox
+		     searchObjs = document.getElementsByName('q');
+		     searchObj = searchObjs[0];
+	  }
+	  else {
+	  }
+	searchObj.focus();
+
+   }
+   catch(err)
+   {
+
+   }
+	
+};
+
+//setup onload function
+if(typeof window.addEventListener != 'undefined')
+{
+	//.. gecko, safari, konqueror and standard
+	window.addEventListener('load', focusSearch, false);
+}
+else if(typeof document.addEventListener != 'undefined')
+{
+	//.. opera 7
+	document.addEventListener('load', focusSearch, false);
+}
+else if(typeof window.attachEvent != 'undefined')
+{
+	//.. win/ie
+	window.attachEvent('onload', focusSearch);
+}
+
+//** remove this condition to degrade older browsers
+else
+{
+	//.. mac/ie5 and anything else that gets this far
+	
+	//if there's an existing onload function
+	if(typeof window.onload == 'function')
+	{
+		//store it
+		var existing = onload;
+		
+		//add new onload handler
+		window.onload = function()
+		{
+			//call existing onload function
+			existing();
+			
+			//call generic onload function
+			focusSearch();
+		};
+	}
+	else
+	{
+		//setup onload function
+		window.onload = focusSearch;
+	}
+}
+ 
+<!-- FUNCTION TO SET FOCUS ON SEARCH BOX ** END ** -->
+</script>
+
+
+
+
+<script language="JavaScript">
+   var g_HttpRelativeWebRoot = "/stellent/";
+   var SSContributor = false;
+</script>
+<!--
+<script id="SSContributorScript" nodeId="1824" websiteId="64" language="JScript" type="text/javascript" src="/stellent/websites/64/contributor.js"></script>
+-->
+<script id="SSNavigationScript" language="JScript" type="text/javascript" src="/stellent/websites/64/sitenavigation.js"></script>
+<script language="JavaScript">
+   var g_navNode_Path = new Array();
+   
+      g_navNode_Path[0] = '64';
+   
+      g_navNode_Path[1] = '70';
+   
+      g_navNode_Path[2] = '1431';
+   
+      g_navNode_Path[3] = '1469';
+   
+      g_navNode_Path[4] = '1490';
+   
+      g_navNode_Path[5] = '1824';
+   
+</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="MSHTML 6.00.2900.2180" name="GENERATOR" />
+   <xml id="ssInfo" style="DISPLAY: none" warning="DO NOT MODIFY!">
+      <ssinfo>
+        <fragmentinstance id="fragment4" fragmentid="AppNotesSideNav" library="server:en002814"></fragmentinstance>
+        <fragmentinstance id="fragment5" fragmentid="SS_MCHP_HeaderMenu" library="server:SS_MCSiteFragments_Library"></fragmentinstance>
+        <fragmentinstance id="fragment6" fragmentid="BreadCrumbPlain" library="server:SS_Fragments_Plain">
+          
+        </fragmentinstance>
+        <fragmentinstance id="fragment7" fragmentid="MCHPFooterMenu" library="server:NewHeaderMenuLib"></fragmentinstance>
+      </ssinfo>
+    </xml>
+ </head>   
+<!-- SS_BEGIN_SNIPPET(fragment6,1)-->
+								<link rel="stylesheet" type="text/css" href="/stellent/fragments/breadcrumbplain/BreadCrumbPlain.css"></link>
+				<script src="/stellent/fragments/breadcrumbplain/BreadCrumbPlain.js"></script>
+			<!-- SS_END_SNIPPET(fragment6,1)-->
+
+<!-- SS_BEGIN_SNIPPET(fragment5,MenuScripts)-->
+				  <script type="text/javascript" src="/stellent/fragments/SS_MCHP_HeaderMenu/p7popmenu.js"></script>
+  <script type="text/javascript" src="/stellent/fragments/SS_MCHP_HeaderMenu/p7tmscripts.js"></script> 
+  <script type="text/javascript" src="/stellent/fragments/SS_MCHP_HeaderMenu/mchpTopNavMenu.js"></script>
+
+  <link href='/stellent/fragments/ss_mchp_headermenu/header.css' type='text/css' rel='stylesheet'>
+  <link href='/stellent/fragments/SS_MCHP_HeaderMenu/p7pmh6.css' type='text/css' media='screen' rel='stylesheet'>
+  <link href='/stellent/fragments/SS_MCHP_HeaderMenu/p7tmbasic.css' type='text/css' media='screen' rel='stylesheet'>
+
+</head>
+  
+<BODY leftMargin="2" topMargin="2" marginwidth="1" marginheight="1" onLoad="P7_initPM(1,6,1,-20,10);"> 
+<TABLE width="987" border="0" valign="top" cellpadding="0" cellspacing="0">
+  <TBODY>
+  	<TR>
+  	  <form name="SearchForm" action="Javascript:Search('site');" method="GET">
+  	   <td height="1" colspan="5" align="left" vAlign="top">
+ 		<table width="982" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="454" rowspan="2"><div align="left">
+            	<span class="pipe"><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=64"><img src="images/mchpsiteimages/MicrochipLogoWithTag.gif" alt="Microchip Technology" title="Microchip Technology" border="0"></a></span></div>
+            </td>            
+            <td align="right" valign="top" style="height:16px"nowrap>
+            	<img src="/MCHPVisitorMgr/default.aspx" width="0" height="0" alt="Welcome to www.microchip.com" border="0">
+            </td>                      
+            <td colspan="3" valign="top" nowrap>
+              <div align="right">
+              <span class="FooterText">
+              <a href="http://www.microchip.com/myMicrochip" class="FooterText">myMicrochip Login</a>&nbsp;&nbsp;|&nbsp;
+              <a href="javascript:SetPath('en');" class="FooterText">English</a>&nbsp;&nbsp;|&nbsp;
+              <a href="javascript:SetPath('cn');" class="FooterText">Chinese 中文</a>&nbsp;&nbsp;|&nbsp;
+              <a href="javascript:SetPath('jp');" class="FooterText">Japanese 日本語</a>&nbsp;&nbsp;
+              </span>
+              </div>
+            </td>            
+          </tr>
+          <tr>
+          	<td width="128" align="right" vAlign="center"><img name="tncurve" id="tncurve" src="/stellent/images/mchpsiteimages/mchp_topNav_curve.jpg" border="0"></td>
+          	<td width="190" align="right" valign="center" style="border-top: #cbcbcb 1px solid; background-color: #e9e7e8" nowrap>
+              	<span class="SearchText">
+            		<input type="hidden" name="site" value="MicrochipWebsites"/>
+        			<input type="hidden" name="client" value="MicrochipWebsites"/>
+        			<input type="hidden" name="proxystylesheet" value="MicrochipWebsites"/>
+        			<input type="hidden" name="output" value="xml_no_dtd"/>
+					Search:
+				</span>
+			<td width="170" align="center" valign="center" style="background: transparent url(/stellent/images/mchpsiteimages/mchp_search_bg.png) no-repeat; border-top: #cbcbcb 1px solid; background-color: #e9e7e8" nowrap>
+            	<span id="search_bg">						
+        			<input class="search" name="q" type="text" value="" maxlength="255" />
+				</span>
+			</td>
+			<td width="40" valign="center" style="border-top: #cbcbcb 1px solid; border-right: #cbcbcb 1px solid; background-color: #e9e7e8" nowrap>
+				<a href="#" onClick="Javascript:Search('site');return false" class="FooterText">
+				<img class="search" name="imgSiteSrch" id="imgSiteSrch" src="images/mchpsiteimages/mchp_go.gif" alt="Click here to Search Microchip.com" title="Click here to Search Microchip.com" border="0"></a>
+            </td>  
+          </tr>          
+        </table>             
+       </td>
+     </form>
+    </TR>
+  	<TR>
+      <TD colspan="4" align="left" vAlign="top">
+      <ul id="p7PMnav">
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=64" class="p7PMtrg"> Home </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2028"> Site Map</a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1497&param=en006914">Site FAQs </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1497&param=en002751">Browser Specification </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2568&param=en028158">RSS Feeds </a></li>
+            <li><a href="http://www.microchip.com/wwwregister/default.aspx?ReturnURL=http://www.microchip.com/mymicrochip/UserPreferences.aspx?mode=SetPreference&RedirectedFrom=Login&DestURL=Home"> myMICROCHIP </a></li>
+          </ul>
+      </li>
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=69" class="p7PMtrg"> Products </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=74"> 8-bit PIC&#174; Microcontrollers </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=75"> 16-bit PIC&reg; MCUs & dsPIC® DSCs </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2591"> 32-bit PIC® Microcontrollers </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=79"> Analog & Interface Products </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2543&amp;param=en021419&amp;pageId=79" class="p7PMtrg"> &nbsp;&nbsp;Thermal Management
+              </a>
+                <ul>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9001&amp;mid=11&amp;lang=en&amp;pageId=79"> Temperature Sensors         </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9002&amp;mid=11&amp;lang=en&amp;pageId=79"> Brushless DC Fan Controllers        </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2543&amp;param=en021417&amp;pageId=79" class="p7PMtrg"> &nbsp;&nbsp;Power Management </a>
+                <ul>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9003&amp;mid=11&amp;lang=en&amp;pageId=79"> Voltage References            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9004&amp;mid=11&amp;lang=en&amp;pageId=79"> Linear Regulators            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9005&amp;mid=11&amp;lang=en&amp;pageId=79"> Switching Regulators            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9006&amp;mid=11&amp;lang=en&amp;pageId=79"> Charge Pump DC-to-DC Converters            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9007&amp;mid=11&amp;lang=en&amp;pageId=79"> PWM Controllers            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9008&amp;mid=11&amp;lang=en&amp;pageId=79"> CPU/System Supervisors            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9009&amp;mid=11&amp;lang=en&amp;pageId=79"> Voltage Detectors            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9010&amp;mid=11&amp;lang=en&amp;pageId=79"> Power MOSFET Drivers            </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=78&amp;pageId=79"> Battery Management            </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=9031&amp;mid=11&amp;lang=en&amp;pageId=79"> Hot Swap Controller            </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2543&amp;param=en021415&amp;pageId=79" class="p7PMtrg"> &nbsp;&nbsp;Linear </a>
+                <ul>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11015&amp;mid=11&amp;lang=en&amp;pageId=79">   Op Amps      </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11014&amp;mid=11&amp;lang=en&amp;pageId=79">  Programmable Gain Amplifiers</a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11011&amp;mid=11&amp;lang=en&amp;pageId=79"> Selectable Gain Amplifiers </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11012&amp;mid=11&amp;lang=en&amp;pageId=79">  Comparators   </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11012&amp;mid=11&amp;lang=en&amp;pageId=79">  Integrated Devices</a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2543&amp;param=en021416&amp;pageId=79" class="p7PMtrg"> &nbsp;&nbsp;Mixed Signal </a>
+                <ul>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11021&amp;mid=11&amp;lang=en&amp;pageId=79"> Successive Approximation Register (SAR) A/D Converters       </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11022&amp;mid=11&amp;lang=en&amp;pageId=79"> Delta- Sigma A/D Converters      </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11023&amp;mid=11&amp;lang=en&amp;pageId=79"> Dual Slope A/D Converters       </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11024&amp;mid=11&amp;lang=en&amp;pageId=79"> Binary and BCD A/D Converters     </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11025&amp;mid=11&amp;lang=en&amp;pageId=79"> Display A/D Converters      </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11026&amp;mid=11&amp;lang=en&amp;pageId=79"> Digital Potentiometers      </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11027&amp;mid=11&amp;lang=en&amp;pageId=79"> Frequency-to-Voltage/ Voltage-to-Frequency Converters       </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11028&amp;mid=11&amp;lang=en&amp;pageId=79"> D/A Converter     </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11029&amp;mid=11&amp;lang=en&amp;pageId=79"> Energy Measurement </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=78"> &nbsp;&nbsp;Battery Management </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2543&amp;param=en021414&amp;pageId=79" class="p7PMtrg"> Interface Products
+              </a>
+                <ul>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11031&amp;mid=11&amp;lang=en&amp;pageId=79"> Controller Area Network (CAN)      </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11032&amp;mid=11&amp;lang=en&amp;pageId=79"> Infrared Products    </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11033&amp;mid=11&amp;lang=en&amp;pageId=79"> LIN Transceiver       </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11034&amp;mid=11&amp;lang=en&amp;pageId=79"> Serial Peripherals    </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11030&amp;mid=11&amp;lang=en&amp;pageId=79"> LCD Drivers    </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11035&amp;mid=11&amp;lang=en&amp;pageId=79"> Ethernet    </a></li>
+                  <li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11036&amp;mid=11&amp;lang=en&amp;pageId=79"> Passive-Keyless-Entry Analog Front End </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2664&param=en535918" class="p7PMtrg"> Wireless Products
+               </a>
+            	<ul>
+            	<li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=76"> Radio Frequency </a></li>
+            	<li><a href="http://www.microchip.com/ParamChartSearch/chart.aspx?branchID=11032&mid=11&lang=en&pageId=79">  Infrared </a></li>
+            	<li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2074">	KEELOQ<sup>&#174;</sup> Authentication </a></li>
+               </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1924&link=TodaysFeatures">	Serial EEPROMS</a></li>
+          </ul>
+      </li>
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=70" class="p7PMtrg"> Design </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=82" class="p7PMtrg"> Getting Started </a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2119"> Getting Started with PIC&#174; Microcontrollers      </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2629&param=en533474"> Getting Started with 16-bit MCUs and DSCs            </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2122"> Getting Started with Development Tools      </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2514"> Getting Started with Analog Op Amps       </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2128&amp;param=en025151"> Getting Started with Microchip&rsquo;s Serial EEPROMS  </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=84" class="p7PMtrg"> Technical  Documentation</a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2046"> Data Sheets </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1433"> Errata </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1956"> Reference Manuals </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1469&amp;filter1=function">App Notes </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1435"> User Guides </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2534"> Analog Design & Sim Tool </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1469"> Application Notes & Software </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2035"> Software Libraries </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1408"> Code Examples </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=86"> Programming </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=81"> Development Tools </a></li>
+          </ul>
+      </li>
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1423" class="p7PMtrg"> Support </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1423" class="p7PMtrg"> Technical Support </a>
+                <ul>
+                  <li><a href="http://support.microchip.com/scripts/slxweb.dll/external?name=webticketcust"> 24/7 Tech Support </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1928" class="p7PMtrg"> Training  </a>
+                <ul>
+                  <li><a href="https://secure.microchip.com/RTC/index.aspx"> Regional Training Centers  </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2502&param=en534075"> Design Partners </a></li>
+            <li><a href="http://cn.microchip.com/sales/product_change.nsf/mainframeset?openframeset"> Customer Change Notification </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1440"> University/Academic Corner </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1926">  3rd Party Dev Tools and Design Resources </a></li>
+            <li><a href="http://forum.microchip.com/" class="p7PMtrg"> Forum </a>
+                <ul>
+                  <li><a href="http://forum.microchip.com/tt.aspx?forumid=-1"> Development Tools Forums   </a></li>
+                  <li><a href="http://forum.microchip.com/tt.aspx?forumid=-2">8-bit PIC&#174; MCU Forums       </a></li>
+                  <li><a href="http://forum.microchip.com/tt.aspx?forumid=152"> 16-bit PIC&#174;MCU Forums  </a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.microchip.com/wiki/"> ICwiki </a></li>
+          </ul>
+      </li>
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1445" class="p7PMtrg"> Applications </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1478"> Automotive   </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1479"> Home Appliance   </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2524&param=en025401">      Intelligent Power Supply  </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2590&param=en528162">      Lighting </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1482"> Mechatronics    </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2557"> Medical Solutions    </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2125&param=en026178">       Motor Control  </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2530" class="p7PMtrg">  System Design      </a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2530"> 3V System Designs     </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2147&param=en023557"> EMC Design Solutions    </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1484"> Low Power Solutions  </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2672" class="p7PMtrg"> Human Interface </a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2599&param=en531501"> mTouch™  Design Center </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2608&page=1&param=en532061"> Advanced Graphics </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2091&param=en506140"> Segmented LCD </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2659"> Audio & Speech Solutions </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2130"> Utility Metering </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2664&param=en535912" class="p7PMtrg"> Wired Connectivity </a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1480"> Controller Area Network (CAN) </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1485"> LIN </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1486"> USB </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2504"> Ethernet </a></li>
+                </ul>
+            </li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2664&param=en535918" class="p7PMtrg"> Wireless Connectivity </a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2663"> Radio Frequency </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1474"> Infrared  </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2074"> KEELOQ<sup>&#174;</sup> Authentication </a></li>
+                </ul>
+            </li>
+          </ul>
+      </li>
+      <li><a href="http://www.microchipdirect.com" class="p7PMtrg"> Buy/Sample </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=71"> Distributors </a></li>
+            <li><a href="http://www.microchipdirect.com/"> MicrochipDIRECT </a></li>
+            <li><a href="http://sample.microchip.com/"> Sample </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=71"> Sales Contacts </a></li>
+          </ul>
+      </li>
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=72" class="p7PMtrg"> Corporate </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=100"> Careers </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=96"> Company Information </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=676"> Contact Info </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=99"> Legal Information </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=98"> Investors </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=97"> News and Events </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=87"> Quality &amp; Reliability </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2001"> Environmental Health and Safety </a></li>
+          </ul>
+      </li>
+      <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=73" class="p7PMtrg"> What's New </a>
+          <ul>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1421"> microSOLUTIONS eNewsletter </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=97"> Press Release </a></li>
+            <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2140" class="p7PMtrg"> Recently Updated: </a>
+                <ul>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2140"> Devices </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=103">  Software  </a></li>
+                  <li><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=102">  Technical Doc </a></li>
+                </ul>
+            </li>
+            <li><a href="http://techtrain.microchip.com/masters/?redirects=masters">MASTERs 2008</a></li>
+            <li><a href="http://www.microchip.com/wwwregister/default.aspx?ReturnURL=http://www.microchip.com/mymicrochip/UserPreferences.aspx?mode=SetPreference&RedirectedFrom=Login&DestURL=Home"> myMICROCHIP</a></li>
+          </ul>
+      </li>
+      <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;}#p7PMnav ul li{float:left;clear:both;width:100%}</style><![endif]-->
+      <!--[if IE 6]><style>#p7PMnav ul li{clear:none;}</style><![endif]-->
+      <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav ul li{float:left;clear:both;width:100%;}</style><![endif]-->
+    </ul>
+    </TD>
+    </TR>
+	<TR>
+	  	<TD height="3" colspan="4" align="left" vAlign="top"></TD>
+    </TR>	
+    <TR>
+    	<TD class="GreyLine" colspan="4" align="left" vAlign="top"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+			<!-- SS_END_SNIPPET(fragment5,MenuScripts)-->
+    
+    
+    
+    <title>
+      AN1066 - MiWi Wireless Networking Protocol Stack - Application Notes - Details
+    </title>  
+
+    <table cellspacing="0" cellpadding="0" width="999" border="0">
+      <tbody>
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            
+<!-- SS_BEGIN_SNIPPET(fragment6,2)-->
+				
+				<script>
+				{
+					
+					
+					
+					
+					
+					var fragment = new BreadCrumbPlain('#a0a0a4', '#0000ff', 
+													'  >  ', 'BreadCrumbPlain','0');
+					fragment.Display(g_navNode_Root);
+						
+				}
+				
+				</script>
+				
+			
+				
+			<!-- SS_END_SNIPPET(fragment6,2)-->
+
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" width="20%">
+            
+<!-- SS_BEGIN_SNIPPET(fragment4,SideNav)-->
+				   <table class="LeftNavBorder" cellspacing="0" cellpadding="0" width="200" border="0">
+                                      <tbody>
+                                        <tr>
+                                          <td class="Green" align="left" width="19" height="16">
+                                            &#160;
+                                          </td>
+                                          <td class="GreenWhiteBold" align="left" width="136" height="16">
+                                            App Notes & Source Code/<br />
+                                            Technical Brief
+                                          </td>
+                                        </tr>
+                                        <tr valign="top">
+                                          <td align="left" colspan="2">
+                                          <table cellspacing="1" cellpadding="3" width="154" align="center" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td valign="center" align="left">
+                                                    <div align="center">
+                                                      <img src="images/mchpsiteimages/bigredbutton_10.gif" />
+                                                    </div>
+                                                  </td>
+                                                  <td class="DarkGreyText" valign="top" align="left" width="133">
+                                                    <a href='/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1469'><font color="#000000">Application Notes</font></a>
+                                                  </td>
+                                                </tr>                                                
+                                                <tr>
+                                                  <td valign="center" align="left">
+                                                    <div align="center">
+                                                      <img src="images/mchpsiteimages/bigredbutton_10.gif" />
+                                                    </div>
+                                                  </td>
+                                                  <td class="DarkGreyText" valign="top" align="left">
+                                                    <a href='/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2047'><font color="#000000">Application Notes by Release Date</font></a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td valign="center" align="left">
+                                                    <div align="center">
+                                                      <img src="images/mchpsiteimages/bigredbutton_10.gif" />
+                                                    </div>
+                                                  </td>
+                                                  <td class="DarkGreyText" valign="top" align="left">
+                                                    <a href='/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2048'>Application Notes (alphabetical)</font></a>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td valign="center" align="left">
+                                                    <div align="center">
+                                                      <img src="images/mchpsiteimages/bigredbutton_10.gif" />
+                                                    </div>
+                                                  </td>
+                                                  <td class="DarkGreyText" valign="top" align="left">
+                                                    <a href='/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2121'>Application Notes - Source Code</font></a>
+                                                  </td>
+                                                </tr>  
+                                              </tbody>
+                                            </table>
+   								</td>
+                        </tr>
+                      </tbody>
+                    </table>
+				
+			<!-- SS_END_SNIPPET(fragment4,SideNav)-->
+
+          </td>
+          <td valign="top" width="80%">
+           
+ 		  <table cellspacing="1" cellpadding="6" width="100%" align="left" border="0" valign="top">
+              <tbody>
+                <tr>
+                  <td valign="top">
+                    <table cellspacing="1" cellpadding="6" width="100%" align="left" border="0" valign="top">
+                      <tbody>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left" colspan="3">
+                            <font size="4">AN1066</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left" width="30%">
+                            Title:
+                          </td>
+                          <td class="NormalTextBoldCopy" valign="top" align="left" width="70%" colspan="2">
+                            MiWi Wireless Networking Protocol Stack
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left">
+                            Name:
+                          </td>
+                          <td class="NormalText" valign="top" align="left" colspan="2">
+                            AN1066
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left">
+                            Date:
+                          </td>
+                          <td class="NormalText" valign="top" align="left" colspan="2">
+                            2/5/07
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left">
+                            Author:
+                          </td>
+                          <td class="NormalText" valign="top" align="left" colspan="2">
+                            David Flowers, Yifeng Yang
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left">
+                            Description:
+                          </td>
+                          <td class="NormalText" valign="top" align="left" colspan="2">
+                            <font style="TEXT-ALIGN: justify">The MiWi Wireless Networking Protocol is a simple protocol designed for low data rate, short distance, low-cost networks.</font>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalTextBoldCopy" valign="top" align="left">
+                            Keywords:
+                          </td>
+                          <td class="NormalText" valign="top" align="left" colspan="2">
+                            MiWi, Wireless Networking Protocol, Stack, IEEE 802.15.4
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%" border="0">
+                      <tbody>
+                        <tr bgcolor="#c0c0c0">
+                          <td class="NormalText" colspan="2">
+                            <b>Data Sheets and Other Documentation</b>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalText" bgcolor="#E6EBD0">
+                            AN1066
+                          </td>
+                          <td class="NormalText" align="right" width="5%" bgcolor="#E6EBD0">
+                            <a href="http://ww1.microchip.com/downloads/en/AppNotes/01066a.pdf"><img src="images/mchpsiteimages/pdf.gif" border="0" /></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="NormalText" bgcolor=#FFFFFF>
+                            AN1066 Source Code
+                          </td>
+                          <td class="NormalText" align="right" width="5%" bgcolor="#FFFFFF">
+                            <a href="http://ww1.microchip.com/downloads/en/AppNotes/MiWi v1_0h.zip"><img src="images/mchpsiteimages/zip.gif" border="0" /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+<!-- SS_BEGIN_SNIPPET(fragment7,Table)-->
+				<table width="990" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="left">
+<tr valign="top">
+		<td class="footer">
+			<!-- Begin Footer -->
+			
+				<tr><td width="100%" class="BottomLine" colspan="2">&nbsp;</td></tr>
+				<tr>
+				</tr>
+					<td colspan="2" class="FooterText">&nbsp;</td>
+				<tr>
+					<td width="80%" class="FooterText">&nbsp;&nbsp;<a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2028"><span class="FooterText">Site Index</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=99"><span class="FooterText">Legal Information</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="http://www.microchipdirect.com"><span class="FooterText">microchipDIRECT</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="http://sample.microchip.com"><span class="FooterText">Samples</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="http://support.microchip.com/scripts/slxweb.dll/external?name=webticketcust"><span class="FooterText">Technical Support</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=98"><span class="FooterText">Investor Information</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=100"><span class="FooterText">Careers at Microchip</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=676"><span class="FooterText">Contact Us</span></a><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2568&param=en028158"><span class="FooterText">RSS Feeds</span></a></td>
+					<td width="20%" align="right" class="FooterText"><span class="FooterText">&copy;2008 Microchip Technology Inc.</span>&nbsp;&nbsp;</td>
+				</tr>			
+			<!-- End Footer -->
+		</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+			<!-- SS_END_SNIPPET(fragment7,Table)-->
+
+  </body>
+</html>
