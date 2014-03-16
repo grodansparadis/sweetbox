@@ -1,0 +1,144 @@
+Resistors
+=========
+
+4.7K
+
+
+Capacitors
+==========
+
+0.1uF Capacitor  	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=587-1134-1-ND
+Cheramic, 0805
+
+10uF Capacitor 		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=PCC1940CT-ND
+Cheramic, 1206
+
+1uF Capacitor		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=PCC1915CT-ND
+Cheramic, 0805
+
+22pF Capacitor		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=490-4888-1-ND
+Cheramic, 0805
+
+12pF Capacitor		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=PCC120CNCT-ND
+Cheramic, 0805
+
+4.7uF Capacitor		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=PCE3478CT-ND
+Electrolytic
+
+
+Inductors
+=========
+
+4.8uH Inductor		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=587-2034-1-ND
+
+
+IC
+==
+
+MCP1603			http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=MCP1603T-330I%2FOSCT-ND
+IC SYNC BUCK REG PFM/PWM SOT23-5
+
+PIC32MX360F512L		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=PIC32MX360F512L-80I%2FPT-ND
+
+
+PCA9635PW-T		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=568-4067-1-ND
+
+
+img
+Diodes
+======
+
+Diode 1A		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=S1DB-FDICT-ND
+S1D
+
+
+Crystals
+========
+
+XTAL 8MHz		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=XC681CT-ND
+
+XTAL, 32.768KHz		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=535-9538-1-ND
+
+
+Sensors
+=======
+MCP9801 SOIC		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=MCP9801-M%2FSN-ND
+I2C Tempsensor
+
+Humidity		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=480-2904-ND
+HCH-1000-002
+
+
+Connectors
+==========
+
+Power Connector		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=CP-002A-ND
+
+Ethernet RJ-45		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=SI-50151-F-ND
+			http://www.sparkfun.com/commerce/product_info.php?products_id=8534
+
+RF
+==
+
+MRF24J40MA		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=MRF24J40MA-I%2FRM-ND
+
+Misc.
+=====
+
+PhotoLED Ambient Light	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=ISL29101IROZ-T7CT-ND
+
+PIR			http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=AMN34112-ND
+Motion Sensor
+
+TSOP85238		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=751-1445-1-ND
+IR-Receiver
+
+IR Transmitter		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=67-1000-ND
+OED-EL-8L
+
+5V DC-DC		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=102-1397-2-ND
+
+Isolator		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=ADUM1201ARZ-RL7CT-ND
+ADUM1201ARZ-RL7
+
+Power Regulator,	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=LM2937IMP-5.0CT-ND
+5V, 500mA
+
+5V, 5A Power		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=LM1084IS-5.0-ND
+Regulator
+
+Microphone		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=102-1721-ND
+
+Distance		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=425-2062-ND
+measuring	
+
+Bluetooth		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=568-3300-1-ND
+BG203
+
+I2C Buffer		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=296-20943-5-ND
+P82B96P, DIP
+
+Humidity Sensor		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=HS1101LF-ND
+
+Amp			http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=LM4811LDCT-ND
+Headphone
+
+100W Stereo		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=296-18033-5-ND
+Audio Amp
+
+TAS5504PAG		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=296-18034-ND
+Audio processor			
+
+Stereo Audio		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=296-20663-1-ND
+Codec
+
+FDV301N			http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=FDV301NCT-ND
+FET
+
+MP3 Codec 		http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=497-3939-1-ND
+
+MPX4115A		http://search.digikey.com/scripts/DkSearch/dksus.dll?lang=en&site=US&keywords=MPX4115A&x=22&y=10
+Pressure sensor
+
+Siren			http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=458-1092-ND
+

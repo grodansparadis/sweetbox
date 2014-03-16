@@ -1,0 +1,166 @@
+Test tones for dsPIC MP3 decoder:
+
+Mono, 44100 kHz sampling rate: Metallica, Master of Puppets (fragment)
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+m0_44_64.mp3  -  64 kbps
+m0_44_96.mp3  -  96 kbps
+m0_44_128.mp3 - 128 kbps
+m0_44_256.mp3 - 256 kbps
+m0_44_320.mp3 - 320 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+mono,     44100 Hz,     64 kbps   40320             0.914        0.442          +
+mono,     44100 Hz,     96 kbps   40320             0.914        0.527          +
+mono,     44100 Hz,    128 kbps   40320             0.914        0.601          +
+mono,     44100 Hz,    256 kbps   40320             0.914        0.708          +
+mono,     44100 Hz,    320 kbps   40320             0.914        0.709          +
+
+
+Stereo, 8000 kHz sampling rate: Man voice
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_8_20.mp3   -  20 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+stereo,    8000 Hz,     20 kbps   10368             1.296        0.224          +
+
+
+Stereo, 11025 kHz sampling rate: Man voice
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_16_20.mp3  -  20 kbps
+s0_16_24.mp3  -  24 kbps
+s0_16_32.mp3  -  32 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+stereo,   11025 Hz,     20 kbps   13824             1.254        0.268          +
+stereo,   11025 Hz,     24 kbps   13824             1.254        0.282          +
+stereo,   11025 Hz,     32 kbps   13824             1.254        0.306          +
+
+
+Stereo, 16000 kHz sampling rate: Man voice
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_16_32.mp3  -  32 kbps
+s0_16_40.mp3  -  40 kbps
+s0_16_48.mp3  -  48 kbps
+s0_16_56.mp3  -  56 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+stereo,   16000 Hz,     32 kbps   19008             1.188        0.373          +
+stereo,   16000 Hz,     40 kbps   19008             1.188        0.402          +
+stereo,   16000 Hz,     48 kbps   19008             1.188        0.429          +
+stereo,   16000 Hz,     56 kbps   19008             1.188        0.452          +
+
+
+Stereo, 22050 kHz sampling rate: Vivaldi Concerto in F Minor Op.8 No.4 "Winter" Allegro non molto (fragment)
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_22_40.mp3  -  40 kbps
+s0_22_48.mp3  -  48 kbps
+s0_22_56.mp3  -  56 kbps
+s0_22_64.mp3  -  64 kbps
+s0_22_80.mp3  -  80 kbps
+s0_22_96.mp3  -  96 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+stereo,   22050 Hz,     40 kbps   27648             1.254        0.561          +
+stereo,   22050 Hz,     48 kbps   27648             1.254        0.601          +
+stereo,   22050 Hz,     56 kbps   27648             1.254        0.641          +
+stereo,   22050 Hz,     64 kbps   27648             1.254        0.671          +
+stereo,   22050 Hz,     80 kbps   27648             1.254        0.720          +
+stereo,   22050 Hz,     96 kbps   27648             1.254        0.764          +
+
+
+Stereo, 32000 kHz sampling rate: Vivaldi Concerto in F Minor Op.8 No.4 "Winter" Allegro non molto (fragment)
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_32_80.mp3  -  80 kbps
+s0_32_96.mp3  -  96 kbps
+s0_32_112.mp3 - 112 kbps
+s0_32_128.mp3 - 128 kbps
+s0_32_160.mp3 - 160 kbps
+s0_32_192.mp3 - 192 kbps
+s0_32_224.mp3 - 224 kbps
+s0_32_256.mp3 - 256 kbps
+s0_32_320.mp3 - 320 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+stereo,   32000 Hz,     80 kbps   39168             1.224        0.863          +
+stereo,   32000 Hz,     96 kbps   39168             1.224        0.923          +
+stereo,   32000 Hz,    112 kbps   39168             1.224        0.979          +
+stereo,   32000 Hz,    128 kbps   39168             1.224        1.034          +
+stereo,   32000 Hz,    160 kbps   39168             1.224        1.127          ?
+stereo,   32000 Hz,    192 kbps   39168             1.224        1.224          -
+stereo,   32000 Hz,    224 kbps   39168             1.224        1.285          -
+stereo,   32000 Hz,    256 kbps   39168             1.224        1.371          -
+stereo,   32000 Hz,    320 kbps   39168             1.224        1.510          -
+
+
+Stereo, 44100 kHz sampling rate: Vivaldi Concerto in F Minor Op.8 No.4 "Winter" Allegro non molto (fragment)
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_44_96.mp3  -  96 kbps
+s0_44_112.mp3 - 112 kbps
+s0_44_128.mp3 - 128 kbps
+s0_44_160.mp3 - 160 kbps
+s0_44_192.mp3 - 192 kbps
+s0_44_224.mp3 - 224 kbps
+s0_44_256.mp3 - 256 kbps
+s0_44_320.mp3 - 320 kbps
+
+Results:
+
+channels: sample_rate: bitrate:   num_of_samples:   play_time:   decode_time:
+-----------------------------------------------------------------------------
+stereo,   44100 Hz,     96 kbps   54144             1.228        1.128          ?
+stereo,   44100 Hz,    112 kbps   54144             1.228        1.191          ?
+stereo,   44100 Hz,    128 kbps   54144             1.228        1.245          -
+stereo,   44100 Hz,    160 kbps   54144             1.228        1.334          -
+stereo,   44100 Hz,    192 kbps   54144             1.228        1.439          -
+stereo,   44100 Hz,    224 kbps   54144             1.228        1.537          -
+stereo,   44100 Hz,    256 kbps   54144             1.228        1.621          -
+stereo,   44100 Hz,    320 kbps   54144             1.228        1.723          -
+
+
+
+Stereo, 48000 kHz sampling rate: Vivaldi Concerto in F Minor Op.8 No.4 "Winter" Allegro non molto (fragment)
+------------------------------------------------------------------------------------------------------------
+Joint Stereo - Middle-Side and Intesity ENABLED
+------------------------------------------------------------------------------------------------------------
+s0_48_112.mp3 - 112 kbps
+s0_48_128.mp3 - 128 kbps
+s0_48_160.mp3 - 160 kbps
+s0_48_192.mp3 - 192 kbps
+s0_48_224.mp3 - 224 kbps
+s0_48_256.mp3 - 256 kbps
+s0_48_320.mp3 - 320 kbps
+
+Results:
+

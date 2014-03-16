@@ -1,0 +1,375 @@
+Partlist exported from /home/akhe/development/hardware/sweetbox_room_controler/project/eagle/sweetbox.sch at 10/12/08 12:20 AM
+
+Part  Value                         Device                     Package           Description                                                                   
+ANT1                                ANTENNA                    PAD-01            Antenna                                                                       
+ANT2                                ANTENNA                    PAD-01            Antenna                                                                       
+C1    0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C2    0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C3    0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C4    0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C5    0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C6    22pF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C7    22pF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C8    11pF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C9    11pF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C10   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C11   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C12   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C13   10uF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C14   1uF                           C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C15   180uF/16V                     CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C16   0.47uF                        CNP-0805                   0805              NON-POLARIZED CAP                                                             
+C17   15uF/50V                      CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C18   15uF/50V                      CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C19   15pF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C20   15pF                          C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C21   0.01uF                        CNP-0805                   0805              NON-POLARIZED CAP                                                             
+C22   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C23   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C24   100uF/50V                     CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C25   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C26   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C27   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C28   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C29   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C30   10uF                          RSVCAP                     RSVCAP                                                                                          
+C31   27pF                          NP_CAP0805                 C0805                                                                                           
+C32   27pF                          NP_CAP0805                 C0805                                                                                           
+C33   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C34   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C35   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C36   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C37   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C38   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C39   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C40   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C41   0.1uF                         C-EUC0805                  C0805             CAPACITOR, European symbol                                                    
+C42   1uF                           NP_CAP0805                 C0805                                                                                           
+C43   1uF                           NP_CAP0805                 C0805                                                                                           
+C44   2.2nF                         NP_CAP0805                 C0805                                                                                           
+C45   1nF                           NP_CAP0805                 C0805                                                                                           
+C46   1uF                           NP_CAP0805                 C0805                                                                                           
+C47   100nF                         NP_CAP0805                 C0805                                                                                           
+C48   22nF                          NP_CAP0805                 C0805                                                                                           
+C49   1uF                           NP_CAP0805                 C0805                                                                                           
+C50   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C51   1nF                           NP_CAP0805                 C0805                                                                                           
+C52   1uF                           NP_CAP0805                 C0805                                                                                           
+C53   100nF                         NP_CAP0805                 C0805                                                                                           
+C54   2.2nF                         NP_CAP0805                 C0805                                                                                           
+C55   0.2uF                         NP_CAP0805                 C0805                                                                                           
+C56   22nF                          NP_CAP0805                 C0805                                                                                           
+C57   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C58   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C59   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C60   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C61   10uF                          CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C62   HCH-1000-002                  CAPNP-5                    C-5                                                                                             
+C63   18pF                          NP_CAP0805                 C0805                                                                                           
+C64   33nF                          NP_CAP0805                 C0805                                                                                           
+C65   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C66   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C67   0.01uF                        CNP-0805                   0805              NON-POLARIZED CAP                                                             
+C68   100uF/16V                     CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C69   1nF                           NP_CAP0805                 C0805                                                                                           
+C70   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C71   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C72   0.1uF                         NP_CAP0805                 C0805                                                                                           
+C73   33uF                          CPOL-USE2-5                E2-5              POLARIZED CAPACITOR, American symbol                                          
+C74   0.1uF                         C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C75   0.1uF                         C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C76   0.022uF                       C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C77   0.022uF                       C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C78   18pF                          C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C79   18pF                          C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C80   220uF                         CPOL-USE3.5-8              E3,5-8            POLARIZED CAPACITOR, American symbol                                          
+C81   220uF                         CPOL-USE3.5-8              E3,5-8            POLARIZED CAPACITOR, American symbol                                          
+C82   10uF                          CPOL-USE2-5                E2-5              POLARIZED CAPACITOR, American symbol                                          
+C83   220uF                         CPOL-USE3.5-8              E3,5-8            POLARIZED CAPACITOR, American symbol                                          
+C84   0.1uF                         C-USC0603                  C0603             CAPACITOR, American symbol                                                    
+C85   10uF                          CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C86   10uF                          CPOL-EUD                   PANASONIC_D       POLARIZED CAPACITOR, European symbol                                          
+C87   1uF                           NP_CAP0805                 C0805                                                                                           
+D1    CSD02060G                     DIODE-SMB                  SMB               DIODE                                                                         
+D2    NUP2105L                      DIODE-2CA|ACSOT23          SOT23             Dual DIODE Cathode-Anode|Anode-Cathode                                        
+D3    SR305                         SCHOTTKY-DIODEF126Z12      F126Z12           Schottky Diode                                                                
+D4    PNZ334                        1N4004                     DO41-10           DIODE                                                                         
+D5    S1D                           DIODE-SMB                  SMB               DIODE                                                                         
+D6    SR305                         SCHOTTKY-DIODEF126Z12      F126Z12           Schottky Diode                                                                
+DIL1  MCP42010SO-14                 MCP42010SO-14              SO-14                                                                                           
+IC1   PIC32MX3X0F512L               PIC32MX3X0F512L            TQFP100_12X12     PIC32MX GP                                                                    
+IC2   LM2676S-3.3V                  LM2676S                    TO263-7           National Semiconductor 3.0A "Simple Switcher"(c)                              
+IC3   MCP2515-E/SO                  MCP2515-E/SO               SO18L                                                                                           
+IC4   LM2671M                       LM2671M                    SO08              National Semiconductor 0.5A "Simple Switcher"(c)                              
+IC5   VBT1 - 12V - 5V DC-DC         VBT1                       VBT1              http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=102-1397-2-ND
+IC6   ENC28J60-SO                   ENC28J60-SO                SO28W             Microchip 10Mbit Eth. contoller with SPI interface                            
+IC7   24AA1025                      24AA128ST                  TSSOP8            Serial EEPROM                                                                 
+IC8   24AA1025                      24AA128ST                  TSSOP8            Serial EEPROM                                                                 
+IC9   MAX3232CSE                    MAX3232CSE                 SO16              True RS-232 Transceivers 3.0V to 5.5V, Low-Power                              
+IC10  LM555D                        LM555D                     SO08              TIMER                                                                         
+J2                                  520426-4                   520426-4          AMP connector                                                                 
+J7    Pulse J0026D21B               J0026                      PJ-J0             RJ45 PulseJack w/LEDs                                                         
+J9    Audio Out                     3C-STEREO                  3C-3-5MM                                                                                        
+JP4                                 MA06-1                     MA06-1            PIN HEADER                                                                    
+L1    33uH                          DO3316P                    DO3316P           COILCRAFT                                                                     
+L2    Ferroxcube, typ 4330-030-3877 L-US0207/10                0207/10           INDUCTOR, American symbol                                                     
+L3    100uH                         DO3316P                    DO3316P           COILCRAFT                                                                     
+LED1                                LEDSMT1206                 1206              LED                                                                           
+LED2                                LEDSMT1206                 1206              LED                                                                           
+LED3                                LEDSMT1206                 1206              LED                                                                           
+LED4  LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED5  LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED6  LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED7  LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED8  LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED9  LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED10 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED11 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED12 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED13 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED14 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED15 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED16 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED17 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED18 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED19 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED20 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED21 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED22 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED23 OED-L-8L                      LED3MM                     LED3MM            LED                                                                           
+LED24 OED-L-8L                      LED3MM                     LED3MM            LED                                                                           
+LED25 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED26 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED27 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED28 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED29 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED30 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED31 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED32 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED33 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED34 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED35 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED36 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+LED37 LP2C63-ST-RGB-SR0             LP2C63-ST-RGB-SR0          LP2C63-ST-RGB-SR0 1.5W RGB HIGH POWER LED                                                       
+M1    ELECTRET_MICROPHON-WM.64PN    ELECTRET_MICROPHON-WM.64PN WM-64PN           Electret Condenser Microphone                                                 
+OK1   CNY17F2M                      4N25SM                     DIL6-SMD          General Purpose 6-Pin Phototransistor Optocouplers                            
+Q1    8MHz                          CRYSTALHC49UP              HC49UP            CRYSTAL                                                                       
+Q2    32.768KHz                     CRYSTALHC49UP              HC49UP            CRYSTAL                                                                       
+Q3    16 MHz                        CRYSTALHC49UP              HC49UP            CRYSTAL                                                                       
+Q4    11.2896MHz                    CRYTALTC26H                TC26H             CRYSTAL                                                                       
+Q5    25MHz                         CRYSTALHC49UP              HC49UP            CRYSTAL                                                                       
+R1    4.7K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R2    330                           R-EU_R0805                 R0805             RESISTOR, European symbol                                                     
+R3    330                           R-EU_R0805                 R0805             RESISTOR, European symbol                                                     
+R4    330                           R-EU_R0805                 R0805             RESISTOR, European symbol                                                     
+R5    10K                           RESEU-10                   R-10                                                                                            
+R6    10K                           RESEU-10                   R-10                                                                                            
+R7    10K                           RESEU-10                   R-10                                                                                            
+R8    10K                           RESEU-10                   R-10                                                                                            
+R9    10K                           RESEU-10                   R-10                                                                                            
+R10   10K                           RESEU-10                   R-10                                                                                            
+R11   120                           RESEU-10                   R-10                                                                                            
+R12   2K 1%                         R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R13   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R14   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R15   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R16   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R17   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R18   50, 1%                        R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R19   50, 1%                        R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R20   50, 1%                        R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R21   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R22   50, 1%                        R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R23   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R24   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R25   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R26   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R27   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R28   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R29   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R30   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R31   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R32   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R33   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R34   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R35   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R36   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R37   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R38   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R39   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R40   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R41   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R42   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R43   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R44   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R45   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R46   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R47   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R48   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R49   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R50   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R51   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R52   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R53   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R54   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R55   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R56   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R57   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R58   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R59   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R60   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R61   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R62   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R63   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R64   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R65   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R66   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R67   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R68   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R69   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R70   180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R71   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R72   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R73   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R74   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R75   4.7K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R76   4.7K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R77   4.7K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R78   4.7K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R79   1K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R80   1K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R81   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R82   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R83   47K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R84   470                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R85   12K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R86   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R87   10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R88   470R                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R89   470R                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R90   5K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R91   1.8K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R92   15K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R93   5K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R94   1.8K                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R95   15K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R96   16K 1%                        R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R97   12K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R101  1K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R102  2K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R103  2K, Multiturn                 R-TRIMM4G/J                RTRIM4G/J         Trimm resistor                                                                
+R104  100                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R105  220                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R106  10K                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R107  100R                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R108  100                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R109  50R                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R110  1M                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R111  330, 1%                       R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R112  100K,1%                       R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R113  1K                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R114  12 1W                         R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R115  39K, 1%                       R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R116  10K, 1%                       R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R117  10K, 1%                       R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R118  10K, 1%                       R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R119  4K7                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R120  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R121  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R122  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R123  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R124  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R125  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R126  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R127  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R128  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R129  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R130  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R131  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R132  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R133  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R134  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R135  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R136  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R137  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R138  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R139  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R140  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R141  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R142  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R143  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R144  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R145  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R146  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R147  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R148  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R149  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R150  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R151  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R152  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R153  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R154  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R155  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R156  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R157  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R158  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R159  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R160  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R161  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R162  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R163  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R164  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R165  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R166  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R167  180                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R168  8R                            RESEU-10                   R-10                                                                                            
+R169  8R                            RESEU-10                   R-10                                                                                            
+R170  16                            RESEU-10                   R-10                                                                                            
+R171  16                            RESEU-10                   R-10                                                                                            
+R172  10K                           RESEU-10                   R-10                                                                                            
+R173  51K                           RESEU-10                   R-10                                                                                            
+R174  10R                           RESEU-10                   R-10                                                                                            
+R175  1M                            RESEU-10                   R-10                                                                                            
+R176  10R                           RESEU-10                   R-10                                                                                            
+R177  47                            RESEU-10                   R-10                                                                                            
+R178  10R                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R179  10R                           R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R180  750R                          R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R181  0R                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R182  0R                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+R183  0R                            R-EU_M0805                 M0805             RESISTOR, European symbol                                                     
+S1                                  31-XX                      B3F-31XX          OMRON SWITCH                                                                  
+S2                                  31-XX                      B3F-31XX          OMRON SWITCH                                                                  
+S3                                  31-XX                      B3F-31XX          OMRON SWITCH                                                                  
+SG1   MSR516XR                      B/C14S                     B/C14S            BUZZER Source: Buerklin                                                       
+SO-1  MCP6002                       MCP6002                    SO-8                                                                                            
+SO-2  MCP6002                       MCP6002                    SO-8                                                                                            
+SO-3  MCP6002                       MCP6002                    SO-8                                                                                            
+SV1                                 MA03-1                     MA03-1            PIN HEADER                                                                    
+U$1   ISO7221                       ADUM1201                   ADUM120                                                                                         
+U$2   PCA9635                       PCA9635PCA9635             TSSOP28                                                                                         
+U$3   MRF24J40MA                    MRF24J40MA                 MRF24J40MA                                                                                      
+U$4   PCA9635PCA9635                PCA9635PCA9635             TSSOP28                                                                                         
+U$5   PCA9635PCA9635                PCA9635PCA9635             TSSOP28                                                                                         
+U$6   MCP9803                       MCP9803                    SOIC-8                                                                                          
+U$7   INA126                        INA155A                    SO08                                                                                            
+U$8   MPXA4115A                     MPXA4115A                  482-01                                                                                          
+U$9   SJ3523SMT                     SJ3523SMT                  SJ-3523-SMT                                                                                     
+U$10  IRFL110                       IRFL110                    SOT223                                                                                          
+U$11  MCP6001                       MCP6001                    SOT23-5L                                                                                        
+U$12  TSOP852                       TSOP852                    TSOP852                                                                                         
+U$13  IRFL110                       IRFL110                    SOT223                                                                                          
+U$14  NAPION_14112                  NAPION_14112               TYPE4                                                                                           
+U$15  MCP6001                       MCP6001                    SOT23-5L                                                                                        
+U$17  TXM-433-LC                    TXM-433-LC                 TX-SMD                                                                                          
+U$18  MCP6001                       MCP6001                    SOT23-5L                                                                                        
+U$19  PCA9635                       PCA9635PCA9635             TSSOP28                                                                                         
+U$20  PCA9635PCA9635                PCA9635PCA9635             TSSOP28                                                                                         
+U$21  PCA9635PCA9635                PCA9635PCA9635             TSSOP28                                                                                         
+U$22  RXM-433-LR                    RXM-433-LR                 SMD1                                                                                            
+U1    MCP2551SN                     MCP2551SN                  SO-08             High Speed CAN tranceiver                                                     
+U6    7WZU04                        NC7WZU04                   SC70-6            Unbuffered dual inverter tinylogic.                                           
+U7    PCM1770                       PCM1770                    SSOP16            PCM1770 Texas Instruments/Burr-Brown Stereo DAC with Headphone Amplifier.     
+X1                                  733989-5                   733989-5          FEMALE PRINT CONNECTOR                                                        
+X2                                  MPT2                       2POL254           PHOENIX CONNECTOR                                                             
+X5                                  F09HP                      F09HP             SUB-D                                                                         

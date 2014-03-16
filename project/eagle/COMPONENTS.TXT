@@ -1,0 +1,55 @@
+
+Capacity measurement IC AD7152 - http://www.arrowne.com/innov/in216/f_1418.shtml
+Binary Code switch - DikiKey - CT3000-ND
+http://www.akrossilicon.com/products/as1135.html PoE
+- Compass Kit	342-1036-ND	$22.50
+- GPS module	GM-205810-000CT-ND	$41.65
+- GPS antenna	627-1015-1-ND	$8.06
+- Magnetic sensor 342-1029-1-ND 
+- GPS GM-2058EV-101-ND
+-  $14.08	Accelerometer 3-Axis I2C	497-5911-1-ND
+- $39.57	3 AXIS ACCELEROMETER	KIT3109MMA7260QE-ND	$39.57
+-  $41.65	GPS MODULE	GM-205810-000CT-ND	$41.65
+-  $128.16	GSM MODULE	591-1068-ND	$128.16
+
+- Microphone CarbProject - 423-1083-1-ND
+- DCDC 2.2V 3.5A  - 555-1119-ND		$25.90  
+- 16M Flash Memory - AT45DB161D-MU-ND	$2.58
+1		Audio DAC	296-13470-5-ND	2,81	2,81
+- Toch Screen - Just incase anyone is looking at using the New Haven 2.4in
+   display with touchscreen. Digikey is now selling them in quanties of 1 for
+   $45.50 . Here is a link: http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name=NHD-2.4-240320YF-CTXI%23-T-1-ND
+
+---------------------------------------
+NC7WZU04P6XCT-ND 	IC INVERTER DUAL UNBUFF SC70-6  	$0.38
+300-8129-1-ND		Crystal 11.2896				$1.10
+296-13470-5-ND		PCM1770					$2.81
+
+---------------------------------------
+
+1	IR-RECEIVER 		425-1148-ND				$1.13
+1	alt			751-1391-1-ND				$3.36
+
+1	Movment Sensor 		255-1803-ND				$36.63
+
+1	RJ45 + Magnetics	553-1349-ND				6,72
+
+1	PoE DCDC, SMD		296-20336-ND				35,9
+	
+1	PIC32			PIC32MX460F512L-80I/PT-ND		12,7
+	
+1	Tempsensor		MCP9803-M/SN-ND				1,58
+2	EEPROM			24AA1025-I/SM-ND			6,68
+1	CAN interface		MCP2515-I/SO-ND				2,98
+1	CAN tranceiver		MCP2551-I/SN-ND				1,45
+1	CAN bus isolator	296-21955-1-ND				2,38
+1	DCDC 12V-5V		102-1395-1-ND				4,82
+1	Ethernet Controller	ENC28J60/SO-ND				3,3
+3	RGB LED CTRL		568-4067-1-ND				2,37
+1	MRF24J40MA		MRF24J40MA-I/RM-ND			9,95
+1	RS-232 Tranceiver	296-13095-1-ND				1,5
+1	Volume control		MCP42010-I/SL-ND			2,65
+1	Siren			458-1092-ND				14,34
+1	Pressure sensor		MPXA4115AP-ND				19,15
+1	Light sensor		PNZ334-ND				1,46
+

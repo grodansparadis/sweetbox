@@ -1,0 +1,19 @@
+@echo off
+if exist *.$$$ del *.$$$
+if exist *.bkx del *.bkx
+if exist *.cce del *.cce
+if exist *.cod del *.cod
+if exist *.cof del *.cof
+if exist *.lde del *.lde
+if exist *.lst del *.lst
+if exist *.map del *.map
+if exist *.mcs del *.mcs
+if exist *.obj del *.obj
+if exist *.rlf del *.rlf
+if exist *.sdb del *.sdb
+if exist *.sym del *.sym
+if exist *.o   del *.o
+if exist *.hex   del *.hex
+if exist *.mptags   del *.mptags
+if exist *.tagsrc   del *.tagsrc
+if exist *.elf del *.elf
